@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CashTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CashTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.automation.features.html">com.automation.features</a> &gt; CashTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">6.233s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">seeTheCreateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
+<td class="success">0.369s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
+<td class="success">4.372s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">seeTheGetAllServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
+<td class="success">0.425s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
+<td class="success">0.554s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
+<td class="success">0.513s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;steven.nienow@hotmail.com&quot;,
+    &quot;amount&quot;: 275103,
+    &quot;collectorCash&quot;: &quot;SuRed&quot;,
+    &quot;cellphone&quot;: &quot;(717) 964-1477&quot;
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 175
+ETag: W/&quot;af-BD0/19dVRUZgGJqe2Tq2rkIlaNo&quot;
+Date: Mon, 25 Sep 2023 20:39:39 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;steven.nienow@hotmail.com&quot;,
+    &quot;collectorCash&quot;: &quot;SuRed&quot;,
+    &quot;amount&quot;: 275103,
+    &quot;cellphone&quot;: &quot;(717) 964-1477&quot;,
+    &quot;_id&quot;: &quot;6511f00bd1dfd8f1c1d255f1&quot;,
+    &quot;__v&quot;: 0
+}
+Request method:	DELETE
+Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00bd1dfd8f1c1d255f1
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=6511f00bd1dfd8f1c1d255f1
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 38
+ETag: W/&quot;26-fgR5yLHQ1Hpp6zDESHaY9wJreYE&quot;
+Date: Mon, 25 Sep 2023 20:39:40 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;acknowledged&quot;: true,
+    &quot;deletedCount&quot;: 1
+}
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/cash-payments
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/cash-payments
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 1760
+ETag: W/&quot;6e0-R/mZU4V5ebL7fML4y+pNxzr8XJg&quot;
+Date: Mon, 25 Sep 2023 20:39:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[
+    {
+        &quot;_id&quot;: &quot;6511d9de6bf09f1b8af871a7&quot;,
+        &quot;reference&quot;: &quot;1836017760&quot;,
+        &quot;userEmail&quot;: &quot;cornelius.satterfield@hotmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;SuRed&quot;,
+        &quot;amount&quot;: 198391,
+        &quot;cellphone&quot;: &quot;610-632-7564&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511dcc66bf09f1b8af871a9&quot;,
+        &quot;reference&quot;: &quot;1836017760&quot;,
+        &quot;userEmail&quot;: &quot;ernesto.barrows@hotmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Nequi&quot;,
+        &quot;amount&quot;: 112690,
+        &quot;cellphone&quot;: &quot;012-340-0492&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ed0fd1dfd8f1c1d25590&quot;,
+        &quot;reference&quot;: &quot;2003979454&quot;,
+        &quot;userEmail&quot;: &quot;morris.metz@gmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Efecty&quot;,
+        &quot;amount&quot;: 752784,
+        &quot;cellphone&quot;: &quot;(084) 133-3561&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ed11d1dfd8f1c1d25598&quot;,
+        &quot;reference&quot;: &quot;2003979454&quot;,
+        &quot;userEmail&quot;: &quot;marylin.mueller@yahoo.com&quot;,
+        &quot;collectorCash&quot;: &quot;SuRed&quot;,
+        &quot;amount&quot;: 475764,
+        &quot;cellphone&quot;: &quot;1-381-724-5680&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ed13d1dfd8f1c1d255a1&quot;,
+        &quot;reference&quot;: &quot;2003979454&quot;,
+        &quot;userEmail&quot;: &quot;julene.wyman@gmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Nequi&quot;,
+        &quot;amount&quot;: 277938,
+        &quot;cellphone&quot;: &quot;510.090.8774&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ef4cd1dfd8f1c1d255b9&quot;,
+        &quot;reference&quot;: &quot;221402392&quot;,
+        &quot;userEmail&quot;: &quot;sharice.grant@yahoo.com&quot;,
+        &quot;collectorCash&quot;: &quot;SuRed&quot;,
+        &quot;amount&quot;: 576440,
+        &quot;cellphone&quot;: &quot;(980) 775-3837&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ef4ed1dfd8f1c1d255c3&quot;,
+        &quot;reference&quot;: &quot;221402392&quot;,
+        &quot;userEmail&quot;: &quot;nikole.kuhlman@hotmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Baloto&quot;,
+        &quot;amount&quot;: 13936,
+        &quot;cellphone&quot;: &quot;1-260-488-3804&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ef87d1dfd8f1c1d255d5&quot;,
+        &quot;reference&quot;: &quot;413177525&quot;,
+        &quot;userEmail&quot;: &quot;cliff.casper@gmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Baloto&quot;,
+        &quot;amount&quot;: 30270,
+        &quot;cellphone&quot;: &quot;(163) 972-0423&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ef88d1dfd8f1c1d255db&quot;,
+        &quot;reference&quot;: &quot;413177525&quot;,
+        &quot;userEmail&quot;: &quot;steven.huel@gmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Baloto&quot;,
+        &quot;amount&quot;: 628047,
+        &quot;cellphone&quot;: &quot;942-924-6749&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ef89d1dfd8f1c1d255e1&quot;,
+        &quot;reference&quot;: &quot;413177525&quot;,
+        &quot;userEmail&quot;: &quot;reynaldo.mclaughlin@gmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Baloto&quot;,
+        &quot;amount&quot;: 743464,
+        &quot;cellphone&quot;: &quot;1-650-858-1616&quot;,
+        &quot;__v&quot;: 0
+    }
+]
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 1760
+ETag: W/&quot;6e0-R/mZU4V5ebL7fML4y+pNxzr8XJg&quot;
+Date: Mon, 25 Sep 2023 20:39:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[
+    {
+        &quot;_id&quot;: &quot;6511d9de6bf09f1b8af871a7&quot;,
+        &quot;reference&quot;: &quot;1836017760&quot;,
+        &quot;userEmail&quot;: &quot;cornelius.satterfield@hotmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;SuRed&quot;,
+        &quot;amount&quot;: 198391,
+        &quot;cellphone&quot;: &quot;610-632-7564&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511dcc66bf09f1b8af871a9&quot;,
+        &quot;reference&quot;: &quot;1836017760&quot;,
+        &quot;userEmail&quot;: &quot;ernesto.barrows@hotmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Nequi&quot;,
+        &quot;amount&quot;: 112690,
+        &quot;cellphone&quot;: &quot;012-340-0492&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ed0fd1dfd8f1c1d25590&quot;,
+        &quot;reference&quot;: &quot;2003979454&quot;,
+        &quot;userEmail&quot;: &quot;morris.metz@gmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Efecty&quot;,
+        &quot;amount&quot;: 752784,
+        &quot;cellphone&quot;: &quot;(084) 133-3561&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ed11d1dfd8f1c1d25598&quot;,
+        &quot;reference&quot;: &quot;2003979454&quot;,
+        &quot;userEmail&quot;: &quot;marylin.mueller@yahoo.com&quot;,
+        &quot;collectorCash&quot;: &quot;SuRed&quot;,
+        &quot;amount&quot;: 475764,
+        &quot;cellphone&quot;: &quot;1-381-724-5680&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ed13d1dfd8f1c1d255a1&quot;,
+        &quot;reference&quot;: &quot;2003979454&quot;,
+        &quot;userEmail&quot;: &quot;julene.wyman@gmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Nequi&quot;,
+        &quot;amount&quot;: 277938,
+        &quot;cellphone&quot;: &quot;510.090.8774&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ef4cd1dfd8f1c1d255b9&quot;,
+        &quot;reference&quot;: &quot;221402392&quot;,
+        &quot;userEmail&quot;: &quot;sharice.grant@yahoo.com&quot;,
+        &quot;collectorCash&quot;: &quot;SuRed&quot;,
+        &quot;amount&quot;: 576440,
+        &quot;cellphone&quot;: &quot;(980) 775-3837&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ef4ed1dfd8f1c1d255c3&quot;,
+        &quot;reference&quot;: &quot;221402392&quot;,
+        &quot;userEmail&quot;: &quot;nikole.kuhlman@hotmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Baloto&quot;,
+        &quot;amount&quot;: 13936,
+        &quot;cellphone&quot;: &quot;1-260-488-3804&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ef87d1dfd8f1c1d255d5&quot;,
+        &quot;reference&quot;: &quot;413177525&quot;,
+        &quot;userEmail&quot;: &quot;cliff.casper@gmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Baloto&quot;,
+        &quot;amount&quot;: 30270,
+        &quot;cellphone&quot;: &quot;(163) 972-0423&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ef88d1dfd8f1c1d255db&quot;,
+        &quot;reference&quot;: &quot;413177525&quot;,
+        &quot;userEmail&quot;: &quot;steven.huel@gmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Baloto&quot;,
+        &quot;amount&quot;: 628047,
+        &quot;cellphone&quot;: &quot;942-924-6749&quot;,
+        &quot;__v&quot;: 0
+    },
+    {
+        &quot;_id&quot;: &quot;6511ef89d1dfd8f1c1d255e1&quot;,
+        &quot;reference&quot;: &quot;413177525&quot;,
+        &quot;userEmail&quot;: &quot;reynaldo.mclaughlin@gmail.com&quot;,
+        &quot;collectorCash&quot;: &quot;Baloto&quot;,
+        &quot;amount&quot;: 743464,
+        &quot;cellphone&quot;: &quot;1-650-858-1616&quot;,
+        &quot;__v&quot;: 0
+    }
+]
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
+    &quot;amount&quot;: 248962,
+    &quot;collectorCash&quot;: &quot;SuRed&quot;,
+    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
+    &quot;amount&quot;: 248962,
+    &quot;collectorCash&quot;: &quot;SuRed&quot;,
+    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
+    &quot;amount&quot;: 248962,
+    &quot;collectorCash&quot;: &quot;SuRed&quot;,
+    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 172
+ETag: W/&quot;ac-PS9iZGM52VqHgu3peyVrAjBkGco&quot;
+Date: Mon, 25 Sep 2023 20:39:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
+    &quot;collectorCash&quot;: &quot;SuRed&quot;,
+    &quot;amount&quot;: 248962,
+    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
+    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
+    &quot;__v&quot;: 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 172
+ETag: W/&quot;ac-PS9iZGM52VqHgu3peyVrAjBkGco&quot;
+Date: Mon, 25 Sep 2023 20:39:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
+    &quot;collectorCash&quot;: &quot;SuRed&quot;,
+    &quot;amount&quot;: 248962,
+    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
+    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
+    &quot;__v&quot;: 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 172
+ETag: W/&quot;ac-PS9iZGM52VqHgu3peyVrAjBkGco&quot;
+Date: Mon, 25 Sep 2023 20:39:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
+    &quot;collectorCash&quot;: &quot;SuRed&quot;,
+    &quot;amount&quot;: 248962,
+    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
+    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
+    &quot;__v&quot;: 0
+}
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00dd1dfd8f1c1d255fd
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=6511f00dd1dfd8f1c1d255fd
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00dd1dfd8f1c1d255fd
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=6511f00dd1dfd8f1c1d255fd
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00dd1dfd8f1c1d255fd
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=6511f00dd1dfd8f1c1d255fd
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 172
+ETag: W/&quot;ac-6jc8mPL3xQx1Z0iTu6reWr0TtrI&quot;
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
+    &quot;collectorCash&quot;: &quot;SuRed&quot;,
+    &quot;amount&quot;: 248962,
+    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
+    &quot;__v&quot;: 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 172
+ETag: W/&quot;ac-6jc8mPL3xQx1Z0iTu6reWr0TtrI&quot;
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
+    &quot;collectorCash&quot;: &quot;SuRed&quot;,
+    &quot;amount&quot;: 248962,
+    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
+    &quot;__v&quot;: 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 172
+ETag: W/&quot;ac-6jc8mPL3xQx1Z0iTu6reWr0TtrI&quot;
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
+    &quot;collectorCash&quot;: &quot;SuRed&quot;,
+    &quot;amount&quot;: 248962,
+    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
+    &quot;__v&quot;: 0
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
+    &quot;amount&quot;: 737696,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;023-750-0316&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
+    &quot;amount&quot;: 737696,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;023-750-0316&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
+    &quot;amount&quot;: 737696,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;023-750-0316&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
+    &quot;amount&quot;: 737696,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;023-750-0316&quot;
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 171
+ETag: W/&quot;ab-rGFtz33SLgNjbJr6NM7jjZJFUio&quot;
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;amount&quot;: 737696,
+    &quot;cellphone&quot;: &quot;023-750-0316&quot;,
+    &quot;_id&quot;: &quot;6511f00ed1dfd8f1c1d25607&quot;,
+    &quot;__v&quot;: 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 171
+ETag: W/&quot;ab-rGFtz33SLgNjbJr6NM7jjZJFUio&quot;
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;amount&quot;: 737696,
+    &quot;cellphone&quot;: &quot;023-750-0316&quot;,
+    &quot;_id&quot;: &quot;6511f00ed1dfd8f1c1d25607&quot;,
+    &quot;__v&quot;: 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 171
+ETag: W/&quot;ab-rGFtz33SLgNjbJr6NM7jjZJFUio&quot;
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;amount&quot;: 737696,
+    &quot;cellphone&quot;: &quot;023-750-0316&quot;,
+    &quot;_id&quot;: &quot;6511f00ed1dfd8f1c1d25607&quot;,
+    &quot;__v&quot;: 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 171
+ETag: W/&quot;ab-rGFtz33SLgNjbJr6NM7jjZJFUio&quot;
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;amount&quot;: 737696,
+    &quot;cellphone&quot;: &quot;023-750-0316&quot;,
+    &quot;_id&quot;: &quot;6511f00ed1dfd8f1c1d25607&quot;,
+    &quot;__v&quot;: 0
+}
+Request method:	PUT
+Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=6511f00ed1dfd8f1c1d25607
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;jerold.ledner@gmail.com&quot;,
+    &quot;amount&quot;: 549017,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;433-906-9863&quot;
+}
+Request method:	PUT
+Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=6511f00ed1dfd8f1c1d25607
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;jerold.ledner@gmail.com&quot;,
+    &quot;amount&quot;: 549017,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;433-906-9863&quot;
+}
+Request method:	PUT
+Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=6511f00ed1dfd8f1c1d25607
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;jerold.ledner@gmail.com&quot;,
+    &quot;amount&quot;: 549017,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;433-906-9863&quot;
+}
+Request method:	PUT
+Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	id=6511f00ed1dfd8f1c1d25607
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;jerold.ledner@gmail.com&quot;,
+    &quot;amount&quot;: 549017,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;433-906-9863&quot;
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 92
+ETag: W/&quot;5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8&quot;
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;acknowledged&quot;: true,
+    &quot;modifiedCount&quot;: 1,
+    &quot;upsertedId&quot;: null,
+    &quot;upsertedCount&quot;: 0,
+    &quot;matchedCount&quot;: 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 92
+ETag: W/&quot;5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8&quot;
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;acknowledged&quot;: true,
+    &quot;modifiedCount&quot;: 1,
+    &quot;upsertedId&quot;: null,
+    &quot;upsertedCount&quot;: 0,
+    &quot;matchedCount&quot;: 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 92
+ETag: W/&quot;5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8&quot;
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;acknowledged&quot;: true,
+    &quot;modifiedCount&quot;: 1,
+    &quot;upsertedId&quot;: null,
+    &quot;upsertedCount&quot;: 0,
+    &quot;matchedCount&quot;: 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 92
+ETag: W/&quot;5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8&quot;
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;acknowledged&quot;: true,
+    &quot;modifiedCount&quot;: 1,
+    &quot;upsertedId&quot;: null,
+    &quot;upsertedCount&quot;: 0,
+    &quot;matchedCount&quot;: 1
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
+    &quot;amount&quot;: 192917,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;782-061-5216&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
+    &quot;amount&quot;: 192917,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;782-061-5216&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
+    &quot;amount&quot;: 192917,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;782-061-5216&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
+    &quot;amount&quot;: 192917,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;782-061-5216&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
+    &quot;amount&quot;: 192917,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cellphone&quot;: &quot;782-061-5216&quot;
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 178
+ETag: W/&quot;b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ&quot;
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;amount&quot;: 192917,
+    &quot;cellphone&quot;: &quot;782-061-5216&quot;,
+    &quot;_id&quot;: &quot;6511f00fd1dfd8f1c1d2560d&quot;,
+    &quot;__v&quot;: 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 178
+ETag: W/&quot;b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ&quot;
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;amount&quot;: 192917,
+    &quot;cellphone&quot;: &quot;782-061-5216&quot;,
+    &quot;_id&quot;: &quot;6511f00fd1dfd8f1c1d2560d&quot;,
+    &quot;__v&quot;: 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 178
+ETag: W/&quot;b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ&quot;
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;amount&quot;: 192917,
+    &quot;cellphone&quot;: &quot;782-061-5216&quot;,
+    &quot;_id&quot;: &quot;6511f00fd1dfd8f1c1d2560d&quot;,
+    &quot;__v&quot;: 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 178
+ETag: W/&quot;b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ&quot;
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;amount&quot;: 192917,
+    &quot;cellphone&quot;: &quot;782-061-5216&quot;,
+    &quot;_id&quot;: &quot;6511f00fd1dfd8f1c1d2560d&quot;,
+    &quot;__v&quot;: 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 178
+ETag: W/&quot;b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ&quot;
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;reference&quot;: &quot;578961422&quot;,
+    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
+    &quot;collectorCash&quot;: &quot;Efecty&quot;,
+    &quot;amount&quot;: 192917,
+    &quot;cellphone&quot;: &quot;782-061-5216&quot;,
+    &quot;_id&quot;: &quot;6511f00fd1dfd8f1c1d2560d&quot;,
+    &quot;__v&quot;: 0
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.0</a> at Sep 25, 2023, 3:39:44 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.automation.features.PseTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-09-25T20:39:36" hostname="Edisons-MacBook-Pro.local" time="6.835">
+  <properties/>
+  <testcase name="seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="4.373"/>
+  <testcase name="seeTheGetAllServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="0.408"/>
+  <testcase name="seeTheCreateServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="0.39"/>
+  <testcase name="seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="0.586"/>
+  <testcase name="seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="0.596"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "felix.daugherty@yahoo.com",
+    "amount": 769625,
+    "fullNameUser": "Tien Weimann",
+    "cellphone": "1-929-629-6911"
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 208
+ETag: W/"d0-jn2cM+r1d2i5LM0jBjhcRyIhGVE"
+Date: Mon, 25 Sep 2023 20:39:39 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "felix.daugherty@yahoo.com",
+    "fullNameUser": "Tien Weimann",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "1-929-629-6911",
+    "amount": 769625,
+    "_id": "6511f00bd1dfd8f1c1d255ef",
+    "__v": 0
+}
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/pse-payment/6511f00bd1dfd8f1c1d255ef
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6511f00bd1dfd8f1c1d255ef
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 208
+ETag: W/"d0-A1JaT27tqcBtF/NKVTA5k/CRSxw"
+Date: Mon, 25 Sep 2023 20:39:40 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "_id": "6511f00bd1dfd8f1c1d255ef",
+    "userEmail": "felix.daugherty@yahoo.com",
+    "fullNameUser": "Tien Weimann",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "1-929-629-6911",
+    "amount": 769625,
+    "__v": 0
+}
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/pse-payments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/pse-payments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 2530
+ETag: W/"9e2-Q+RQ6s7ztGeKCriLCoAsFZRpS28"
+Date: Mon, 25 Sep 2023 20:39:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[
+    {
+        "_id": "6511e731d1dfd8f1c1d2557d",
+        "userEmail": "krystin.denesik@yahoo.com",
+        "fullNameUser": "Waylon Schimmel",
+        "reference": "1836017760",
+        "referencePse": "1836017760",
+        "cellphone": "(746) 483-4046",
+        "amount": 171641,
+        "__v": 0
+    },
+    {
+        "_id": "6511e73ad1dfd8f1c1d2557f",
+        "userEmail": "randy.gaylord@yahoo.com",
+        "fullNameUser": "Jamar Hermann",
+        "reference": "1836017760",
+        "referencePse": "1836017760",
+        "cellphone": "(627) 762-6320",
+        "amount": 363068,
+        "__v": 0
+    },
+    {
+        "_id": "6511ed0dd1dfd8f1c1d25587",
+        "userEmail": "gilberto.welch@hotmail.com",
+        "fullNameUser": "Mrs. Corrina Lind",
+        "reference": "2003979454",
+        "referencePse": "2003979454",
+        "cellphone": "392.639.1440",
+        "amount": 782918,
+        "__v": 0
+    },
+    {
+        "_id": "6511ed10d1dfd8f1c1d25594",
+        "userEmail": "manuel.farrell@hotmail.com",
+        "fullNameUser": "Hwa Gerlach",
+        "reference": "2003979454",
+        "referencePse": "2003979454",
+        "cellphone": "(025) 971-3608",
+        "amount": 381705,
+        "__v": 0
+    },
+    {
+        "_id": "6511ed12d1dfd8f1c1d2559c",
+        "userEmail": "solomon.jacobson@yahoo.com",
+        "fullNameUser": "Warner Okuneva",
+        "reference": "2003979454",
+        "referencePse": "2003979454",
+        "cellphone": "(719) 907-2784",
+        "amount": 414722,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef47d1dfd8f1c1d255a9",
+        "userEmail": "johnathan.ritchie@gmail.com",
+        "fullNameUser": "Kermit Lowe PhD",
+        "reference": "221402392",
+        "referencePse": "221402392",
+        "cellphone": "372.180.4353",
+        "amount": 450116,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef4bd1dfd8f1c1d255b3",
+        "userEmail": "nicholas.klein@gmail.com",
+        "fullNameUser": "Filomena Barrows",
+        "reference": "221402392",
+        "referencePse": "221402392",
+        "cellphone": "671-407-8857",
+        "amount": 315368,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef4cd1dfd8f1c1d255b7",
+        "userEmail": "concepcion.yundt@gmail.com",
+        "fullNameUser": "Adelina Ziemann",
+        "reference": "221402392",
+        "referencePse": "221402392",
+        "cellphone": "1-301-199-4284",
+        "amount": 440122,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef89d1dfd8f1c1d255e3",
+        "userEmail": "jeramy.johnston@gmail.com",
+        "fullNameUser": "Bernita Kuhic",
+        "reference": "1616653215",
+        "referencePse": "1616653215",
+        "cellphone": "092-408-1329",
+        "amount": 275688,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef8ad1dfd8f1c1d255e7",
+        "userEmail": "sofia.kshlerin@gmail.com",
+        "fullNameUser": "Mr. Rey Hudson",
+        "reference": "1616653215",
+        "referencePse": "1616653215",
+        "cellphone": "965-840-6429",
+        "amount": 558473,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef8ad1dfd8f1c1d255e9",
+        "userEmail": "jamar.nader@yahoo.com",
+        "fullNameUser": "Man Torp",
+        "reference": "1616653215",
+        "referencePse": "1616653215",
+        "cellphone": "350.058.4343",
+        "amount": 751988,
+        "__v": 0
+    },
+    {
+        "_id": "6511f00bd1dfd8f1c1d255ef",
+        "userEmail": "felix.daugherty@yahoo.com",
+        "fullNameUser": "Tien Weimann",
+        "reference": "578961422",
+        "referencePse": "578961422",
+        "cellphone": "1-929-629-6911",
+        "amount": 769625,
+        "__v": 0
+    }
+]
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 2530
+ETag: W/"9e2-Q+RQ6s7ztGeKCriLCoAsFZRpS28"
+Date: Mon, 25 Sep 2023 20:39:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[
+    {
+        "_id": "6511e731d1dfd8f1c1d2557d",
+        "userEmail": "krystin.denesik@yahoo.com",
+        "fullNameUser": "Waylon Schimmel",
+        "reference": "1836017760",
+        "referencePse": "1836017760",
+        "cellphone": "(746) 483-4046",
+        "amount": 171641,
+        "__v": 0
+    },
+    {
+        "_id": "6511e73ad1dfd8f1c1d2557f",
+        "userEmail": "randy.gaylord@yahoo.com",
+        "fullNameUser": "Jamar Hermann",
+        "reference": "1836017760",
+        "referencePse": "1836017760",
+        "cellphone": "(627) 762-6320",
+        "amount": 363068,
+        "__v": 0
+    },
+    {
+        "_id": "6511ed0dd1dfd8f1c1d25587",
+        "userEmail": "gilberto.welch@hotmail.com",
+        "fullNameUser": "Mrs. Corrina Lind",
+        "reference": "2003979454",
+        "referencePse": "2003979454",
+        "cellphone": "392.639.1440",
+        "amount": 782918,
+        "__v": 0
+    },
+    {
+        "_id": "6511ed10d1dfd8f1c1d25594",
+        "userEmail": "manuel.farrell@hotmail.com",
+        "fullNameUser": "Hwa Gerlach",
+        "reference": "2003979454",
+        "referencePse": "2003979454",
+        "cellphone": "(025) 971-3608",
+        "amount": 381705,
+        "__v": 0
+    },
+    {
+        "_id": "6511ed12d1dfd8f1c1d2559c",
+        "userEmail": "solomon.jacobson@yahoo.com",
+        "fullNameUser": "Warner Okuneva",
+        "reference": "2003979454",
+        "referencePse": "2003979454",
+        "cellphone": "(719) 907-2784",
+        "amount": 414722,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef47d1dfd8f1c1d255a9",
+        "userEmail": "johnathan.ritchie@gmail.com",
+        "fullNameUser": "Kermit Lowe PhD",
+        "reference": "221402392",
+        "referencePse": "221402392",
+        "cellphone": "372.180.4353",
+        "amount": 450116,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef4bd1dfd8f1c1d255b3",
+        "userEmail": "nicholas.klein@gmail.com",
+        "fullNameUser": "Filomena Barrows",
+        "reference": "221402392",
+        "referencePse": "221402392",
+        "cellphone": "671-407-8857",
+        "amount": 315368,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef4cd1dfd8f1c1d255b7",
+        "userEmail": "concepcion.yundt@gmail.com",
+        "fullNameUser": "Adelina Ziemann",
+        "reference": "221402392",
+        "referencePse": "221402392",
+        "cellphone": "1-301-199-4284",
+        "amount": 440122,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef89d1dfd8f1c1d255e3",
+        "userEmail": "jeramy.johnston@gmail.com",
+        "fullNameUser": "Bernita Kuhic",
+        "reference": "1616653215",
+        "referencePse": "1616653215",
+        "cellphone": "092-408-1329",
+        "amount": 275688,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef8ad1dfd8f1c1d255e7",
+        "userEmail": "sofia.kshlerin@gmail.com",
+        "fullNameUser": "Mr. Rey Hudson",
+        "reference": "1616653215",
+        "referencePse": "1616653215",
+        "cellphone": "965-840-6429",
+        "amount": 558473,
+        "__v": 0
+    },
+    {
+        "_id": "6511ef8ad1dfd8f1c1d255e9",
+        "userEmail": "jamar.nader@yahoo.com",
+        "fullNameUser": "Man Torp",
+        "reference": "1616653215",
+        "referencePse": "1616653215",
+        "cellphone": "350.058.4343",
+        "amount": 751988,
+        "__v": 0
+    },
+    {
+        "_id": "6511f00bd1dfd8f1c1d255ef",
+        "userEmail": "felix.daugherty@yahoo.com",
+        "fullNameUser": "Tien Weimann",
+        "reference": "578961422",
+        "referencePse": "578961422",
+        "cellphone": "1-929-629-6911",
+        "amount": 769625,
+        "__v": 0
+    }
+]
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "hermelinda.hagenes@hotmail.com",
+    "amount": 656359,
+    "fullNameUser": "Cameron Grant",
+    "cellphone": "159.042.0723"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "hermelinda.hagenes@hotmail.com",
+    "amount": 656359,
+    "fullNameUser": "Cameron Grant",
+    "cellphone": "159.042.0723"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "hermelinda.hagenes@hotmail.com",
+    "amount": 656359,
+    "fullNameUser": "Cameron Grant",
+    "cellphone": "159.042.0723"
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 212
+ETag: W/"d4-kVy97sYiCRUeNuIY+3tDc1QnwZc"
+Date: Mon, 25 Sep 2023 20:39:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "hermelinda.hagenes@hotmail.com",
+    "fullNameUser": "Cameron Grant",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "159.042.0723",
+    "amount": 656359,
+    "_id": "6511f00dd1dfd8f1c1d255ff",
+    "__v": 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 212
+ETag: W/"d4-kVy97sYiCRUeNuIY+3tDc1QnwZc"
+Date: Mon, 25 Sep 2023 20:39:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "hermelinda.hagenes@hotmail.com",
+    "fullNameUser": "Cameron Grant",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "159.042.0723",
+    "amount": 656359,
+    "_id": "6511f00dd1dfd8f1c1d255ff",
+    "__v": 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 212
+ETag: W/"d4-kVy97sYiCRUeNuIY+3tDc1QnwZc"
+Date: Mon, 25 Sep 2023 20:39:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "hermelinda.hagenes@hotmail.com",
+    "fullNameUser": "Cameron Grant",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "159.042.0723",
+    "amount": 656359,
+    "_id": "6511f00dd1dfd8f1c1d255ff",
+    "__v": 0
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "grazyna.bauch@hotmail.com",
+    "amount": 397291,
+    "fullNameUser": "Ismael Tillman",
+    "cellphone": "(939) 212-6422"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "grazyna.bauch@hotmail.com",
+    "amount": 397291,
+    "fullNameUser": "Ismael Tillman",
+    "cellphone": "(939) 212-6422"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "grazyna.bauch@hotmail.com",
+    "amount": 397291,
+    "fullNameUser": "Ismael Tillman",
+    "cellphone": "(939) 212-6422"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "grazyna.bauch@hotmail.com",
+    "amount": 397291,
+    "fullNameUser": "Ismael Tillman",
+    "cellphone": "(939) 212-6422"
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 210
+ETag: W/"d2-QHBh327bXb8+HJJIiy2gGZCLPyU"
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "grazyna.bauch@hotmail.com",
+    "fullNameUser": "Ismael Tillman",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "(939) 212-6422",
+    "amount": 397291,
+    "_id": "6511f00ed1dfd8f1c1d25605",
+    "__v": 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 210
+ETag: W/"d2-QHBh327bXb8+HJJIiy2gGZCLPyU"
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "grazyna.bauch@hotmail.com",
+    "fullNameUser": "Ismael Tillman",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "(939) 212-6422",
+    "amount": 397291,
+    "_id": "6511f00ed1dfd8f1c1d25605",
+    "__v": 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 210
+ETag: W/"d2-QHBh327bXb8+HJJIiy2gGZCLPyU"
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "grazyna.bauch@hotmail.com",
+    "fullNameUser": "Ismael Tillman",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "(939) 212-6422",
+    "amount": 397291,
+    "_id": "6511f00ed1dfd8f1c1d25605",
+    "__v": 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 210
+ETag: W/"d2-QHBh327bXb8+HJJIiy2gGZCLPyU"
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "grazyna.bauch@hotmail.com",
+    "fullNameUser": "Ismael Tillman",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "(939) 212-6422",
+    "amount": 397291,
+    "_id": "6511f00ed1dfd8f1c1d25605",
+    "__v": 0
+}
+Request method:	PUT
+Request URI:	http://localhost:1337/api/v1/pse-payment/6511f00ed1dfd8f1c1d25605
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6511f00ed1dfd8f1c1d25605
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "shaunta.mohr@hotmail.com",
+    "amount": 420524,
+    "fullNameUser": "Andrew Cremin",
+    "cellphone": "250-880-9217"
+}
+Request method:	PUT
+Request URI:	http://localhost:1337/api/v1/pse-payment/6511f00ed1dfd8f1c1d25605
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6511f00ed1dfd8f1c1d25605
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "shaunta.mohr@hotmail.com",
+    "amount": 420524,
+    "fullNameUser": "Andrew Cremin",
+    "cellphone": "250-880-9217"
+}
+Request method:	PUT
+Request URI:	http://localhost:1337/api/v1/pse-payment/6511f00ed1dfd8f1c1d25605
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6511f00ed1dfd8f1c1d25605
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "shaunta.mohr@hotmail.com",
+    "amount": 420524,
+    "fullNameUser": "Andrew Cremin",
+    "cellphone": "250-880-9217"
+}
+Request method:	PUT
+Request URI:	http://localhost:1337/api/v1/pse-payment/6511f00ed1dfd8f1c1d25605
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6511f00ed1dfd8f1c1d25605
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "shaunta.mohr@hotmail.com",
+    "amount": 420524,
+    "fullNameUser": "Andrew Cremin",
+    "cellphone": "250-880-9217"
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 92
+ETag: W/"5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8"
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "acknowledged": true,
+    "modifiedCount": 1,
+    "upsertedId": null,
+    "upsertedCount": 0,
+    "matchedCount": 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 92
+ETag: W/"5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8"
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "acknowledged": true,
+    "modifiedCount": 1,
+    "upsertedId": null,
+    "upsertedCount": 0,
+    "matchedCount": 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 92
+ETag: W/"5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8"
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "acknowledged": true,
+    "modifiedCount": 1,
+    "upsertedId": null,
+    "upsertedCount": 0,
+    "matchedCount": 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 92
+ETag: W/"5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8"
+Date: Mon, 25 Sep 2023 20:39:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "acknowledged": true,
+    "modifiedCount": 1,
+    "upsertedId": null,
+    "upsertedCount": 0,
+    "matchedCount": 1
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "nobuko.williamson@gmail.com",
+    "amount": 411551,
+    "fullNameUser": "Bobby Hansen",
+    "cellphone": "1-051-707-2372"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "nobuko.williamson@gmail.com",
+    "amount": 411551,
+    "fullNameUser": "Bobby Hansen",
+    "cellphone": "1-051-707-2372"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "nobuko.williamson@gmail.com",
+    "amount": 411551,
+    "fullNameUser": "Bobby Hansen",
+    "cellphone": "1-051-707-2372"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "nobuko.williamson@gmail.com",
+    "amount": 411551,
+    "fullNameUser": "Bobby Hansen",
+    "cellphone": "1-051-707-2372"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "userEmail": "nobuko.williamson@gmail.com",
+    "amount": 411551,
+    "fullNameUser": "Bobby Hansen",
+    "cellphone": "1-051-707-2372"
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 210
+ETag: W/"d2-QOpp2riDbVqwOfkVapjto/oH93s"
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "nobuko.williamson@gmail.com",
+    "fullNameUser": "Bobby Hansen",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "1-051-707-2372",
+    "amount": 411551,
+    "_id": "6511f00fd1dfd8f1c1d25610",
+    "__v": 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 210
+ETag: W/"d2-QOpp2riDbVqwOfkVapjto/oH93s"
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "nobuko.williamson@gmail.com",
+    "fullNameUser": "Bobby Hansen",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "1-051-707-2372",
+    "amount": 411551,
+    "_id": "6511f00fd1dfd8f1c1d25610",
+    "__v": 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 210
+ETag: W/"d2-QOpp2riDbVqwOfkVapjto/oH93s"
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "nobuko.williamson@gmail.com",
+    "fullNameUser": "Bobby Hansen",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "1-051-707-2372",
+    "amount": 411551,
+    "_id": "6511f00fd1dfd8f1c1d25610",
+    "__v": 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 210
+ETag: W/"d2-QOpp2riDbVqwOfkVapjto/oH93s"
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "nobuko.williamson@gmail.com",
+    "fullNameUser": "Bobby Hansen",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "1-051-707-2372",
+    "amount": 411551,
+    "_id": "6511f00fd1dfd8f1c1d25610",
+    "__v": 0
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 210
+ETag: W/"d2-QOpp2riDbVqwOfkVapjto/oH93s"
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "userEmail": "nobuko.williamson@gmail.com",
+    "fullNameUser": "Bobby Hansen",
+    "reference": "578961422",
+    "referencePse": "578961422",
+    "cellphone": "1-051-707-2372",
+    "amount": 411551,
+    "_id": "6511f00fd1dfd8f1c1d25610",
+    "__v": 0
+}
+Request method:	DELETE
+Request URI:	http://localhost:1337/api/v1/pse-payment/6511f00fd1dfd8f1c1d25610
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6511f00fd1dfd8f1c1d25610
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	http://localhost:1337/api/v1/pse-payment/6511f00fd1dfd8f1c1d25610
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6511f00fd1dfd8f1c1d25610
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	http://localhost:1337/api/v1/pse-payment/6511f00fd1dfd8f1c1d25610
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6511f00fd1dfd8f1c1d25610
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	http://localhost:1337/api/v1/pse-payment/6511f00fd1dfd8f1c1d25610
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6511f00fd1dfd8f1c1d25610
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	http://localhost:1337/api/v1/pse-payment/6511f00fd1dfd8f1c1d25610
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6511f00fd1dfd8f1c1d25610
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 38
+ETag: W/"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE"
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "acknowledged": true,
+    "deletedCount": 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 38
+ETag: W/"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE"
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "acknowledged": true,
+    "deletedCount": 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 38
+ETag: W/"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE"
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "acknowledged": true,
+    "deletedCount": 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 38
+ETag: W/"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE"
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "acknowledged": true,
+    "deletedCount": 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 38
+ETag: W/"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE"
+Date: Mon, 25 Sep 2023 20:39:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "acknowledged": true,
+    "deletedCount": 1
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
