@@ -5,14 +5,17 @@ import lombok.Data;
 @Data
 public class CreditCardPayment {
 
-    private String reference;
+    private String ccreference;
     private String ccName;
     private String ccNumber;
+    private String cclevel;
     private Integer ccMonthExp;
     private Integer ccYearExp;
     private Integer ccSecurityCode;
-    private String userEmail;
-    private Integer amount;
-    private String cellphone;
+    private String ccuserEmail;
+    private String ccDues;
+    private String ccDate;
+    private String ccamount;
+    private String cccellphone;
 
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.automation.features.CreditCardTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-09-25T20:39:36" hostname="Edisons-MacBook-Pro.local" time="6.438">
+<testsuite name="com.automation.features.CreditCardTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-09-30T22:34:37" hostname="Edisons-MacBook-Pro.local" time="8.961">
   <properties/>
-  <testcase name="seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectCreditCardPaymentInformation()" classname="com.automation.features.CreditCardTests" time="4.387"/>
-  <testcase name="seeTheGetAllServiceResponseCorrectly_When_SubmitTheCorrectCreditCardPaymentInformation()" classname="com.automation.features.CreditCardTests" time="0.325"/>
-  <testcase name="seeTheCreateServiceResponseCorrectly_When_SubmitTheCorrectCreditCardPaymentInformation()" classname="com.automation.features.CreditCardTests" time="0.274"/>
-  <testcase name="seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectCreditCardPaymentInformation()" classname="com.automation.features.CreditCardTests" time="0.476"/>
-  <testcase name="seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectCreditCardPaymentInformation()" classname="com.automation.features.CreditCardTests" time="0.602"/>
+  <testcase name="seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectCreditCardPaymentInformation()" classname="com.automation.features.CreditCardTests" time="6.152"/>
+  <testcase name="seeTheGetAllServiceResponseCorrectly_When_SubmitTheCorrectCreditCardPaymentInformation()" classname="com.automation.features.CreditCardTests" time="0.313"/>
+  <testcase name="seeTheCreateServiceResponseCorrectly_When_SubmitTheCorrectCreditCardPaymentInformation()" classname="com.automation.features.CreditCardTests" time="0.477"/>
+  <testcase name="seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectCreditCardPaymentInformation()" classname="com.automation.features.CreditCardTests" time="0.686"/>
+  <testcase name="seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectCreditCardPaymentInformation()" classname="com.automation.features.CreditCardTests" time="0.753"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:1337/api/v1/credit-card-payment
 Proxy:			<none>
@@ -19,76 +19,90 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "ccName": "Miss Hal Zboncak",
-    "ccNumber": "5019-9703-1147-6743",
-    "ccMonthExp": 8,
+    "ccreference": "306279528",
+    "ccName": "Humberto O'Reilly",
+    "ccNumber": "6759-3404-3434-6181-38",
+    "cclevel": "VISA",
+    "ccMonthExp": 5,
     "ccYearExp": 47,
-    "ccSecurityCode": 493,
-    "userEmail": "erik.mcdermott@gmail.com",
-    "amount": 62040,
-    "cellphone": "095-097-9038"
+    "ccSecurityCode": 223,
+    "ccuserEmail": "lakiesha.hagenes@hotmail.com",
+    "ccDues": "18",
+    "ccDate": "30/12/2023",
+    "ccamount": "261070",
+    "cccellphone": "606.293.3947"
 }
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 259
-ETag: W/"103-WLFjLwEMJYb0Hr4pMHUTmb0nFsA"
-Date: Mon, 25 Sep 2023 20:39:39 GMT
+Content-Length: 327
+ETag: W/"147-hCOyViyKOycH/XgWILf4IaaDrjc"
+Date: Sat, 30 Sep 2023 22:34:42 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "ccName": "Miss Hal Zboncak",
-    "ccNumber": "5019-9703-1147-6743",
-    "ccMonthExp": 8,
+    "ccreference": "306279528",
+    "ccName": "Humberto O'Reilly",
+    "ccNumber": "6759-3404-3434-6181-38",
+    "cclevel": "VISA",
+    "ccMonthExp": 5,
     "ccYearExp": 47,
-    "ccSecurityCode": 493,
-    "userEmail": "erik.mcdermott@gmail.com",
-    "amount": 62040,
-    "cellphone": "095-097-9038",
-    "_id": "6511f00bd1dfd8f1c1d255f3",
+    "ccDues": 18,
+    "ccSecurityCode": 223,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "lakiesha.hagenes@hotmail.com",
+    "ccamount": 261070,
+    "cccellphone": "606.293.3947",
+    "_id": "6518a282b15d7ac86c3d9347",
     "__v": 0
 }
 Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/credit-card-payment/6511f00bd1dfd8f1c1d255f3
+Request URI:	http://localhost:1337/api/v1/credit-card-payment/6518a282b15d7ac86c3d9347
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=6511f00bd1dfd8f1c1d255f3
+Path params:	id=6518a282b15d7ac86c3d9347
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "ccName": "Gerry Nolan",
-    "ccNumber": "3529-8735-0262-0475",
-    "ccMonthExp": 10,
-    "ccYearExp": 25,
-    "ccSecurityCode": 607,
-    "userEmail": "vanda.flatley@yahoo.com",
-    "amount": 546389,
-    "cellphone": "(274) 556-0024"
+    "ccreference": "306279528",
+    "ccName": "Victoria Aufderhar",
+    "ccNumber": "3528-3839-2390-3675",
+    "cclevel": "VISA",
+    "ccMonthExp": 8,
+    "ccYearExp": 35,
+    "ccSecurityCode": 978,
+    "ccuserEmail": "casey.corkery@yahoo.com",
+    "ccDues": "12",
+    "ccDate": "30/12/2023",
+    "ccamount": "533212",
+    "cccellphone": "(265) 471-8387"
 }
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 92
-ETag: W/"5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8"
-Date: Mon, 25 Sep 2023 20:39:41 GMT
+Content-Length: 209
+ETag: W/"d1-CAlJeD1NkO10bhBNmaeH6jlf7Xs"
+Date: Sat, 30 Sep 2023 22:34:43 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "acknowledged": true,
-    "modifiedCount": 1,
-    "upsertedId": null,
-    "upsertedCount": 0,
-    "matchedCount": 1
+    "status": "201",
+    "message": "Credit card payment updated successfull",
+    "idUpdated": "6518a282b15d7ac86c3d9347",
+    "result": {
+        "acknowledged": true,
+        "modifiedCount": 1,
+        "upsertedId": null,
+        "upsertedCount": 0,
+        "matchedCount": 1
+    }
 }
 Request method:	GET
 Request URI:	http://localhost:1337/api/v1/credit-card-payments
@@ -117,471 +131,809 @@ Body:			<none>
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 3105
-ETag: W/"c21-1jFwqlxyOh4vRIDAgrUmP5vDNZY"
-Date: Mon, 25 Sep 2023 20:39:41 GMT
+Content-Length: 2618
+ETag: W/"a3a-EbLBkGh1Mb3COiXsmFsjhANpnx0"
+Date: Sat, 30 Sep 2023 22:34:44 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
-[
-    {
-        "_id": "6511e00a6bf09f1b8af871af",
-        "reference": "1836017760",
-        "ccName": "Caitlin Moore Sr.",
-        "ccNumber": "6007-2267-0061-9605",
-        "ccMonthExp": 1,
-        "ccYearExp": 42,
-        "ccSecurityCode": 485,
-        "userEmail": "sammie.cummerata@yahoo.com",
-        "amount": 9882,
-        "cellphone": "973.326.0146",
-        "__v": 0
-    },
-    {
-        "_id": "6511e0a7d97fb4385fc9e168",
-        "reference": "1836017760",
-        "ccName": "Venice Walsh",
-        "ccNumber": "3783-944329-03426",
-        "ccMonthExp": 5,
+{
+    "status": "200",
+    "message": "Credit card payments request",
+    "results": [
+        {
+            "_id": "651872a009d12dc5e940555a",
+            "ccreference": "CC00000001",
+            "ccName": "USER CREDIT CARD 1133",
+            "ccNumber": "4111 5555 8888 6666",
+            "cclevel": "VISA",
+            "ccMonthExp": 8,
+            "ccYearExp": 25,
+            "ccDues": 12,
+            "ccSecurityCode": 123,
+            "ccDate": "23/09/2024",
+            "ccuserEmail": "USER1133@test.com",
+            "ccamount": 12500,
+            "cccellphone": "573256589987",
+            "__v": 0
+        },
+        {
+            "_id": "6518a19eb15d7ac86c3d9309",
+            "ccreference": "306279528",
+            "ccName": "Jadwiga Bahringer",
+            "ccNumber": "6771432216647817",
+            "cclevel": "VISA",
+            "ccMonthExp": 9,
+            "ccYearExp": 31,
+            "ccDues": 2,
+            "ccSecurityCode": 685,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "alysia.bernhard@yahoo.com",
+            "ccamount": 172982,
+            "cccellphone": "1-244-108-6766",
+            "__v": 0
+        },
+        {
+            "_id": "6518a1a2b15d7ac86c3d9318",
+            "ccreference": "306279528",
+            "ccName": "Edythe Armstrong",
+            "ccNumber": "6771-8960-6252-3639",
+            "cclevel": "VISA",
+            "ccMonthExp": 4,
+            "ccYearExp": 46,
+            "ccDues": 33,
+            "ccSecurityCode": 280,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "bunny.hammes@yahoo.com",
+            "ccamount": 332686,
+            "cccellphone": "(583) 365-6574",
+            "__v": 0
+        },
+        {
+            "_id": "6518a1a3b15d7ac86c3d931d",
+            "ccreference": "306279528",
+            "ccName": "Jarvis Koch",
+            "ccNumber": "6771-8934-1174-5419",
+            "cclevel": "VISA",
+            "ccMonthExp": 8,
+            "ccYearExp": 25,
+            "ccDues": 34,
+            "ccSecurityCode": 192,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "lyndia.bahringer@yahoo.com",
+            "ccamount": 395010,
+            "cccellphone": "813-906-7807",
+            "__v": 0
+        },
+        {
+            "_id": "6518a1d3b15d7ac86c3d9328",
+            "ccreference": "306279528",
+            "ccName": "Malia Klein",
+            "ccNumber": "3499-338946-19040",
+            "cclevel": "VISA",
+            "ccMonthExp": 1,
+            "ccYearExp": 38,
+            "ccDues": 31,
+            "ccSecurityCode": 346,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "roger.will@hotmail.com",
+            "ccamount": 650395,
+            "cccellphone": "1-629-197-8221",
+            "__v": 0
+        },
+        {
+            "_id": "6518a1d6b15d7ac86c3d9333",
+            "ccreference": "306279528",
+            "ccName": "Edda Dooley",
+            "ccNumber": "6706748700955709",
+            "cclevel": "VISA",
+            "ccMonthExp": 7,
+            "ccYearExp": 29,
+            "ccDues": 13,
+            "ccSecurityCode": 664,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "kyong.blick@gmail.com",
+            "ccamount": 407818,
+            "cccellphone": "(536) 227-7810",
+            "__v": 0
+        },
+        {
+            "_id": "6518a1d6b15d7ac86c3d9337",
+            "ccreference": "306279528",
+            "ccName": "Janessa Goldner",
+            "ccNumber": "6767-1527-1167-7439-743",
+            "cclevel": "VISA",
+            "ccMonthExp": 9,
+            "ccYearExp": 30,
+            "ccDues": 2,
+            "ccSecurityCode": 899,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "carlton.rosenbaum@gmail.com",
+            "ccamount": 275030,
+            "cccellphone": "1-763-014-2414",
+            "__v": 0
+        },
+        {
+            "_id": "6518a282b15d7ac86c3d9347",
+            "ccreference": "306279528",
+            "ccName": "Victoria Aufderhar",
+            "ccNumber": "3528-3839-2390-3675",
+            "cclevel": "VISA",
+            "ccMonthExp": 8,
+            "ccYearExp": 35,
+            "ccDues": 12,
+            "ccSecurityCode": 978,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "casey.corkery@yahoo.com",
+            "ccamount": 533212,
+            "cccellphone": "(265) 471-8387",
+            "__v": 0
+        }
+    ]
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 2618
+ETag: W/"a3a-EbLBkGh1Mb3COiXsmFsjhANpnx0"
+Date: Sat, 30 Sep 2023 22:34:44 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "200",
+    "message": "Credit card payments request",
+    "results": [
+        {
+            "_id": "651872a009d12dc5e940555a",
+            "ccreference": "CC00000001",
+            "ccName": "USER CREDIT CARD 1133",
+            "ccNumber": "4111 5555 8888 6666",
+            "cclevel": "VISA",
+            "ccMonthExp": 8,
+            "ccYearExp": 25,
+            "ccDues": 12,
+            "ccSecurityCode": 123,
+            "ccDate": "23/09/2024",
+            "ccuserEmail": "USER1133@test.com",
+            "ccamount": 12500,
+            "cccellphone": "573256589987",
+            "__v": 0
+        },
+        {
+            "_id": "6518a19eb15d7ac86c3d9309",
+            "ccreference": "306279528",
+            "ccName": "Jadwiga Bahringer",
+            "ccNumber": "6771432216647817",
+            "cclevel": "VISA",
+            "ccMonthExp": 9,
+            "ccYearExp": 31,
+            "ccDues": 2,
+            "ccSecurityCode": 685,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "alysia.bernhard@yahoo.com",
+            "ccamount": 172982,
+            "cccellphone": "1-244-108-6766",
+            "__v": 0
+        },
+        {
+            "_id": "6518a1a2b15d7ac86c3d9318",
+            "ccreference": "306279528",
+            "ccName": "Edythe Armstrong",
+            "ccNumber": "6771-8960-6252-3639",
+            "cclevel": "VISA",
+            "ccMonthExp": 4,
+            "ccYearExp": 46,
+            "ccDues": 33,
+            "ccSecurityCode": 280,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "bunny.hammes@yahoo.com",
+            "ccamount": 332686,
+            "cccellphone": "(583) 365-6574",
+            "__v": 0
+        },
+        {
+            "_id": "6518a1a3b15d7ac86c3d931d",
+            "ccreference": "306279528",
+            "ccName": "Jarvis Koch",
+            "ccNumber": "6771-8934-1174-5419",
+            "cclevel": "VISA",
+            "ccMonthExp": 8,
+            "ccYearExp": 25,
+            "ccDues": 34,
+            "ccSecurityCode": 192,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "lyndia.bahringer@yahoo.com",
+            "ccamount": 395010,
+            "cccellphone": "813-906-7807",
+            "__v": 0
+        },
+        {
+            "_id": "6518a1d3b15d7ac86c3d9328",
+            "ccreference": "306279528",
+            "ccName": "Malia Klein",
+            "ccNumber": "3499-338946-19040",
+            "cclevel": "VISA",
+            "ccMonthExp": 1,
+            "ccYearExp": 38,
+            "ccDues": 31,
+            "ccSecurityCode": 346,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "roger.will@hotmail.com",
+            "ccamount": 650395,
+            "cccellphone": "1-629-197-8221",
+            "__v": 0
+        },
+        {
+            "_id": "6518a1d6b15d7ac86c3d9333",
+            "ccreference": "306279528",
+            "ccName": "Edda Dooley",
+            "ccNumber": "6706748700955709",
+            "cclevel": "VISA",
+            "ccMonthExp": 7,
+            "ccYearExp": 29,
+            "ccDues": 13,
+            "ccSecurityCode": 664,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "kyong.blick@gmail.com",
+            "ccamount": 407818,
+            "cccellphone": "(536) 227-7810",
+            "__v": 0
+        },
+        {
+            "_id": "6518a1d6b15d7ac86c3d9337",
+            "ccreference": "306279528",
+            "ccName": "Janessa Goldner",
+            "ccNumber": "6767-1527-1167-7439-743",
+            "cclevel": "VISA",
+            "ccMonthExp": 9,
+            "ccYearExp": 30,
+            "ccDues": 2,
+            "ccSecurityCode": 899,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "carlton.rosenbaum@gmail.com",
+            "ccamount": 275030,
+            "cccellphone": "1-763-014-2414",
+            "__v": 0
+        },
+        {
+            "_id": "6518a282b15d7ac86c3d9347",
+            "ccreference": "306279528",
+            "ccName": "Victoria Aufderhar",
+            "ccNumber": "3528-3839-2390-3675",
+            "cclevel": "VISA",
+            "ccMonthExp": 8,
+            "ccYearExp": 35,
+            "ccDues": 12,
+            "ccSecurityCode": 978,
+            "ccDate": "30/12/2023",
+            "ccuserEmail": "casey.corkery@yahoo.com",
+            "ccamount": 533212,
+            "cccellphone": "(265) 471-8387",
+            "__v": 0
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ccreference": "306279528",
+    "ccName": "Marylee Zieme",
+    "ccNumber": "6007-2201-4615-6587",
+    "cclevel": "VISA",
+    "ccMonthExp": 1,
+    "ccYearExp": 33,
+    "ccSecurityCode": 623,
+    "ccuserEmail": "dion.lesch@hotmail.com",
+    "ccDues": "33",
+    "ccDate": "30/12/2023",
+    "ccamount": "525101",
+    "cccellphone": "1-074-928-8403"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ccreference": "306279528",
+    "ccName": "Marylee Zieme",
+    "ccNumber": "6007-2201-4615-6587",
+    "cclevel": "VISA",
+    "ccMonthExp": 1,
+    "ccYearExp": 33,
+    "ccSecurityCode": 623,
+    "ccuserEmail": "dion.lesch@hotmail.com",
+    "ccDues": "33",
+    "ccDate": "30/12/2023",
+    "ccamount": "525101",
+    "cccellphone": "1-074-928-8403"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ccreference": "306279528",
+    "ccName": "Marylee Zieme",
+    "ccNumber": "6007-2201-4615-6587",
+    "cclevel": "VISA",
+    "ccMonthExp": 1,
+    "ccYearExp": 33,
+    "ccSecurityCode": 623,
+    "ccuserEmail": "dion.lesch@hotmail.com",
+    "ccDues": "33",
+    "ccDate": "30/12/2023",
+    "ccamount": "525101",
+    "cccellphone": "1-074-928-8403"
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 316
+ETag: W/"13c-qgnCIgt7nPRS0axT30/OAB1j7sc"
+Date: Sat, 30 Sep 2023 22:34:44 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "ccreference": "306279528",
+    "ccName": "Marylee Zieme",
+    "ccNumber": "6007-2201-4615-6587",
+    "cclevel": "VISA",
+    "ccMonthExp": 1,
+    "ccYearExp": 33,
+    "ccDues": 33,
+    "ccSecurityCode": 623,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "dion.lesch@hotmail.com",
+    "ccamount": 525101,
+    "cccellphone": "1-074-928-8403",
+    "_id": "6518a284b15d7ac86c3d9350",
+    "__v": 0
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 316
+ETag: W/"13c-qgnCIgt7nPRS0axT30/OAB1j7sc"
+Date: Sat, 30 Sep 2023 22:34:44 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "ccreference": "306279528",
+    "ccName": "Marylee Zieme",
+    "ccNumber": "6007-2201-4615-6587",
+    "cclevel": "VISA",
+    "ccMonthExp": 1,
+    "ccYearExp": 33,
+    "ccDues": 33,
+    "ccSecurityCode": 623,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "dion.lesch@hotmail.com",
+    "ccamount": 525101,
+    "cccellphone": "1-074-928-8403",
+    "_id": "6518a284b15d7ac86c3d9350",
+    "__v": 0
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 316
+ETag: W/"13c-qgnCIgt7nPRS0axT30/OAB1j7sc"
+Date: Sat, 30 Sep 2023 22:34:44 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "ccreference": "306279528",
+    "ccName": "Marylee Zieme",
+    "ccNumber": "6007-2201-4615-6587",
+    "cclevel": "VISA",
+    "ccMonthExp": 1,
+    "ccYearExp": 33,
+    "ccDues": 33,
+    "ccSecurityCode": 623,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "dion.lesch@hotmail.com",
+    "ccamount": 525101,
+    "cccellphone": "1-074-928-8403",
+    "_id": "6518a284b15d7ac86c3d9350",
+    "__v": 0
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ccreference": "306279528",
+    "ccName": "Laci Nienow PhD",
+    "ccNumber": "3684-346546-5434",
+    "cclevel": "VISA",
+    "ccMonthExp": 4,
+    "ccYearExp": 23,
+    "ccSecurityCode": 536,
+    "ccuserEmail": "denise.cole@hotmail.com",
+    "ccDues": "11",
+    "ccDate": "30/12/2023",
+    "ccamount": "290843",
+    "cccellphone": "(453) 302-8156"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ccreference": "306279528",
+    "ccName": "Laci Nienow PhD",
+    "ccNumber": "3684-346546-5434",
+    "cclevel": "VISA",
+    "ccMonthExp": 4,
+    "ccYearExp": 23,
+    "ccSecurityCode": 536,
+    "ccuserEmail": "denise.cole@hotmail.com",
+    "ccDues": "11",
+    "ccDate": "30/12/2023",
+    "ccamount": "290843",
+    "cccellphone": "(453) 302-8156"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ccreference": "306279528",
+    "ccName": "Laci Nienow PhD",
+    "ccNumber": "3684-346546-5434",
+    "cclevel": "VISA",
+    "ccMonthExp": 4,
+    "ccYearExp": 23,
+    "ccSecurityCode": 536,
+    "ccuserEmail": "denise.cole@hotmail.com",
+    "ccDues": "11",
+    "ccDate": "30/12/2023",
+    "ccamount": "290843",
+    "cccellphone": "(453) 302-8156"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ccreference": "306279528",
+    "ccName": "Laci Nienow PhD",
+    "ccNumber": "3684-346546-5434",
+    "cclevel": "VISA",
+    "ccMonthExp": 4,
+    "ccYearExp": 23,
+    "ccSecurityCode": 536,
+    "ccuserEmail": "denise.cole@hotmail.com",
+    "ccDues": "11",
+    "ccDate": "30/12/2023",
+    "ccamount": "290843",
+    "cccellphone": "(453) 302-8156"
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 316
+ETag: W/"13c-aOBxoIIxwbFiE6l/DHmtF0WO/pA"
+Date: Sat, 30 Sep 2023 22:34:45 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "ccreference": "306279528",
+    "ccName": "Laci Nienow PhD",
+    "ccNumber": "3684-346546-5434",
+    "cclevel": "VISA",
+    "ccMonthExp": 4,
+    "ccYearExp": 23,
+    "ccDues": 11,
+    "ccSecurityCode": 536,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "denise.cole@hotmail.com",
+    "ccamount": 290843,
+    "cccellphone": "(453) 302-8156",
+    "_id": "6518a285b15d7ac86c3d9353",
+    "__v": 0
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 316
+ETag: W/"13c-aOBxoIIxwbFiE6l/DHmtF0WO/pA"
+Date: Sat, 30 Sep 2023 22:34:45 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "ccreference": "306279528",
+    "ccName": "Laci Nienow PhD",
+    "ccNumber": "3684-346546-5434",
+    "cclevel": "VISA",
+    "ccMonthExp": 4,
+    "ccYearExp": 23,
+    "ccDues": 11,
+    "ccSecurityCode": 536,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "denise.cole@hotmail.com",
+    "ccamount": 290843,
+    "cccellphone": "(453) 302-8156",
+    "_id": "6518a285b15d7ac86c3d9353",
+    "__v": 0
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 316
+ETag: W/"13c-aOBxoIIxwbFiE6l/DHmtF0WO/pA"
+Date: Sat, 30 Sep 2023 22:34:45 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "ccreference": "306279528",
+    "ccName": "Laci Nienow PhD",
+    "ccNumber": "3684-346546-5434",
+    "cclevel": "VISA",
+    "ccMonthExp": 4,
+    "ccYearExp": 23,
+    "ccDues": 11,
+    "ccSecurityCode": 536,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "denise.cole@hotmail.com",
+    "ccamount": 290843,
+    "cccellphone": "(453) 302-8156",
+    "_id": "6518a285b15d7ac86c3d9353",
+    "__v": 0
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 316
+ETag: W/"13c-aOBxoIIxwbFiE6l/DHmtF0WO/pA"
+Date: Sat, 30 Sep 2023 22:34:45 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "ccreference": "306279528",
+    "ccName": "Laci Nienow PhD",
+    "ccNumber": "3684-346546-5434",
+    "cclevel": "VISA",
+    "ccMonthExp": 4,
+    "ccYearExp": 23,
+    "ccDues": 11,
+    "ccSecurityCode": 536,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "denise.cole@hotmail.com",
+    "ccamount": 290843,
+    "cccellphone": "(453) 302-8156",
+    "_id": "6518a285b15d7ac86c3d9353",
+    "__v": 0
+}
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/credit-card-payment/6518a285b15d7ac86c3d9353
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6518a285b15d7ac86c3d9353
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/credit-card-payment/6518a285b15d7ac86c3d9353
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6518a285b15d7ac86c3d9353
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/credit-card-payment/6518a285b15d7ac86c3d9353
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6518a285b15d7ac86c3d9353
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:1337/api/v1/credit-card-payment/6518a285b15d7ac86c3d9353
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6518a285b15d7ac86c3d9353
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 382
+ETag: W/"17e-i7BWB5wgQW6qe9qosf1nS/RM91E"
+Date: Sat, 30 Sep 2023 22:34:45 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "200",
+    "message": "Credit card payment request",
+    "result": {
+        "_id": "6518a285b15d7ac86c3d9353",
+        "ccreference": "306279528",
+        "ccName": "Laci Nienow PhD",
+        "ccNumber": "3684-346546-5434",
+        "cclevel": "VISA",
+        "ccMonthExp": 4,
         "ccYearExp": 23,
-        "ccSecurityCode": 532,
-        "userEmail": "scott.koelpin@yahoo.com",
-        "amount": 85947,
-        "cellphone": "229.276.3292",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed0dd1dfd8f1c1d25589",
-        "reference": "2003979454",
-        "ccName": "Ramon Hilpert",
-        "ccNumber": "5019-7434-6694-0205",
-        "ccMonthExp": 9,
-        "ccYearExp": 23,
-        "ccSecurityCode": 174,
-        "userEmail": "porsha.auer@yahoo.com",
-        "amount": 292434,
-        "cellphone": "133.261.3473",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed10d1dfd8f1c1d25596",
-        "reference": "2003979454",
-        "ccName": "Jonnie Braun",
-        "ccNumber": "6767-3489-5749-2598-263",
-        "ccMonthExp": 10,
-        "ccYearExp": 48,
-        "ccSecurityCode": 795,
-        "userEmail": "mathew.bayer@gmail.com",
-        "amount": 562126,
-        "cellphone": "(403) 583-1740",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed12d1dfd8f1c1d2559a",
-        "reference": "2003979454",
-        "ccName": "Mrs. Moses Wiza",
-        "ccNumber": "3685-749810-0156",
-        "ccMonthExp": 8,
-        "ccYearExp": 35,
-        "ccSecurityCode": 194,
-        "userEmail": "onie.dickinson@yahoo.com",
-        "amount": 578676,
-        "cellphone": "(992) 382-9181",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef48d1dfd8f1c1d255ad",
-        "reference": "306279528",
-        "ccName": "Rick Paucek",
-        "ccNumber": "6706669117215919",
-        "ccMonthExp": 11,
-        "ccYearExp": 35,
-        "ccSecurityCode": 691,
-        "userEmail": "kay.hane@yahoo.com",
-        "amount": 750102,
-        "cellphone": "1-701-290-8734",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef4dd1dfd8f1c1d255bb",
-        "reference": "306279528",
-        "ccName": "Mr. Kiesha Lemke",
-        "ccNumber": "3529-7248-4549-6638",
-        "ccMonthExp": 10,
-        "ccYearExp": 49,
-        "ccSecurityCode": 207,
-        "userEmail": "hipolito.johnston@hotmail.com",
-        "amount": 42085,
-        "cellphone": "423.048.7550",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef4ed1dfd8f1c1d255bf",
-        "reference": "306279528",
-        "ccName": "Eloy Skiles",
-        "ccNumber": "6767-7490-0777-8778-620",
-        "ccMonthExp": 1,
-        "ccYearExp": 49,
-        "ccSecurityCode": 827,
-        "userEmail": "scott.pouros@gmail.com",
-        "amount": 419729,
-        "cellphone": "658.671.5428",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef85d1dfd8f1c1d255cb",
-        "reference": "306279528",
-        "ccName": "Edyth Collins",
-        "ccNumber": "4868301482150",
-        "ccMonthExp": 12,
-        "ccYearExp": 46,
-        "ccSecurityCode": 184,
-        "userEmail": "kathyrn.sanford@hotmail.com",
-        "amount": 458821,
-        "cellphone": "1-991-466-9825",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef87d1dfd8f1c1d255d3",
-        "reference": "306279528",
-        "ccName": "Carlton Luettgen IV",
-        "ccNumber": "3405-445013-12124",
-        "ccMonthExp": 11,
-        "ccYearExp": 25,
-        "ccSecurityCode": 447,
-        "userEmail": "monty.swift@yahoo.com",
-        "amount": 366472,
-        "cellphone": "(372) 437-9530",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef88d1dfd8f1c1d255d8",
-        "reference": "306279528",
-        "ccName": "Hiram Hackett",
-        "ccNumber": "3684-792717-9822",
-        "ccMonthExp": 5,
-        "ccYearExp": 25,
-        "ccSecurityCode": 396,
-        "userEmail": "travis.schaden@gmail.com",
-        "amount": 418395,
-        "cellphone": "012-871-3679",
-        "__v": 0
-    },
-    {
-        "_id": "6511f00bd1dfd8f1c1d255f3",
-        "reference": "578961422",
-        "ccName": "Gerry Nolan",
-        "ccNumber": "3529-8735-0262-0475",
-        "ccMonthExp": 10,
-        "ccYearExp": 25,
-        "ccSecurityCode": 607,
-        "userEmail": "erik.mcdermott@gmail.com",
-        "amount": 546389,
-        "cellphone": "(274) 556-0024",
+        "ccDues": 11,
+        "ccSecurityCode": 536,
+        "ccDate": "30/12/2023",
+        "ccuserEmail": "denise.cole@hotmail.com",
+        "ccamount": 290843,
+        "cccellphone": "(453) 302-8156",
         "__v": 0
     }
-]
+}
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 3105
-ETag: W/"c21-1jFwqlxyOh4vRIDAgrUmP5vDNZY"
-Date: Mon, 25 Sep 2023 20:39:41 GMT
+Content-Length: 382
+ETag: W/"17e-i7BWB5wgQW6qe9qosf1nS/RM91E"
+Date: Sat, 30 Sep 2023 22:34:45 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
-[
-    {
-        "_id": "6511e00a6bf09f1b8af871af",
-        "reference": "1836017760",
-        "ccName": "Caitlin Moore Sr.",
-        "ccNumber": "6007-2267-0061-9605",
-        "ccMonthExp": 1,
-        "ccYearExp": 42,
-        "ccSecurityCode": 485,
-        "userEmail": "sammie.cummerata@yahoo.com",
-        "amount": 9882,
-        "cellphone": "973.326.0146",
-        "__v": 0
-    },
-    {
-        "_id": "6511e0a7d97fb4385fc9e168",
-        "reference": "1836017760",
-        "ccName": "Venice Walsh",
-        "ccNumber": "3783-944329-03426",
-        "ccMonthExp": 5,
+{
+    "status": "200",
+    "message": "Credit card payment request",
+    "result": {
+        "_id": "6518a285b15d7ac86c3d9353",
+        "ccreference": "306279528",
+        "ccName": "Laci Nienow PhD",
+        "ccNumber": "3684-346546-5434",
+        "cclevel": "VISA",
+        "ccMonthExp": 4,
         "ccYearExp": 23,
-        "ccSecurityCode": 532,
-        "userEmail": "scott.koelpin@yahoo.com",
-        "amount": 85947,
-        "cellphone": "229.276.3292",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed0dd1dfd8f1c1d25589",
-        "reference": "2003979454",
-        "ccName": "Ramon Hilpert",
-        "ccNumber": "5019-7434-6694-0205",
-        "ccMonthExp": 9,
-        "ccYearExp": 23,
-        "ccSecurityCode": 174,
-        "userEmail": "porsha.auer@yahoo.com",
-        "amount": 292434,
-        "cellphone": "133.261.3473",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed10d1dfd8f1c1d25596",
-        "reference": "2003979454",
-        "ccName": "Jonnie Braun",
-        "ccNumber": "6767-3489-5749-2598-263",
-        "ccMonthExp": 10,
-        "ccYearExp": 48,
-        "ccSecurityCode": 795,
-        "userEmail": "mathew.bayer@gmail.com",
-        "amount": 562126,
-        "cellphone": "(403) 583-1740",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed12d1dfd8f1c1d2559a",
-        "reference": "2003979454",
-        "ccName": "Mrs. Moses Wiza",
-        "ccNumber": "3685-749810-0156",
-        "ccMonthExp": 8,
-        "ccYearExp": 35,
-        "ccSecurityCode": 194,
-        "userEmail": "onie.dickinson@yahoo.com",
-        "amount": 578676,
-        "cellphone": "(992) 382-9181",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef48d1dfd8f1c1d255ad",
-        "reference": "306279528",
-        "ccName": "Rick Paucek",
-        "ccNumber": "6706669117215919",
-        "ccMonthExp": 11,
-        "ccYearExp": 35,
-        "ccSecurityCode": 691,
-        "userEmail": "kay.hane@yahoo.com",
-        "amount": 750102,
-        "cellphone": "1-701-290-8734",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef4dd1dfd8f1c1d255bb",
-        "reference": "306279528",
-        "ccName": "Mr. Kiesha Lemke",
-        "ccNumber": "3529-7248-4549-6638",
-        "ccMonthExp": 10,
-        "ccYearExp": 49,
-        "ccSecurityCode": 207,
-        "userEmail": "hipolito.johnston@hotmail.com",
-        "amount": 42085,
-        "cellphone": "423.048.7550",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef4ed1dfd8f1c1d255bf",
-        "reference": "306279528",
-        "ccName": "Eloy Skiles",
-        "ccNumber": "6767-7490-0777-8778-620",
-        "ccMonthExp": 1,
-        "ccYearExp": 49,
-        "ccSecurityCode": 827,
-        "userEmail": "scott.pouros@gmail.com",
-        "amount": 419729,
-        "cellphone": "658.671.5428",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef85d1dfd8f1c1d255cb",
-        "reference": "306279528",
-        "ccName": "Edyth Collins",
-        "ccNumber": "4868301482150",
-        "ccMonthExp": 12,
-        "ccYearExp": 46,
-        "ccSecurityCode": 184,
-        "userEmail": "kathyrn.sanford@hotmail.com",
-        "amount": 458821,
-        "cellphone": "1-991-466-9825",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef87d1dfd8f1c1d255d3",
-        "reference": "306279528",
-        "ccName": "Carlton Luettgen IV",
-        "ccNumber": "3405-445013-12124",
-        "ccMonthExp": 11,
-        "ccYearExp": 25,
-        "ccSecurityCode": 447,
-        "userEmail": "monty.swift@yahoo.com",
-        "amount": 366472,
-        "cellphone": "(372) 437-9530",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef88d1dfd8f1c1d255d8",
-        "reference": "306279528",
-        "ccName": "Hiram Hackett",
-        "ccNumber": "3684-792717-9822",
-        "ccMonthExp": 5,
-        "ccYearExp": 25,
-        "ccSecurityCode": 396,
-        "userEmail": "travis.schaden@gmail.com",
-        "amount": 418395,
-        "cellphone": "012-871-3679",
-        "__v": 0
-    },
-    {
-        "_id": "6511f00bd1dfd8f1c1d255f3",
-        "reference": "578961422",
-        "ccName": "Gerry Nolan",
-        "ccNumber": "3529-8735-0262-0475",
-        "ccMonthExp": 10,
-        "ccYearExp": 25,
-        "ccSecurityCode": 607,
-        "userEmail": "erik.mcdermott@gmail.com",
-        "amount": 546389,
-        "cellphone": "(274) 556-0024",
+        "ccDues": 11,
+        "ccSecurityCode": 536,
+        "ccDate": "30/12/2023",
+        "ccuserEmail": "denise.cole@hotmail.com",
+        "ccamount": 290843,
+        "cccellphone": "(453) 302-8156",
         "__v": 0
     }
-]
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "ccName": "Avelina Abbott",
-    "ccNumber": "6767-3207-5889-1670-352",
-    "ccMonthExp": 3,
-    "ccYearExp": 39,
-    "ccSecurityCode": 646,
-    "userEmail": "guy.mills@yahoo.com",
-    "amount": 369900,
-    "cellphone": "(014) 708-1754"
-}
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "ccName": "Avelina Abbott",
-    "ccNumber": "6767-3207-5889-1670-352",
-    "ccMonthExp": 3,
-    "ccYearExp": 39,
-    "ccSecurityCode": 646,
-    "userEmail": "guy.mills@yahoo.com",
-    "amount": 369900,
-    "cellphone": "(014) 708-1754"
-}
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "ccName": "Avelina Abbott",
-    "ccNumber": "6767-3207-5889-1670-352",
-    "ccMonthExp": 3,
-    "ccYearExp": 39,
-    "ccSecurityCode": 646,
-    "userEmail": "guy.mills@yahoo.com",
-    "amount": 369900,
-    "cellphone": "(014) 708-1754"
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 259
-ETag: W/"103-9bKgdCw459+Ws0Rk1QKwrjj4mig"
-Date: Mon, 25 Sep 2023 20:39:41 GMT
+Content-Length: 382
+ETag: W/"17e-i7BWB5wgQW6qe9qosf1nS/RM91E"
+Date: Sat, 30 Sep 2023 22:34:45 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "ccName": "Avelina Abbott",
-    "ccNumber": "6767-3207-5889-1670-352",
-    "ccMonthExp": 3,
-    "ccYearExp": 39,
-    "ccSecurityCode": 646,
-    "userEmail": "guy.mills@yahoo.com",
-    "amount": 369900,
-    "cellphone": "(014) 708-1754",
-    "_id": "6511f00dd1dfd8f1c1d255fb",
-    "__v": 0
+    "status": "200",
+    "message": "Credit card payment request",
+    "result": {
+        "_id": "6518a285b15d7ac86c3d9353",
+        "ccreference": "306279528",
+        "ccName": "Laci Nienow PhD",
+        "ccNumber": "3684-346546-5434",
+        "cclevel": "VISA",
+        "ccMonthExp": 4,
+        "ccYearExp": 23,
+        "ccDues": 11,
+        "ccSecurityCode": 536,
+        "ccDate": "30/12/2023",
+        "ccuserEmail": "denise.cole@hotmail.com",
+        "ccamount": 290843,
+        "cccellphone": "(453) 302-8156",
+        "__v": 0
+    }
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 259
-ETag: W/"103-9bKgdCw459+Ws0Rk1QKwrjj4mig"
-Date: Mon, 25 Sep 2023 20:39:41 GMT
+Content-Length: 382
+ETag: W/"17e-i7BWB5wgQW6qe9qosf1nS/RM91E"
+Date: Sat, 30 Sep 2023 22:34:45 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "ccName": "Avelina Abbott",
-    "ccNumber": "6767-3207-5889-1670-352",
-    "ccMonthExp": 3,
-    "ccYearExp": 39,
-    "ccSecurityCode": 646,
-    "userEmail": "guy.mills@yahoo.com",
-    "amount": 369900,
-    "cellphone": "(014) 708-1754",
-    "_id": "6511f00dd1dfd8f1c1d255fb",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 259
-ETag: W/"103-9bKgdCw459+Ws0Rk1QKwrjj4mig"
-Date: Mon, 25 Sep 2023 20:39:41 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "ccName": "Avelina Abbott",
-    "ccNumber": "6767-3207-5889-1670-352",
-    "ccMonthExp": 3,
-    "ccYearExp": 39,
-    "ccSecurityCode": 646,
-    "userEmail": "guy.mills@yahoo.com",
-    "amount": 369900,
-    "cellphone": "(014) 708-1754",
-    "_id": "6511f00dd1dfd8f1c1d255fb",
-    "__v": 0
+    "status": "200",
+    "message": "Credit card payment request",
+    "result": {
+        "_id": "6518a285b15d7ac86c3d9353",
+        "ccreference": "306279528",
+        "ccName": "Laci Nienow PhD",
+        "ccNumber": "3684-346546-5434",
+        "cclevel": "VISA",
+        "ccMonthExp": 4,
+        "ccYearExp": 23,
+        "ccDues": 11,
+        "ccSecurityCode": 536,
+        "ccDate": "30/12/2023",
+        "ccuserEmail": "denise.cole@hotmail.com",
+        "ccamount": 290843,
+        "cccellphone": "(453) 302-8156",
+        "__v": 0
+    }
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/credit-card-payment
@@ -596,15 +948,18 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436"
+    "ccreference": "306279528",
+    "ccName": "Ms. Harland Spinka",
+    "ccNumber": "4939491060179",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 38,
+    "ccSecurityCode": 279,
+    "ccuserEmail": "chrystal.zulauf@gmail.com",
+    "ccDues": "29",
+    "ccDate": "30/12/2023",
+    "ccamount": "307766",
+    "cccellphone": "080-796-3395"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/credit-card-payment
@@ -619,15 +974,18 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436"
+    "ccreference": "306279528",
+    "ccName": "Ms. Harland Spinka",
+    "ccNumber": "4939491060179",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 38,
+    "ccSecurityCode": 279,
+    "ccuserEmail": "chrystal.zulauf@gmail.com",
+    "ccDues": "29",
+    "ccDate": "30/12/2023",
+    "ccamount": "307766",
+    "cccellphone": "080-796-3395"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/credit-card-payment
@@ -642,15 +1000,18 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436"
+    "ccreference": "306279528",
+    "ccName": "Ms. Harland Spinka",
+    "ccNumber": "4939491060179",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 38,
+    "ccSecurityCode": 279,
+    "ccuserEmail": "chrystal.zulauf@gmail.com",
+    "ccDues": "29",
+    "ccDate": "30/12/2023",
+    "ccamount": "307766",
+    "cccellphone": "080-796-3395"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/credit-card-payment
@@ -665,239 +1026,18 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436"
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 265
-ETag: W/"109-oHVkK1MGp+uL9dM4B6vCE5ayLBU"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436",
-    "_id": "6511f00ed1dfd8f1c1d25602",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 265
-ETag: W/"109-oHVkK1MGp+uL9dM4B6vCE5ayLBU"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436",
-    "_id": "6511f00ed1dfd8f1c1d25602",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 265
-ETag: W/"109-oHVkK1MGp+uL9dM4B6vCE5ayLBU"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436",
-    "_id": "6511f00ed1dfd8f1c1d25602",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 265
-ETag: W/"109-oHVkK1MGp+uL9dM4B6vCE5ayLBU"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436",
-    "_id": "6511f00ed1dfd8f1c1d25602",
-    "__v": 0
-}
-Request method:	GET
-Request URI:	http://localhost:1337/api/v1/credit-card-payment/6511f00ed1dfd8f1c1d25602
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d25602
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	http://localhost:1337/api/v1/credit-card-payment/6511f00ed1dfd8f1c1d25602
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d25602
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	http://localhost:1337/api/v1/credit-card-payment/6511f00ed1dfd8f1c1d25602
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d25602
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	http://localhost:1337/api/v1/credit-card-payment/6511f00ed1dfd8f1c1d25602
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d25602
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 265
-ETag: W/"109-sYpILAVJtpPCKRlPPjjb8WrAt6A"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "_id": "6511f00ed1dfd8f1c1d25602",
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 265
-ETag: W/"109-sYpILAVJtpPCKRlPPjjb8WrAt6A"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "_id": "6511f00ed1dfd8f1c1d25602",
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 265
-ETag: W/"109-sYpILAVJtpPCKRlPPjjb8WrAt6A"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "_id": "6511f00ed1dfd8f1c1d25602",
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 265
-ETag: W/"109-sYpILAVJtpPCKRlPPjjb8WrAt6A"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "_id": "6511f00ed1dfd8f1c1d25602",
-    "reference": "578961422",
-    "ccName": "Hershel Monahan III",
-    "ccNumber": "3528-0302-1175-0314",
-    "ccMonthExp": 9,
-    "ccYearExp": 30,
-    "ccSecurityCode": 221,
-    "userEmail": "rudolph.kilback@hotmail.com",
-    "amount": 94187,
-    "cellphone": "517-599-9436",
-    "__v": 0
+    "ccreference": "306279528",
+    "ccName": "Ms. Harland Spinka",
+    "ccNumber": "4939491060179",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 38,
+    "ccSecurityCode": 279,
+    "ccuserEmail": "chrystal.zulauf@gmail.com",
+    "ccDues": "29",
+    "ccDate": "30/12/2023",
+    "ccamount": "307766",
+    "cccellphone": "080-796-3395"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/credit-card-payment
@@ -912,342 +1052,273 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "ccName": "Augustine Lubowitz",
-    "ccNumber": "6767-6560-1470-4802",
-    "ccMonthExp": 8,
-    "ccYearExp": 35,
-    "ccSecurityCode": 277,
-    "userEmail": "dorthy.jacobson@yahoo.com",
-    "amount": 787273,
-    "cellphone": "387-108-4049"
+    "ccreference": "306279528",
+    "ccName": "Ms. Harland Spinka",
+    "ccNumber": "4939491060179",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 38,
+    "ccSecurityCode": 279,
+    "ccuserEmail": "chrystal.zulauf@gmail.com",
+    "ccDues": "29",
+    "ccDate": "30/12/2023",
+    "ccamount": "307766",
+    "cccellphone": "080-796-3395"
 }
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "ccName": "Augustine Lubowitz",
-    "ccNumber": "6767-6560-1470-4802",
-    "ccMonthExp": 8,
-    "ccYearExp": 35,
-    "ccSecurityCode": 277,
-    "userEmail": "dorthy.jacobson@yahoo.com",
-    "amount": 787273,
-    "cellphone": "387-108-4049"
-}
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "ccName": "Augustine Lubowitz",
-    "ccNumber": "6767-6560-1470-4802",
-    "ccMonthExp": 8,
-    "ccYearExp": 35,
-    "ccSecurityCode": 277,
-    "userEmail": "dorthy.jacobson@yahoo.com",
-    "amount": 787273,
-    "cellphone": "387-108-4049"
-}
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "ccName": "Augustine Lubowitz",
-    "ccNumber": "6767-6560-1470-4802",
-    "ccMonthExp": 8,
-    "ccYearExp": 35,
-    "ccSecurityCode": 277,
-    "userEmail": "dorthy.jacobson@yahoo.com",
-    "amount": 787273,
-    "cellphone": "387-108-4049"
-}
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "ccName": "Augustine Lubowitz",
-    "ccNumber": "6767-6560-1470-4802",
-    "ccMonthExp": 8,
-    "ccYearExp": 35,
-    "ccSecurityCode": 277,
-    "userEmail": "dorthy.jacobson@yahoo.com",
-    "amount": 787273,
-    "cellphone": "387-108-4049"
-}
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 263
-ETag: W/"107-aLkqCct2YdY69R1rBc2f44EKxss"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
+Content-Length: 316
+ETag: W/"13c-mLxQs+NHTe3TP40Yc+EVf594gXI"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "ccName": "Augustine Lubowitz",
-    "ccNumber": "6767-6560-1470-4802",
-    "ccMonthExp": 8,
-    "ccYearExp": 35,
-    "ccSecurityCode": 277,
-    "userEmail": "dorthy.jacobson@yahoo.com",
-    "amount": 787273,
-    "cellphone": "387-108-4049",
-    "_id": "6511f00ed1dfd8f1c1d2560b",
+    "ccreference": "306279528",
+    "ccName": "Ms. Harland Spinka",
+    "ccNumber": "4939491060179",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 38,
+    "ccDues": 29,
+    "ccSecurityCode": 279,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "chrystal.zulauf@gmail.com",
+    "ccamount": 307766,
+    "cccellphone": "080-796-3395",
+    "_id": "6518a286b15d7ac86c3d935d",
     "__v": 0
 }
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 263
-ETag: W/"107-aLkqCct2YdY69R1rBc2f44EKxss"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
+Content-Length: 316
+ETag: W/"13c-mLxQs+NHTe3TP40Yc+EVf594gXI"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "ccName": "Augustine Lubowitz",
-    "ccNumber": "6767-6560-1470-4802",
-    "ccMonthExp": 8,
-    "ccYearExp": 35,
-    "ccSecurityCode": 277,
-    "userEmail": "dorthy.jacobson@yahoo.com",
-    "amount": 787273,
-    "cellphone": "387-108-4049",
-    "_id": "6511f00ed1dfd8f1c1d2560b",
+    "ccreference": "306279528",
+    "ccName": "Ms. Harland Spinka",
+    "ccNumber": "4939491060179",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 38,
+    "ccDues": 29,
+    "ccSecurityCode": 279,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "chrystal.zulauf@gmail.com",
+    "ccamount": 307766,
+    "cccellphone": "080-796-3395",
+    "_id": "6518a286b15d7ac86c3d935d",
     "__v": 0
 }
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 263
-ETag: W/"107-aLkqCct2YdY69R1rBc2f44EKxss"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
+Content-Length: 316
+ETag: W/"13c-mLxQs+NHTe3TP40Yc+EVf594gXI"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "ccName": "Augustine Lubowitz",
-    "ccNumber": "6767-6560-1470-4802",
-    "ccMonthExp": 8,
-    "ccYearExp": 35,
-    "ccSecurityCode": 277,
-    "userEmail": "dorthy.jacobson@yahoo.com",
-    "amount": 787273,
-    "cellphone": "387-108-4049",
-    "_id": "6511f00ed1dfd8f1c1d2560b",
+    "ccreference": "306279528",
+    "ccName": "Ms. Harland Spinka",
+    "ccNumber": "4939491060179",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 38,
+    "ccDues": 29,
+    "ccSecurityCode": 279,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "chrystal.zulauf@gmail.com",
+    "ccamount": 307766,
+    "cccellphone": "080-796-3395",
+    "_id": "6518a286b15d7ac86c3d935d",
     "__v": 0
 }
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 263
-ETag: W/"107-aLkqCct2YdY69R1rBc2f44EKxss"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
+Content-Length: 316
+ETag: W/"13c-mLxQs+NHTe3TP40Yc+EVf594gXI"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "ccName": "Augustine Lubowitz",
-    "ccNumber": "6767-6560-1470-4802",
-    "ccMonthExp": 8,
-    "ccYearExp": 35,
-    "ccSecurityCode": 277,
-    "userEmail": "dorthy.jacobson@yahoo.com",
-    "amount": 787273,
-    "cellphone": "387-108-4049",
-    "_id": "6511f00ed1dfd8f1c1d2560b",
+    "ccreference": "306279528",
+    "ccName": "Ms. Harland Spinka",
+    "ccNumber": "4939491060179",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 38,
+    "ccDues": 29,
+    "ccSecurityCode": 279,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "chrystal.zulauf@gmail.com",
+    "ccamount": 307766,
+    "cccellphone": "080-796-3395",
+    "_id": "6518a286b15d7ac86c3d935d",
     "__v": 0
 }
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 263
-ETag: W/"107-aLkqCct2YdY69R1rBc2f44EKxss"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
+Content-Length: 316
+ETag: W/"13c-mLxQs+NHTe3TP40Yc+EVf594gXI"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "ccName": "Augustine Lubowitz",
-    "ccNumber": "6767-6560-1470-4802",
-    "ccMonthExp": 8,
-    "ccYearExp": 35,
-    "ccSecurityCode": 277,
-    "userEmail": "dorthy.jacobson@yahoo.com",
-    "amount": 787273,
-    "cellphone": "387-108-4049",
-    "_id": "6511f00ed1dfd8f1c1d2560b",
+    "ccreference": "306279528",
+    "ccName": "Ms. Harland Spinka",
+    "ccNumber": "4939491060179",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 38,
+    "ccDues": 29,
+    "ccSecurityCode": 279,
+    "ccDate": "30/12/2023",
+    "ccuserEmail": "chrystal.zulauf@gmail.com",
+    "ccamount": 307766,
+    "cccellphone": "080-796-3395",
+    "_id": "6518a286b15d7ac86c3d935d",
     "__v": 0
 }
 Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/credit-card-payment/6511f00ed1dfd8f1c1d2560b
+Request URI:	http://localhost:1337/api/v1/credit-card-payment/6518a286b15d7ac86c3d935d
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d2560b
+Path params:	id=6518a286b15d7ac86c3d935d
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/credit-card-payment/6511f00ed1dfd8f1c1d2560b
+Request URI:	http://localhost:1337/api/v1/credit-card-payment/6518a286b15d7ac86c3d935d
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d2560b
+Path params:	id=6518a286b15d7ac86c3d935d
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/credit-card-payment/6511f00ed1dfd8f1c1d2560b
+Request URI:	http://localhost:1337/api/v1/credit-card-payment/6518a286b15d7ac86c3d935d
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d2560b
+Path params:	id=6518a286b15d7ac86c3d935d
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/credit-card-payment/6511f00ed1dfd8f1c1d2560b
+Request URI:	http://localhost:1337/api/v1/credit-card-payment/6518a286b15d7ac86c3d935d
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d2560b
+Path params:	id=6518a286b15d7ac86c3d935d
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/credit-card-payment/6511f00ed1dfd8f1c1d2560b
+Request URI:	http://localhost:1337/api/v1/credit-card-payment/6518a286b15d7ac86c3d935d
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d2560b
+Path params:	id=6518a286b15d7ac86c3d935d
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 38
-ETag: W/"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE"
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 86
+ETag: W/"56-r4uTZFgoSgjkbUIBnUl1peeWjgw"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "acknowledged": true,
-    "deletedCount": 1
+    "status": "201",
+    "message": "Credit card payment deleted successfull",
+    "items_deleted": 1
 }
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 38
-ETag: W/"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE"
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 86
+ETag: W/"56-r4uTZFgoSgjkbUIBnUl1peeWjgw"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "acknowledged": true,
-    "deletedCount": 1
+    "status": "201",
+    "message": "Credit card payment deleted successfull",
+    "items_deleted": 1
 }
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 38
-ETag: W/"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE"
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 86
+ETag: W/"56-r4uTZFgoSgjkbUIBnUl1peeWjgw"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "acknowledged": true,
-    "deletedCount": 1
+    "status": "201",
+    "message": "Credit card payment deleted successfull",
+    "items_deleted": 1
 }
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 38
-ETag: W/"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE"
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 86
+ETag: W/"56-r4uTZFgoSgjkbUIBnUl1peeWjgw"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "acknowledged": true,
-    "deletedCount": 1
+    "status": "201",
+    "message": "Credit card payment deleted successfull",
+    "items_deleted": 1
 }
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 38
-ETag: W/"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE"
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 86
+ETag: W/"56-r4uTZFgoSgjkbUIBnUl1peeWjgw"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "acknowledged": true,
-    "deletedCount": 1
+    "status": "201",
+    "message": "Credit card payment deleted successfull",
+    "items_deleted": 1
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

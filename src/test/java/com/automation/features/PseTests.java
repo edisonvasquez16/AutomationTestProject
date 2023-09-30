@@ -70,7 +70,7 @@ public class PseTests extends BaseConf {
                                 PseFactory.withRandomData()));
 
         actor.should(
-                SeeThatResponse.okStatus());
+                SeeThatResponse.createStatus());
 
     }
 
@@ -87,7 +87,7 @@ public class PseTests extends BaseConf {
                         .deleteAPsePayments(actor.recall(PSE_PAYMENT_ID.name())));
 
         actor.should(
-                SeeThatResponse.okStatus());
+                SeeThatResponse.createStatus());
 
     }
 

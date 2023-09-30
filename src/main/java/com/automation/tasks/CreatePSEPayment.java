@@ -30,7 +30,7 @@ public class CreatePSEPayment implements Task {
         );
 
         actor.should(
-                SeeThatResponse.okStatus()
+                SeeThatResponse.createStatus()
         );
 
         actor.remember(PSE_PAYMENT_ID.name(), LastResponse.received().answeredBy(actor)

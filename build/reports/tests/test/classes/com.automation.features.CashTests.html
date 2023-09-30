@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">3</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6.233s</div>
+<div class="counter">8.428s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">40%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,249 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()"></a>
+<h3 class="failures">seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationParametersConfigurations.pathParam(RequestSpecificationParametersConfigurations.java:100)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.pathParam(RequestSpecificationDecorated.java:38)
+	at com.automation.interactions.CashPaymentActions.lambda$deleteACashPayments$3(CashPaymentActions.java:52)
+	at net.serenitybdd.screenplay.rest.interactions.RestInteraction.rest(RestInteraction.java:50)
+	at net.serenitybdd.screenplay.rest.interactions.Delete$ByteBuddy$KDJADuee.rest$accessor$rc2j8s81(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:195)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Delete$ByteBuddy$KDJADuee.rest(Unknown Source)
+	at net.serenitybdd.screenplay.rest.interactions.Delete.performAs(Delete.java:24)
+	at net.serenitybdd.screenplay.rest.interactions.Delete$ByteBuddy$KDJADuee.performAs$accessor$rc2j8s81(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Delete$ByteBuddy$KDJADuee.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at net.serenitybdd.screenplay.AnonymousPerformable.performAs(AnonymousPerformable.java:25)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs$accessor$eSE6dh3r(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.automation.features.CashTests.seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation(CashTests.java:85)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()"></a>
+<h3 class="failures">seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationParametersConfigurations.pathParam(RequestSpecificationParametersConfigurations.java:100)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.pathParam(RequestSpecificationDecorated.java:38)
+	at com.automation.interactions.CashPaymentActions.lambda$getACashPayment$1(CashPaymentActions.java:34)
+	at net.serenitybdd.screenplay.rest.interactions.RestInteraction.rest(RestInteraction.java:50)
+	at net.serenitybdd.screenplay.rest.interactions.Get$ByteBuddy$aRNUQWRC.rest$accessor$uT0qZN5C(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:195)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Get$ByteBuddy$aRNUQWRC.rest(Unknown Source)
+	at net.serenitybdd.screenplay.rest.interactions.Get.performAs(Get.java:23)
+	at net.serenitybdd.screenplay.rest.interactions.Get$ByteBuddy$aRNUQWRC.performAs$accessor$uT0qZN5C(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Get$ByteBuddy$aRNUQWRC.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at net.serenitybdd.screenplay.AnonymousPerformable.performAs(AnonymousPerformable.java:25)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs$accessor$eSE6dh3r(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.automation.features.CashTests.seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation(CashTests.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()"></a>
+<h3 class="failures">seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationParametersConfigurations.pathParam(RequestSpecificationParametersConfigurations.java:100)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.pathParam(RequestSpecificationDecorated.java:38)
+	at com.automation.interactions.CashPaymentActions.lambda$updateACashPaymentWithInfo$2(CashPaymentActions.java:43)
+	at net.serenitybdd.screenplay.rest.interactions.RestInteraction.rest(RestInteraction.java:50)
+	at net.serenitybdd.screenplay.rest.interactions.Put$ByteBuddy$K8vjii5N.rest$accessor$cUkiQIrO(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:195)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Put$ByteBuddy$K8vjii5N.rest(Unknown Source)
+	at net.serenitybdd.screenplay.rest.interactions.Put.performAs(Put.java:24)
+	at net.serenitybdd.screenplay.rest.interactions.Put$ByteBuddy$K8vjii5N.performAs$accessor$cUkiQIrO(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Put$ByteBuddy$K8vjii5N.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at net.serenitybdd.screenplay.AnonymousPerformable.performAs(AnonymousPerformable.java:25)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs$accessor$eSE6dh3r(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.automation.features.CashTests.seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation(CashTests.java:67)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -79,32 +315,32 @@
 </thead>
 <tr>
 <td class="success">seeTheCreateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
-<td class="success">0.369s</td>
+<td class="success">0.254s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
-<td class="success">4.372s</td>
-<td class="success">passed</td>
+<td class="failures">seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
+<td class="failures">6.447s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">seeTheGetAllServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
-<td class="success">0.425s</td>
+<td class="success">0.382s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
-<td class="success">0.554s</td>
-<td class="success">passed</td>
+<td class="failures">seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
+<td class="failures">0.639s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
-<td class="success">seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
-<td class="success">0.513s</td>
-<td class="success">passed</td>
+<td class="failures">seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()</td>
+<td class="failures">0.706s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>Request method:	POST
@@ -120,54 +356,32 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;steven.nienow@hotmail.com&quot;,
-    &quot;amount&quot;: 275103,
-    &quot;collectorCash&quot;: &quot;SuRed&quot;,
-    &quot;cellphone&quot;: &quot;(717) 964-1477&quot;
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;joseph.lebsack@yahoo.com&quot;,
+    &quot;cashamount&quot;: 279338,
+    &quot;cashcollectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cashcellphone&quot;: &quot;1-767-841-8434&quot;
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 175
-ETag: W/&quot;af-BD0/19dVRUZgGJqe2Tq2rkIlaNo&quot;
-Date: Mon, 25 Sep 2023 20:39:39 GMT
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:42 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;steven.nienow@hotmail.com&quot;,
-    &quot;collectorCash&quot;: &quot;SuRed&quot;,
-    &quot;amount&quot;: 275103,
-    &quot;cellphone&quot;: &quot;(717) 964-1477&quot;,
-    &quot;_id&quot;: &quot;6511f00bd1dfd8f1c1d255f1&quot;,
-    &quot;__v&quot;: 0
-}
-Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00bd1dfd8f1c1d255f1
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	id=6511f00bd1dfd8f1c1d255f1
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:			&lt;none&gt;
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 38
-ETag: W/&quot;26-fgR5yLHQ1Hpp6zDESHaY9wJreYE&quot;
-Date: Mon, 25 Sep 2023 20:39:40 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;acknowledged&quot;: true,
-    &quot;deletedCount&quot;: 1
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
+    }
 }
 Request method:	GET
 Request URI:	http://localhost:1337/api/v1/cash-payments
@@ -196,242 +410,170 @@ Body:			&lt;none&gt;
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 1760
-ETag: W/&quot;6e0-R/mZU4V5ebL7fML4y+pNxzr8XJg&quot;
-Date: Mon, 25 Sep 2023 20:39:41 GMT
+Content-Length: 248
+ETag: W/&quot;f8-guE3mJLyeR/GrhV/QtJ2/OAuM8Q&quot;
+Date: Sat, 30 Sep 2023 22:34:45 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
-[
-    {
-        &quot;_id&quot;: &quot;6511d9de6bf09f1b8af871a7&quot;,
-        &quot;reference&quot;: &quot;1836017760&quot;,
-        &quot;userEmail&quot;: &quot;cornelius.satterfield@hotmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;SuRed&quot;,
-        &quot;amount&quot;: 198391,
-        &quot;cellphone&quot;: &quot;610-632-7564&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511dcc66bf09f1b8af871a9&quot;,
-        &quot;reference&quot;: &quot;1836017760&quot;,
-        &quot;userEmail&quot;: &quot;ernesto.barrows@hotmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Nequi&quot;,
-        &quot;amount&quot;: 112690,
-        &quot;cellphone&quot;: &quot;012-340-0492&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ed0fd1dfd8f1c1d25590&quot;,
-        &quot;reference&quot;: &quot;2003979454&quot;,
-        &quot;userEmail&quot;: &quot;morris.metz@gmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Efecty&quot;,
-        &quot;amount&quot;: 752784,
-        &quot;cellphone&quot;: &quot;(084) 133-3561&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ed11d1dfd8f1c1d25598&quot;,
-        &quot;reference&quot;: &quot;2003979454&quot;,
-        &quot;userEmail&quot;: &quot;marylin.mueller@yahoo.com&quot;,
-        &quot;collectorCash&quot;: &quot;SuRed&quot;,
-        &quot;amount&quot;: 475764,
-        &quot;cellphone&quot;: &quot;1-381-724-5680&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ed13d1dfd8f1c1d255a1&quot;,
-        &quot;reference&quot;: &quot;2003979454&quot;,
-        &quot;userEmail&quot;: &quot;julene.wyman@gmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Nequi&quot;,
-        &quot;amount&quot;: 277938,
-        &quot;cellphone&quot;: &quot;510.090.8774&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ef4cd1dfd8f1c1d255b9&quot;,
-        &quot;reference&quot;: &quot;221402392&quot;,
-        &quot;userEmail&quot;: &quot;sharice.grant@yahoo.com&quot;,
-        &quot;collectorCash&quot;: &quot;SuRed&quot;,
-        &quot;amount&quot;: 576440,
-        &quot;cellphone&quot;: &quot;(980) 775-3837&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ef4ed1dfd8f1c1d255c3&quot;,
-        &quot;reference&quot;: &quot;221402392&quot;,
-        &quot;userEmail&quot;: &quot;nikole.kuhlman@hotmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Baloto&quot;,
-        &quot;amount&quot;: 13936,
-        &quot;cellphone&quot;: &quot;1-260-488-3804&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ef87d1dfd8f1c1d255d5&quot;,
-        &quot;reference&quot;: &quot;413177525&quot;,
-        &quot;userEmail&quot;: &quot;cliff.casper@gmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Baloto&quot;,
-        &quot;amount&quot;: 30270,
-        &quot;cellphone&quot;: &quot;(163) 972-0423&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ef88d1dfd8f1c1d255db&quot;,
-        &quot;reference&quot;: &quot;413177525&quot;,
-        &quot;userEmail&quot;: &quot;steven.huel@gmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Baloto&quot;,
-        &quot;amount&quot;: 628047,
-        &quot;cellphone&quot;: &quot;942-924-6749&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ef89d1dfd8f1c1d255e1&quot;,
-        &quot;reference&quot;: &quot;413177525&quot;,
-        &quot;userEmail&quot;: &quot;reynaldo.mclaughlin@gmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Baloto&quot;,
-        &quot;amount&quot;: 743464,
-        &quot;cellphone&quot;: &quot;1-650-858-1616&quot;,
-        &quot;__v&quot;: 0
+{
+    &quot;status&quot;: &quot;OK&quot;,
+    &quot;message&quot;: &quot;Cash payments request&quot;,
+    &quot;results&quot;: [
+        {
+            &quot;_id&quot;: &quot;651872a709d12dc5e940555c&quot;,
+            &quot;cashreference&quot;: &quot;CASH000001&quot;,
+            &quot;cashuserEmail&quot;: &quot;USER1234@test.com&quot;,
+            &quot;cashcollectorCash&quot;: &quot;Efecty&quot;,
+            &quot;cashamount&quot;: 15000,
+            &quot;cashcellphone&quot;: &quot;573225568899&quot;,
+            &quot;__v&quot;: 0
+        }
+    ]
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 248
+ETag: W/&quot;f8-guE3mJLyeR/GrhV/QtJ2/OAuM8Q&quot;
+Date: Sat, 30 Sep 2023 22:34:45 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;status&quot;: &quot;OK&quot;,
+    &quot;message&quot;: &quot;Cash payments request&quot;,
+    &quot;results&quot;: [
+        {
+            &quot;_id&quot;: &quot;651872a709d12dc5e940555c&quot;,
+            &quot;cashreference&quot;: &quot;CASH000001&quot;,
+            &quot;cashuserEmail&quot;: &quot;USER1234@test.com&quot;,
+            &quot;cashcollectorCash&quot;: &quot;Efecty&quot;,
+            &quot;cashamount&quot;: 15000,
+            &quot;cashcellphone&quot;: &quot;573225568899&quot;,
+            &quot;__v&quot;: 0
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;reba.ruecker@hotmail.com&quot;,
+    &quot;cashamount&quot;: 721892,
+    &quot;cashcollectorCash&quot;: &quot;Baloto&quot;,
+    &quot;cashcellphone&quot;: &quot;576.761.0901&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;reba.ruecker@hotmail.com&quot;,
+    &quot;cashamount&quot;: 721892,
+    &quot;cashcollectorCash&quot;: &quot;Baloto&quot;,
+    &quot;cashcellphone&quot;: &quot;576.761.0901&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;reba.ruecker@hotmail.com&quot;,
+    &quot;cashamount&quot;: 721892,
+    &quot;cashcollectorCash&quot;: &quot;Baloto&quot;,
+    &quot;cashcellphone&quot;: &quot;576.761.0901&quot;
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:46 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
     }
-]
+}
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 1760
-ETag: W/&quot;6e0-R/mZU4V5ebL7fML4y+pNxzr8XJg&quot;
-Date: Mon, 25 Sep 2023 20:39:41 GMT
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
-[
-    {
-        &quot;_id&quot;: &quot;6511d9de6bf09f1b8af871a7&quot;,
-        &quot;reference&quot;: &quot;1836017760&quot;,
-        &quot;userEmail&quot;: &quot;cornelius.satterfield@hotmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;SuRed&quot;,
-        &quot;amount&quot;: 198391,
-        &quot;cellphone&quot;: &quot;610-632-7564&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511dcc66bf09f1b8af871a9&quot;,
-        &quot;reference&quot;: &quot;1836017760&quot;,
-        &quot;userEmail&quot;: &quot;ernesto.barrows@hotmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Nequi&quot;,
-        &quot;amount&quot;: 112690,
-        &quot;cellphone&quot;: &quot;012-340-0492&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ed0fd1dfd8f1c1d25590&quot;,
-        &quot;reference&quot;: &quot;2003979454&quot;,
-        &quot;userEmail&quot;: &quot;morris.metz@gmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Efecty&quot;,
-        &quot;amount&quot;: 752784,
-        &quot;cellphone&quot;: &quot;(084) 133-3561&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ed11d1dfd8f1c1d25598&quot;,
-        &quot;reference&quot;: &quot;2003979454&quot;,
-        &quot;userEmail&quot;: &quot;marylin.mueller@yahoo.com&quot;,
-        &quot;collectorCash&quot;: &quot;SuRed&quot;,
-        &quot;amount&quot;: 475764,
-        &quot;cellphone&quot;: &quot;1-381-724-5680&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ed13d1dfd8f1c1d255a1&quot;,
-        &quot;reference&quot;: &quot;2003979454&quot;,
-        &quot;userEmail&quot;: &quot;julene.wyman@gmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Nequi&quot;,
-        &quot;amount&quot;: 277938,
-        &quot;cellphone&quot;: &quot;510.090.8774&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ef4cd1dfd8f1c1d255b9&quot;,
-        &quot;reference&quot;: &quot;221402392&quot;,
-        &quot;userEmail&quot;: &quot;sharice.grant@yahoo.com&quot;,
-        &quot;collectorCash&quot;: &quot;SuRed&quot;,
-        &quot;amount&quot;: 576440,
-        &quot;cellphone&quot;: &quot;(980) 775-3837&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ef4ed1dfd8f1c1d255c3&quot;,
-        &quot;reference&quot;: &quot;221402392&quot;,
-        &quot;userEmail&quot;: &quot;nikole.kuhlman@hotmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Baloto&quot;,
-        &quot;amount&quot;: 13936,
-        &quot;cellphone&quot;: &quot;1-260-488-3804&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ef87d1dfd8f1c1d255d5&quot;,
-        &quot;reference&quot;: &quot;413177525&quot;,
-        &quot;userEmail&quot;: &quot;cliff.casper@gmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Baloto&quot;,
-        &quot;amount&quot;: 30270,
-        &quot;cellphone&quot;: &quot;(163) 972-0423&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ef88d1dfd8f1c1d255db&quot;,
-        &quot;reference&quot;: &quot;413177525&quot;,
-        &quot;userEmail&quot;: &quot;steven.huel@gmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Baloto&quot;,
-        &quot;amount&quot;: 628047,
-        &quot;cellphone&quot;: &quot;942-924-6749&quot;,
-        &quot;__v&quot;: 0
-    },
-    {
-        &quot;_id&quot;: &quot;6511ef89d1dfd8f1c1d255e1&quot;,
-        &quot;reference&quot;: &quot;413177525&quot;,
-        &quot;userEmail&quot;: &quot;reynaldo.mclaughlin@gmail.com&quot;,
-        &quot;collectorCash&quot;: &quot;Baloto&quot;,
-        &quot;amount&quot;: 743464,
-        &quot;cellphone&quot;: &quot;1-650-858-1616&quot;,
-        &quot;__v&quot;: 0
+{
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
     }
-]
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
-    &quot;amount&quot;: 248962,
-    &quot;collectorCash&quot;: &quot;SuRed&quot;,
-    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;
 }
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:46 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
-    &quot;amount&quot;: 248962,
-    &quot;collectorCash&quot;: &quot;SuRed&quot;,
-    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
+    }
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -446,155 +588,11 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
-    &quot;amount&quot;: 248962,
-    &quot;collectorCash&quot;: &quot;SuRed&quot;,
-    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/&quot;ac-PS9iZGM52VqHgu3peyVrAjBkGco&quot;
-Date: Mon, 25 Sep 2023 20:39:41 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
-    &quot;collectorCash&quot;: &quot;SuRed&quot;,
-    &quot;amount&quot;: 248962,
-    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
-    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
-    &quot;__v&quot;: 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/&quot;ac-PS9iZGM52VqHgu3peyVrAjBkGco&quot;
-Date: Mon, 25 Sep 2023 20:39:41 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
-    &quot;collectorCash&quot;: &quot;SuRed&quot;,
-    &quot;amount&quot;: 248962,
-    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
-    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
-    &quot;__v&quot;: 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/&quot;ac-PS9iZGM52VqHgu3peyVrAjBkGco&quot;
-Date: Mon, 25 Sep 2023 20:39:41 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
-    &quot;collectorCash&quot;: &quot;SuRed&quot;,
-    &quot;amount&quot;: 248962,
-    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
-    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
-    &quot;__v&quot;: 0
-}
-Request method:	GET
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00dd1dfd8f1c1d255fd
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	id=6511f00dd1dfd8f1c1d255fd
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:			&lt;none&gt;
-Request method:	GET
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00dd1dfd8f1c1d255fd
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	id=6511f00dd1dfd8f1c1d255fd
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:			&lt;none&gt;
-Request method:	GET
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00dd1dfd8f1c1d255fd
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	id=6511f00dd1dfd8f1c1d255fd
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:			&lt;none&gt;
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/&quot;ac-6jc8mPL3xQx1Z0iTu6reWr0TtrI&quot;
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
-    &quot;collectorCash&quot;: &quot;SuRed&quot;,
-    &quot;amount&quot;: 248962,
-    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
-    &quot;__v&quot;: 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/&quot;ac-6jc8mPL3xQx1Z0iTu6reWr0TtrI&quot;
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
-    &quot;collectorCash&quot;: &quot;SuRed&quot;,
-    &quot;amount&quot;: 248962,
-    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
-    &quot;__v&quot;: 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/&quot;ac-6jc8mPL3xQx1Z0iTu6reWr0TtrI&quot;
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;_id&quot;: &quot;6511f00dd1dfd8f1c1d255fd&quot;,
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;caleb.cremin@yahoo.com&quot;,
-    &quot;collectorCash&quot;: &quot;SuRed&quot;,
-    &quot;amount&quot;: 248962,
-    &quot;cellphone&quot;: &quot;1-376-404-6519&quot;,
-    &quot;__v&quot;: 0
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;sam.pacocha@gmail.com&quot;,
+    &quot;cashamount&quot;: 468823,
+    &quot;cashcollectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cashcellphone&quot;: &quot;589.456.0591&quot;
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -609,11 +607,11 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
-    &quot;amount&quot;: 737696,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;023-750-0316&quot;
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;sam.pacocha@gmail.com&quot;,
+    &quot;cashamount&quot;: 468823,
+    &quot;cashcollectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cashcellphone&quot;: &quot;589.456.0591&quot;
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -628,11 +626,11 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
-    &quot;amount&quot;: 737696,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;023-750-0316&quot;
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;sam.pacocha@gmail.com&quot;,
+    &quot;cashamount&quot;: 468823,
+    &quot;cashcollectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cashcellphone&quot;: &quot;589.456.0591&quot;
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -647,11 +645,95 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
-    &quot;amount&quot;: 737696,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;023-750-0316&quot;
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;sam.pacocha@gmail.com&quot;,
+    &quot;cashamount&quot;: 468823,
+    &quot;cashcollectorCash&quot;: &quot;Efecty&quot;,
+    &quot;cashcellphone&quot;: &quot;589.456.0591&quot;
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:47 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
+    }
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:47 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
+    }
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:47 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
+    }
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:47 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
+    }
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -666,223 +748,11 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
-    &quot;amount&quot;: 737696,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;023-750-0316&quot;
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 171
-ETag: W/&quot;ab-rGFtz33SLgNjbJr6NM7jjZJFUio&quot;
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;amount&quot;: 737696,
-    &quot;cellphone&quot;: &quot;023-750-0316&quot;,
-    &quot;_id&quot;: &quot;6511f00ed1dfd8f1c1d25607&quot;,
-    &quot;__v&quot;: 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 171
-ETag: W/&quot;ab-rGFtz33SLgNjbJr6NM7jjZJFUio&quot;
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;amount&quot;: 737696,
-    &quot;cellphone&quot;: &quot;023-750-0316&quot;,
-    &quot;_id&quot;: &quot;6511f00ed1dfd8f1c1d25607&quot;,
-    &quot;__v&quot;: 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 171
-ETag: W/&quot;ab-rGFtz33SLgNjbJr6NM7jjZJFUio&quot;
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;amount&quot;: 737696,
-    &quot;cellphone&quot;: &quot;023-750-0316&quot;,
-    &quot;_id&quot;: &quot;6511f00ed1dfd8f1c1d25607&quot;,
-    &quot;__v&quot;: 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 171
-ETag: W/&quot;ab-rGFtz33SLgNjbJr6NM7jjZJFUio&quot;
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;lashon.zieme@gmail.com&quot;,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;amount&quot;: 737696,
-    &quot;cellphone&quot;: &quot;023-750-0316&quot;,
-    &quot;_id&quot;: &quot;6511f00ed1dfd8f1c1d25607&quot;,
-    &quot;__v&quot;: 0
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	id=6511f00ed1dfd8f1c1d25607
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;jerold.ledner@gmail.com&quot;,
-    &quot;amount&quot;: 549017,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;433-906-9863&quot;
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	id=6511f00ed1dfd8f1c1d25607
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;jerold.ledner@gmail.com&quot;,
-    &quot;amount&quot;: 549017,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;433-906-9863&quot;
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	id=6511f00ed1dfd8f1c1d25607
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;jerold.ledner@gmail.com&quot;,
-    &quot;amount&quot;: 549017,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;433-906-9863&quot;
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	id=6511f00ed1dfd8f1c1d25607
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;jerold.ledner@gmail.com&quot;,
-    &quot;amount&quot;: 549017,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;433-906-9863&quot;
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 92
-ETag: W/&quot;5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8&quot;
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;acknowledged&quot;: true,
-    &quot;modifiedCount&quot;: 1,
-    &quot;upsertedId&quot;: null,
-    &quot;upsertedCount&quot;: 0,
-    &quot;matchedCount&quot;: 1
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 92
-ETag: W/&quot;5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8&quot;
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;acknowledged&quot;: true,
-    &quot;modifiedCount&quot;: 1,
-    &quot;upsertedId&quot;: null,
-    &quot;upsertedCount&quot;: 0,
-    &quot;matchedCount&quot;: 1
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 92
-ETag: W/&quot;5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8&quot;
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;acknowledged&quot;: true,
-    &quot;modifiedCount&quot;: 1,
-    &quot;upsertedId&quot;: null,
-    &quot;upsertedCount&quot;: 0,
-    &quot;matchedCount&quot;: 1
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 92
-ETag: W/&quot;5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8&quot;
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    &quot;acknowledged&quot;: true,
-    &quot;modifiedCount&quot;: 1,
-    &quot;upsertedId&quot;: null,
-    &quot;upsertedCount&quot;: 0,
-    &quot;matchedCount&quot;: 1
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;willette.ebert@gmail.com&quot;,
+    &quot;cashamount&quot;: 209801,
+    &quot;cashcollectorCash&quot;: &quot;Daviplata&quot;,
+    &quot;cashcellphone&quot;: &quot;792.872.2848&quot;
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -897,11 +767,11 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
-    &quot;amount&quot;: 192917,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;782-061-5216&quot;
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;willette.ebert@gmail.com&quot;,
+    &quot;cashamount&quot;: 209801,
+    &quot;cashcollectorCash&quot;: &quot;Daviplata&quot;,
+    &quot;cashcellphone&quot;: &quot;792.872.2848&quot;
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -916,11 +786,11 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
-    &quot;amount&quot;: 192917,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;782-061-5216&quot;
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;willette.ebert@gmail.com&quot;,
+    &quot;cashamount&quot;: 209801,
+    &quot;cashcollectorCash&quot;: &quot;Daviplata&quot;,
+    &quot;cashcellphone&quot;: &quot;792.872.2848&quot;
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -935,11 +805,11 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
-    &quot;amount&quot;: 192917,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;782-061-5216&quot;
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;willette.ebert@gmail.com&quot;,
+    &quot;cashamount&quot;: 209801,
+    &quot;cashcollectorCash&quot;: &quot;Daviplata&quot;,
+    &quot;cashcellphone&quot;: &quot;792.872.2848&quot;
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -954,120 +824,116 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
-    &quot;amount&quot;: 192917,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;782-061-5216&quot;
-}
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
-    &quot;amount&quot;: 192917,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;cellphone&quot;: &quot;782-061-5216&quot;
+    &quot;cashreference&quot;: &quot;306279528&quot;,
+    &quot;cashuserEmail&quot;: &quot;willette.ebert@gmail.com&quot;,
+    &quot;cashamount&quot;: 209801,
+    &quot;cashcollectorCash&quot;: &quot;Daviplata&quot;,
+    &quot;cashcellphone&quot;: &quot;792.872.2848&quot;
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 178
-ETag: W/&quot;b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ&quot;
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:47 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;amount&quot;: 192917,
-    &quot;cellphone&quot;: &quot;782-061-5216&quot;,
-    &quot;_id&quot;: &quot;6511f00fd1dfd8f1c1d2560d&quot;,
-    &quot;__v&quot;: 0
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
+    }
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 178
-ETag: W/&quot;b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ&quot;
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:47 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;amount&quot;: 192917,
-    &quot;cellphone&quot;: &quot;782-061-5216&quot;,
-    &quot;_id&quot;: &quot;6511f00fd1dfd8f1c1d2560d&quot;,
-    &quot;__v&quot;: 0
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
+    }
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 178
-ETag: W/&quot;b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ&quot;
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:47 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;amount&quot;: 192917,
-    &quot;cellphone&quot;: &quot;782-061-5216&quot;,
-    &quot;_id&quot;: &quot;6511f00fd1dfd8f1c1d2560d&quot;,
-    &quot;__v&quot;: 0
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
+    }
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 178
-ETag: W/&quot;b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ&quot;
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:47 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;amount&quot;: 192917,
-    &quot;cellphone&quot;: &quot;782-061-5216&quot;,
-    &quot;_id&quot;: &quot;6511f00fd1dfd8f1c1d2560d&quot;,
-    &quot;__v&quot;: 0
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
+    }
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 178
-ETag: W/&quot;b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ&quot;
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 95
+ETag: W/&quot;5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU&quot;
+Date: Sat, 30 Sep 2023 22:34:47 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    &quot;reference&quot;: &quot;578961422&quot;,
-    &quot;userEmail&quot;: &quot;shanelle.johnston@hotmail.com&quot;,
-    &quot;collectorCash&quot;: &quot;Efecty&quot;,
-    &quot;amount&quot;: 192917,
-    &quot;cellphone&quot;: &quot;782-061-5216&quot;,
-    &quot;_id&quot;: &quot;6511f00fd1dfd8f1c1d2560d&quot;,
-    &quot;__v&quot;: 0
+    &quot;message&quot;: {
+        &quot;index&quot;: 0,
+        &quot;code&quot;: 11000,
+        &quot;keyPattern&quot;: {
+            &quot;reference&quot;: 1
+        },
+        &quot;keyValue&quot;: {
+            &quot;reference&quot;: null
+        }
+    }
 }
 </pre>
 </span>
@@ -1080,7 +946,7 @@ Keep-Alive: timeout=5
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.0</a> at Sep 25, 2023, 3:39:44 PM</p>
+<a href="http://www.gradle.org">Gradle 8.0</a> at Sep 30, 2023, 5:34:48 PM</p>
 </div>
 </div>
 </body>

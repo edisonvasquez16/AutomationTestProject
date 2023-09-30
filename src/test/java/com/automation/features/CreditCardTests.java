@@ -69,7 +69,7 @@ public class CreditCardTests extends BaseConf {
                                 CreditCardFactory.withRandomData()));
 
         actor.should(
-                SeeThatResponse.okStatus());
+                SeeThatResponse.createStatus());
 
     }
     
@@ -85,7 +85,7 @@ public class CreditCardTests extends BaseConf {
                         .deleteACreditCardPayment(actor.recall(CC_PAYMENT_ID.name())));
 
         actor.should(
-                SeeThatResponse.okStatus());
+                SeeThatResponse.createStatus());
 
     }
 

@@ -5,10 +5,10 @@ import lombok.Data;
 @Data
 public class CashPayment {
 
-    private String reference;
-    private String userEmail;
-    private Integer amount;
-    private String collectorCash;
-    private String cellphone;
+    private String cashreference;
+    private String cashuserEmail;
+    private Integer cashamount;
+    private String cashcollectorCash;
+    private String cashcellphone;
 
 }

@@ -30,7 +30,7 @@ public class CreateCreditCardPayment implements Task {
         );
 
         actor.should(
-                SeeThatResponse.okStatus()
+                SeeThatResponse.createStatus()
         );
 
         actor.remember(CC_PAYMENT_ID.name(), LastResponse.received().answeredBy(actor)

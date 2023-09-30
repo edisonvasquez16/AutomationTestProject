@@ -1,11 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.automation.features.CashTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-09-25T20:39:36" hostname="Edisons-MacBook-Pro.local" time="6.574">
+<testsuite name="com.automation.features.CashTests" tests="5" skipped="0" failures="3" errors="0" timestamp="2023-09-30T22:34:38" hostname="Edisons-MacBook-Pro.local" time="9.791">
   <properties/>
-  <testcase name="seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()" classname="com.automation.features.CashTests" time="4.372"/>
-  <testcase name="seeTheGetAllServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()" classname="com.automation.features.CashTests" time="0.425"/>
-  <testcase name="seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()" classname="com.automation.features.CashTests" time="0.554"/>
-  <testcase name="seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()" classname="com.automation.features.CashTests" time="0.513"/>
-  <testcase name="seeTheCreateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()" classname="com.automation.features.CashTests" time="0.369"/>
+  <testcase name="seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()" classname="com.automation.features.CashTests" time="6.447">
+    <failure message="java.lang.IllegalArgumentException: parameterValue cannot be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: parameterValue cannot be null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationParametersConfigurations.pathParam(RequestSpecificationParametersConfigurations.java:100)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.pathParam(RequestSpecificationDecorated.java:38)
+	at com.automation.interactions.CashPaymentActions.lambda$deleteACashPayments$3(CashPaymentActions.java:52)
+	at net.serenitybdd.screenplay.rest.interactions.RestInteraction.rest(RestInteraction.java:50)
+	at net.serenitybdd.screenplay.rest.interactions.Delete$ByteBuddy$KDJADuee.rest$accessor$rc2j8s81(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:195)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Delete$ByteBuddy$KDJADuee.rest(Unknown Source)
+	at net.serenitybdd.screenplay.rest.interactions.Delete.performAs(Delete.java:24)
+	at net.serenitybdd.screenplay.rest.interactions.Delete$ByteBuddy$KDJADuee.performAs$accessor$rc2j8s81(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Delete$ByteBuddy$KDJADuee.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at net.serenitybdd.screenplay.AnonymousPerformable.performAs(AnonymousPerformable.java:25)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs$accessor$eSE6dh3r(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.automation.features.CashTests.seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation(CashTests.java:85)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+</failure>
+  </testcase>
+  <testcase name="seeTheGetAllServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()" classname="com.automation.features.CashTests" time="0.382"/>
+  <testcase name="seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()" classname="com.automation.features.CashTests" time="0.639">
+    <failure message="java.lang.IllegalArgumentException: parameterValue cannot be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: parameterValue cannot be null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationParametersConfigurations.pathParam(RequestSpecificationParametersConfigurations.java:100)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.pathParam(RequestSpecificationDecorated.java:38)
+	at com.automation.interactions.CashPaymentActions.lambda$getACashPayment$1(CashPaymentActions.java:34)
+	at net.serenitybdd.screenplay.rest.interactions.RestInteraction.rest(RestInteraction.java:50)
+	at net.serenitybdd.screenplay.rest.interactions.Get$ByteBuddy$aRNUQWRC.rest$accessor$uT0qZN5C(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:195)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Get$ByteBuddy$aRNUQWRC.rest(Unknown Source)
+	at net.serenitybdd.screenplay.rest.interactions.Get.performAs(Get.java:23)
+	at net.serenitybdd.screenplay.rest.interactions.Get$ByteBuddy$aRNUQWRC.performAs$accessor$uT0qZN5C(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Get$ByteBuddy$aRNUQWRC.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at net.serenitybdd.screenplay.AnonymousPerformable.performAs(AnonymousPerformable.java:25)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs$accessor$eSE6dh3r(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.automation.features.CashTests.seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation(CashTests.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+</failure>
+  </testcase>
+  <testcase name="seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()" classname="com.automation.features.CashTests" time="0.706">
+    <failure message="java.lang.IllegalArgumentException: parameterValue cannot be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: parameterValue cannot be null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationParametersConfigurations.pathParam(RequestSpecificationParametersConfigurations.java:100)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.pathParam(RequestSpecificationDecorated.java:38)
+	at com.automation.interactions.CashPaymentActions.lambda$updateACashPaymentWithInfo$2(CashPaymentActions.java:43)
+	at net.serenitybdd.screenplay.rest.interactions.RestInteraction.rest(RestInteraction.java:50)
+	at net.serenitybdd.screenplay.rest.interactions.Put$ByteBuddy$K8vjii5N.rest$accessor$cUkiQIrO(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:195)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Put$ByteBuddy$K8vjii5N.rest(Unknown Source)
+	at net.serenitybdd.screenplay.rest.interactions.Put.performAs(Put.java:24)
+	at net.serenitybdd.screenplay.rest.interactions.Put$ByteBuddy$K8vjii5N.performAs$accessor$cUkiQIrO(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.rest.interactions.Put$ByteBuddy$K8vjii5N.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at net.serenitybdd.screenplay.AnonymousPerformable.performAs(AnonymousPerformable.java:25)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs$accessor$eSE6dh3r(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$A5NdE3fs.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.automation.features.CashTests.seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation(CashTests.java:67)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+</failure>
+  </testcase>
+  <testcase name="seeTheCreateServiceResponseCorrectly_When_SubmitTheCorrectCashPaymentInformation()" classname="com.automation.features.CashTests" time="0.254"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
 Proxy:			<none>
@@ -19,54 +234,32 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "userEmail": "steven.nienow@hotmail.com",
-    "amount": 275103,
-    "collectorCash": "SuRed",
-    "cellphone": "(717) 964-1477"
+    "cashreference": "306279528",
+    "cashuserEmail": "joseph.lebsack@yahoo.com",
+    "cashamount": 279338,
+    "cashcollectorCash": "Efecty",
+    "cashcellphone": "1-767-841-8434"
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 175
-ETag: W/"af-BD0/19dVRUZgGJqe2Tq2rkIlaNo"
-Date: Mon, 25 Sep 2023 20:39:39 GMT
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:42 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "userEmail": "steven.nienow@hotmail.com",
-    "collectorCash": "SuRed",
-    "amount": 275103,
-    "cellphone": "(717) 964-1477",
-    "_id": "6511f00bd1dfd8f1c1d255f1",
-    "__v": 0
-}
-Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00bd1dfd8f1c1d255f1
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00bd1dfd8f1c1d255f1
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 38
-ETag: W/"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE"
-Date: Mon, 25 Sep 2023 20:39:40 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "acknowledged": true,
-    "deletedCount": 1
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
+    }
 }
 Request method:	GET
 Request URI:	http://localhost:1337/api/v1/cash-payments
@@ -95,242 +288,170 @@ Body:			<none>
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 1760
-ETag: W/"6e0-R/mZU4V5ebL7fML4y+pNxzr8XJg"
-Date: Mon, 25 Sep 2023 20:39:41 GMT
+Content-Length: 248
+ETag: W/"f8-guE3mJLyeR/GrhV/QtJ2/OAuM8Q"
+Date: Sat, 30 Sep 2023 22:34:45 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
-[
-    {
-        "_id": "6511d9de6bf09f1b8af871a7",
-        "reference": "1836017760",
-        "userEmail": "cornelius.satterfield@hotmail.com",
-        "collectorCash": "SuRed",
-        "amount": 198391,
-        "cellphone": "610-632-7564",
-        "__v": 0
-    },
-    {
-        "_id": "6511dcc66bf09f1b8af871a9",
-        "reference": "1836017760",
-        "userEmail": "ernesto.barrows@hotmail.com",
-        "collectorCash": "Nequi",
-        "amount": 112690,
-        "cellphone": "012-340-0492",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed0fd1dfd8f1c1d25590",
-        "reference": "2003979454",
-        "userEmail": "morris.metz@gmail.com",
-        "collectorCash": "Efecty",
-        "amount": 752784,
-        "cellphone": "(084) 133-3561",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed11d1dfd8f1c1d25598",
-        "reference": "2003979454",
-        "userEmail": "marylin.mueller@yahoo.com",
-        "collectorCash": "SuRed",
-        "amount": 475764,
-        "cellphone": "1-381-724-5680",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed13d1dfd8f1c1d255a1",
-        "reference": "2003979454",
-        "userEmail": "julene.wyman@gmail.com",
-        "collectorCash": "Nequi",
-        "amount": 277938,
-        "cellphone": "510.090.8774",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef4cd1dfd8f1c1d255b9",
-        "reference": "221402392",
-        "userEmail": "sharice.grant@yahoo.com",
-        "collectorCash": "SuRed",
-        "amount": 576440,
-        "cellphone": "(980) 775-3837",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef4ed1dfd8f1c1d255c3",
-        "reference": "221402392",
-        "userEmail": "nikole.kuhlman@hotmail.com",
-        "collectorCash": "Baloto",
-        "amount": 13936,
-        "cellphone": "1-260-488-3804",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef87d1dfd8f1c1d255d5",
-        "reference": "413177525",
-        "userEmail": "cliff.casper@gmail.com",
-        "collectorCash": "Baloto",
-        "amount": 30270,
-        "cellphone": "(163) 972-0423",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef88d1dfd8f1c1d255db",
-        "reference": "413177525",
-        "userEmail": "steven.huel@gmail.com",
-        "collectorCash": "Baloto",
-        "amount": 628047,
-        "cellphone": "942-924-6749",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef89d1dfd8f1c1d255e1",
-        "reference": "413177525",
-        "userEmail": "reynaldo.mclaughlin@gmail.com",
-        "collectorCash": "Baloto",
-        "amount": 743464,
-        "cellphone": "1-650-858-1616",
-        "__v": 0
+{
+    "status": "OK",
+    "message": "Cash payments request",
+    "results": [
+        {
+            "_id": "651872a709d12dc5e940555c",
+            "cashreference": "CASH000001",
+            "cashuserEmail": "USER1234@test.com",
+            "cashcollectorCash": "Efecty",
+            "cashamount": 15000,
+            "cashcellphone": "573225568899",
+            "__v": 0
+        }
+    ]
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 248
+ETag: W/"f8-guE3mJLyeR/GrhV/QtJ2/OAuM8Q"
+Date: Sat, 30 Sep 2023 22:34:45 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "OK",
+    "message": "Cash payments request",
+    "results": [
+        {
+            "_id": "651872a709d12dc5e940555c",
+            "cashreference": "CASH000001",
+            "cashuserEmail": "USER1234@test.com",
+            "cashcollectorCash": "Efecty",
+            "cashamount": 15000,
+            "cashcellphone": "573225568899",
+            "__v": 0
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "cashreference": "306279528",
+    "cashuserEmail": "reba.ruecker@hotmail.com",
+    "cashamount": 721892,
+    "cashcollectorCash": "Baloto",
+    "cashcellphone": "576.761.0901"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "cashreference": "306279528",
+    "cashuserEmail": "reba.ruecker@hotmail.com",
+    "cashamount": 721892,
+    "cashcollectorCash": "Baloto",
+    "cashcellphone": "576.761.0901"
+}
+Request method:	POST
+Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "cashreference": "306279528",
+    "cashuserEmail": "reba.ruecker@hotmail.com",
+    "cashamount": 721892,
+    "cashcollectorCash": "Baloto",
+    "cashcellphone": "576.761.0901"
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
     }
-]
+}
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 1760
-ETag: W/"6e0-R/mZU4V5ebL7fML4y+pNxzr8XJg"
-Date: Mon, 25 Sep 2023 20:39:41 GMT
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
-[
-    {
-        "_id": "6511d9de6bf09f1b8af871a7",
-        "reference": "1836017760",
-        "userEmail": "cornelius.satterfield@hotmail.com",
-        "collectorCash": "SuRed",
-        "amount": 198391,
-        "cellphone": "610-632-7564",
-        "__v": 0
-    },
-    {
-        "_id": "6511dcc66bf09f1b8af871a9",
-        "reference": "1836017760",
-        "userEmail": "ernesto.barrows@hotmail.com",
-        "collectorCash": "Nequi",
-        "amount": 112690,
-        "cellphone": "012-340-0492",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed0fd1dfd8f1c1d25590",
-        "reference": "2003979454",
-        "userEmail": "morris.metz@gmail.com",
-        "collectorCash": "Efecty",
-        "amount": 752784,
-        "cellphone": "(084) 133-3561",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed11d1dfd8f1c1d25598",
-        "reference": "2003979454",
-        "userEmail": "marylin.mueller@yahoo.com",
-        "collectorCash": "SuRed",
-        "amount": 475764,
-        "cellphone": "1-381-724-5680",
-        "__v": 0
-    },
-    {
-        "_id": "6511ed13d1dfd8f1c1d255a1",
-        "reference": "2003979454",
-        "userEmail": "julene.wyman@gmail.com",
-        "collectorCash": "Nequi",
-        "amount": 277938,
-        "cellphone": "510.090.8774",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef4cd1dfd8f1c1d255b9",
-        "reference": "221402392",
-        "userEmail": "sharice.grant@yahoo.com",
-        "collectorCash": "SuRed",
-        "amount": 576440,
-        "cellphone": "(980) 775-3837",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef4ed1dfd8f1c1d255c3",
-        "reference": "221402392",
-        "userEmail": "nikole.kuhlman@hotmail.com",
-        "collectorCash": "Baloto",
-        "amount": 13936,
-        "cellphone": "1-260-488-3804",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef87d1dfd8f1c1d255d5",
-        "reference": "413177525",
-        "userEmail": "cliff.casper@gmail.com",
-        "collectorCash": "Baloto",
-        "amount": 30270,
-        "cellphone": "(163) 972-0423",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef88d1dfd8f1c1d255db",
-        "reference": "413177525",
-        "userEmail": "steven.huel@gmail.com",
-        "collectorCash": "Baloto",
-        "amount": 628047,
-        "cellphone": "942-924-6749",
-        "__v": 0
-    },
-    {
-        "_id": "6511ef89d1dfd8f1c1d255e1",
-        "reference": "413177525",
-        "userEmail": "reynaldo.mclaughlin@gmail.com",
-        "collectorCash": "Baloto",
-        "amount": 743464,
-        "cellphone": "1-650-858-1616",
-        "__v": 0
+{
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
     }
-]
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "userEmail": "caleb.cremin@yahoo.com",
-    "amount": 248962,
-    "collectorCash": "SuRed",
-    "cellphone": "1-376-404-6519"
 }
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:46 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
 {
-    "reference": "578961422",
-    "userEmail": "caleb.cremin@yahoo.com",
-    "amount": 248962,
-    "collectorCash": "SuRed",
-    "cellphone": "1-376-404-6519"
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
+    }
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -345,155 +466,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "userEmail": "caleb.cremin@yahoo.com",
-    "amount": 248962,
-    "collectorCash": "SuRed",
-    "cellphone": "1-376-404-6519"
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/"ac-PS9iZGM52VqHgu3peyVrAjBkGco"
-Date: Mon, 25 Sep 2023 20:39:41 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "userEmail": "caleb.cremin@yahoo.com",
-    "collectorCash": "SuRed",
-    "amount": 248962,
-    "cellphone": "1-376-404-6519",
-    "_id": "6511f00dd1dfd8f1c1d255fd",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/"ac-PS9iZGM52VqHgu3peyVrAjBkGco"
-Date: Mon, 25 Sep 2023 20:39:41 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "userEmail": "caleb.cremin@yahoo.com",
-    "collectorCash": "SuRed",
-    "amount": 248962,
-    "cellphone": "1-376-404-6519",
-    "_id": "6511f00dd1dfd8f1c1d255fd",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/"ac-PS9iZGM52VqHgu3peyVrAjBkGco"
-Date: Mon, 25 Sep 2023 20:39:41 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "userEmail": "caleb.cremin@yahoo.com",
-    "collectorCash": "SuRed",
-    "amount": 248962,
-    "cellphone": "1-376-404-6519",
-    "_id": "6511f00dd1dfd8f1c1d255fd",
-    "__v": 0
-}
-Request method:	GET
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00dd1dfd8f1c1d255fd
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00dd1dfd8f1c1d255fd
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00dd1dfd8f1c1d255fd
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00dd1dfd8f1c1d255fd
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00dd1dfd8f1c1d255fd
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00dd1dfd8f1c1d255fd
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/"ac-6jc8mPL3xQx1Z0iTu6reWr0TtrI"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "_id": "6511f00dd1dfd8f1c1d255fd",
-    "reference": "578961422",
-    "userEmail": "caleb.cremin@yahoo.com",
-    "collectorCash": "SuRed",
-    "amount": 248962,
-    "cellphone": "1-376-404-6519",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/"ac-6jc8mPL3xQx1Z0iTu6reWr0TtrI"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "_id": "6511f00dd1dfd8f1c1d255fd",
-    "reference": "578961422",
-    "userEmail": "caleb.cremin@yahoo.com",
-    "collectorCash": "SuRed",
-    "amount": 248962,
-    "cellphone": "1-376-404-6519",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 172
-ETag: W/"ac-6jc8mPL3xQx1Z0iTu6reWr0TtrI"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "_id": "6511f00dd1dfd8f1c1d255fd",
-    "reference": "578961422",
-    "userEmail": "caleb.cremin@yahoo.com",
-    "collectorCash": "SuRed",
-    "amount": 248962,
-    "cellphone": "1-376-404-6519",
-    "__v": 0
+    "cashreference": "306279528",
+    "cashuserEmail": "sam.pacocha@gmail.com",
+    "cashamount": 468823,
+    "cashcollectorCash": "Efecty",
+    "cashcellphone": "589.456.0591"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -508,11 +485,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "userEmail": "lashon.zieme@gmail.com",
-    "amount": 737696,
-    "collectorCash": "Efecty",
-    "cellphone": "023-750-0316"
+    "cashreference": "306279528",
+    "cashuserEmail": "sam.pacocha@gmail.com",
+    "cashamount": 468823,
+    "cashcollectorCash": "Efecty",
+    "cashcellphone": "589.456.0591"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -527,11 +504,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "userEmail": "lashon.zieme@gmail.com",
-    "amount": 737696,
-    "collectorCash": "Efecty",
-    "cellphone": "023-750-0316"
+    "cashreference": "306279528",
+    "cashuserEmail": "sam.pacocha@gmail.com",
+    "cashamount": 468823,
+    "cashcollectorCash": "Efecty",
+    "cashcellphone": "589.456.0591"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -546,11 +523,95 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "userEmail": "lashon.zieme@gmail.com",
-    "amount": 737696,
-    "collectorCash": "Efecty",
-    "cellphone": "023-750-0316"
+    "cashreference": "306279528",
+    "cashuserEmail": "sam.pacocha@gmail.com",
+    "cashamount": 468823,
+    "cashcollectorCash": "Efecty",
+    "cashcellphone": "589.456.0591"
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:47 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
+    }
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:47 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
+    }
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:47 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
+    }
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:47 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
+    }
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -565,223 +626,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "userEmail": "lashon.zieme@gmail.com",
-    "amount": 737696,
-    "collectorCash": "Efecty",
-    "cellphone": "023-750-0316"
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 171
-ETag: W/"ab-rGFtz33SLgNjbJr6NM7jjZJFUio"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "userEmail": "lashon.zieme@gmail.com",
-    "collectorCash": "Efecty",
-    "amount": 737696,
-    "cellphone": "023-750-0316",
-    "_id": "6511f00ed1dfd8f1c1d25607",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 171
-ETag: W/"ab-rGFtz33SLgNjbJr6NM7jjZJFUio"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "userEmail": "lashon.zieme@gmail.com",
-    "collectorCash": "Efecty",
-    "amount": 737696,
-    "cellphone": "023-750-0316",
-    "_id": "6511f00ed1dfd8f1c1d25607",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 171
-ETag: W/"ab-rGFtz33SLgNjbJr6NM7jjZJFUio"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "userEmail": "lashon.zieme@gmail.com",
-    "collectorCash": "Efecty",
-    "amount": 737696,
-    "cellphone": "023-750-0316",
-    "_id": "6511f00ed1dfd8f1c1d25607",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 171
-ETag: W/"ab-rGFtz33SLgNjbJr6NM7jjZJFUio"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "reference": "578961422",
-    "userEmail": "lashon.zieme@gmail.com",
-    "collectorCash": "Efecty",
-    "amount": 737696,
-    "cellphone": "023-750-0316",
-    "_id": "6511f00ed1dfd8f1c1d25607",
-    "__v": 0
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d25607
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "userEmail": "jerold.ledner@gmail.com",
-    "amount": 549017,
-    "collectorCash": "Efecty",
-    "cellphone": "433-906-9863"
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d25607
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "userEmail": "jerold.ledner@gmail.com",
-    "amount": 549017,
-    "collectorCash": "Efecty",
-    "cellphone": "433-906-9863"
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d25607
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "userEmail": "jerold.ledner@gmail.com",
-    "amount": 549017,
-    "collectorCash": "Efecty",
-    "cellphone": "433-906-9863"
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/cash-payment/6511f00ed1dfd8f1c1d25607
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6511f00ed1dfd8f1c1d25607
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "userEmail": "jerold.ledner@gmail.com",
-    "amount": 549017,
-    "collectorCash": "Efecty",
-    "cellphone": "433-906-9863"
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 92
-ETag: W/"5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "acknowledged": true,
-    "modifiedCount": 1,
-    "upsertedId": null,
-    "upsertedCount": 0,
-    "matchedCount": 1
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 92
-ETag: W/"5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "acknowledged": true,
-    "modifiedCount": 1,
-    "upsertedId": null,
-    "upsertedCount": 0,
-    "matchedCount": 1
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 92
-ETag: W/"5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "acknowledged": true,
-    "modifiedCount": 1,
-    "upsertedId": null,
-    "upsertedCount": 0,
-    "matchedCount": 1
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 92
-ETag: W/"5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8"
-Date: Mon, 25 Sep 2023 20:39:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "acknowledged": true,
-    "modifiedCount": 1,
-    "upsertedId": null,
-    "upsertedCount": 0,
-    "matchedCount": 1
+    "cashreference": "306279528",
+    "cashuserEmail": "willette.ebert@gmail.com",
+    "cashamount": 209801,
+    "cashcollectorCash": "Daviplata",
+    "cashcellphone": "792.872.2848"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -796,11 +645,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "userEmail": "shanelle.johnston@hotmail.com",
-    "amount": 192917,
-    "collectorCash": "Efecty",
-    "cellphone": "782-061-5216"
+    "cashreference": "306279528",
+    "cashuserEmail": "willette.ebert@gmail.com",
+    "cashamount": 209801,
+    "cashcollectorCash": "Daviplata",
+    "cashcellphone": "792.872.2848"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -815,11 +664,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "userEmail": "shanelle.johnston@hotmail.com",
-    "amount": 192917,
-    "collectorCash": "Efecty",
-    "cellphone": "782-061-5216"
+    "cashreference": "306279528",
+    "cashuserEmail": "willette.ebert@gmail.com",
+    "cashamount": 209801,
+    "cashcollectorCash": "Daviplata",
+    "cashcellphone": "792.872.2848"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -834,11 +683,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "userEmail": "shanelle.johnston@hotmail.com",
-    "amount": 192917,
-    "collectorCash": "Efecty",
-    "cellphone": "782-061-5216"
+    "cashreference": "306279528",
+    "cashuserEmail": "willette.ebert@gmail.com",
+    "cashamount": 209801,
+    "cashcollectorCash": "Daviplata",
+    "cashcellphone": "792.872.2848"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -853,120 +702,116 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "reference": "578961422",
-    "userEmail": "shanelle.johnston@hotmail.com",
-    "amount": 192917,
-    "collectorCash": "Efecty",
-    "cellphone": "782-061-5216"
-}
-Request method:	POST
-Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "reference": "578961422",
-    "userEmail": "shanelle.johnston@hotmail.com",
-    "amount": 192917,
-    "collectorCash": "Efecty",
-    "cellphone": "782-061-5216"
+    "cashreference": "306279528",
+    "cashuserEmail": "willette.ebert@gmail.com",
+    "cashamount": 209801,
+    "cashcollectorCash": "Daviplata",
+    "cashcellphone": "792.872.2848"
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 178
-ETag: W/"b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ"
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:47 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "userEmail": "shanelle.johnston@hotmail.com",
-    "collectorCash": "Efecty",
-    "amount": 192917,
-    "cellphone": "782-061-5216",
-    "_id": "6511f00fd1dfd8f1c1d2560d",
-    "__v": 0
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
+    }
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 178
-ETag: W/"b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ"
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:47 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "userEmail": "shanelle.johnston@hotmail.com",
-    "collectorCash": "Efecty",
-    "amount": 192917,
-    "cellphone": "782-061-5216",
-    "_id": "6511f00fd1dfd8f1c1d2560d",
-    "__v": 0
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
+    }
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 178
-ETag: W/"b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ"
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:47 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "userEmail": "shanelle.johnston@hotmail.com",
-    "collectorCash": "Efecty",
-    "amount": 192917,
-    "cellphone": "782-061-5216",
-    "_id": "6511f00fd1dfd8f1c1d2560d",
-    "__v": 0
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
+    }
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 178
-ETag: W/"b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ"
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:47 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "userEmail": "shanelle.johnston@hotmail.com",
-    "collectorCash": "Efecty",
-    "amount": 192917,
-    "cellphone": "782-061-5216",
-    "_id": "6511f00fd1dfd8f1c1d2560d",
-    "__v": 0
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
+    }
 }
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 178
-ETag: W/"b2-8tI2FfP5IC9YYwiiQlQx8U3WvSQ"
-Date: Mon, 25 Sep 2023 20:39:43 GMT
+Content-Length: 95
+ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
+Date: Sat, 30 Sep 2023 22:34:47 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "reference": "578961422",
-    "userEmail": "shanelle.johnston@hotmail.com",
-    "collectorCash": "Efecty",
-    "amount": 192917,
-    "cellphone": "782-061-5216",
-    "_id": "6511f00fd1dfd8f1c1d2560d",
-    "__v": 0
+    "message": {
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+            "reference": 1
+        },
+        "keyValue": {
+            "reference": null
+        }
+    }
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
