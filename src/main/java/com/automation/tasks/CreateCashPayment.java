@@ -30,7 +30,7 @@ public class CreateCashPayment implements Task {
         );
 
         actor.should(
-                SeeThatResponse.okStatus()
+                SeeThatResponse.createStatus()
         );
 
         actor.remember(CASH_PAYMENT_ID.name(), LastResponse.received().answeredBy(actor)

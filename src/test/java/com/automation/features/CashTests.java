@@ -70,7 +70,7 @@ public class CashTests extends BaseConf {
                                 .withRandomData()));
 
         actor.should(
-                SeeThatResponse.okStatus());
+                SeeThatResponse.createStatus());
 
     }
 
@@ -87,7 +87,7 @@ public class CashTests extends BaseConf {
                         .deleteACashPayments(actor.recall(CASH_PAYMENT_ID.name())));
 
         actor.should(
-                SeeThatResponse.okStatus());
+                SeeThatResponse.createStatus());
 
     }
 

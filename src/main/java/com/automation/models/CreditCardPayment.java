@@ -14,7 +14,7 @@ public class CreditCardPayment {
     private Integer ccSecurityCode;
     private String ccuserEmail;
     private String ccDues;
-    private String ccDate;
+    private String ccPayDate;
     private String ccamount;
     private String cccellphone;
 
