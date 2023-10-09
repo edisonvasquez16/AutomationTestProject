@@ -2,6 +2,6 @@
 /.idea/
 /history/
 /target/
-/bin/
-/build/
-/.vscode/
+bin/
+build/
+.vscode/
