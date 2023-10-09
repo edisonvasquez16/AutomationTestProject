@@ -58,14 +58,14 @@ clean {
 
 test {
     testLogging.showStandardStreams = true
-    maxParallelForks = 3
+    maxParallelForks = 1
     useJUnitPlatform()
     systemProperties System.getProperties()
 }
 
 task smoke(type: Test) {
     testLogging.showStandardStreams = true
-    maxParallelForks = 3
+    maxParallelForks = 1
     useJUnitPlatform {
         includeTags("smoke")
     }
