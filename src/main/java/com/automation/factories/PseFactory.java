@@ -10,8 +10,8 @@ public class PseFactory {
     public static PsePayment withRandomData() {
 
         PsePayment psePayment = new PsePayment();
-        psePayment.setPsereference(String.valueOf(jf.random().hashCode()));
-        psePayment.setPsereferencePse(String.valueOf(jf.random().hashCode()));
+        psePayment.setPserereference(String.valueOf(jf.random().nextInt(0,999999)));
+        psePayment.setPserefereference(String.valueOf(jf.random().nextInt(0,999999)));
         psePayment.setPseuserEmail(jf.internet().emailAddress());
         psePayment.setPseamount(jf.random().nextInt(3000, 800000));
         psePayment.setPsefullNameUser(jf.name().fullName());

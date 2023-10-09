@@ -1,7 +1,7 @@
-.gradle/
-.idea/
-history/
-target/
-bin/
-build/
-.vscode/
+/.gradle/
+/.idea/
+/history/
+/target/
+/bin/
+/build/
+/.vscode/

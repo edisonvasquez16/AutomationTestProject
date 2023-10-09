@@ -10,7 +10,7 @@ public class CreditCardFactory {
     public static CreditCardPayment withRandomData() {
 
         CreditCardPayment creditCardPayment = new CreditCardPayment();
-        creditCardPayment.setCcreference(String.valueOf(jf.random().hashCode()));
+        creditCardPayment.setCcreference(String.valueOf(jf.random().nextInt(0,999999)));
         creditCardPayment.setCcName(jf.name().fullName());
         creditCardPayment.setCcNumber(jf.finance().creditCard().replace("-",""));
         creditCardPayment.setCcMonthExp(jf.random().nextInt(1,12));
