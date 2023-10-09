@@ -1,11 +1,912 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.automation.features.PseTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-09-30T22:34:38" hostname="Edisons-MacBook-Pro.local" time="9.17">
+<testsuite name="com.automation.features.PseTests" tests="5" skipped="0" failures="3" errors="0" timestamp="2023-10-05T15:33:51" hostname="Edisons-MacBook-Pro.local" time="36.894">
   <properties/>
-  <testcase name="seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="6.36"/>
-  <testcase name="seeTheGetAllServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="0.417"/>
-  <testcase name="seeTheCreateServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="0.427"/>
-  <testcase name="seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="0.657"/>
-  <testcase name="seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="0.667"/>
+  <testcase name="seeTheGetServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="4.678"/>
+  <testcase name="seeTheGetAllServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="0.232"/>
+  <testcase name="seeTheCreateServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="30.65">
+    <failure message="net.serenitybdd.model.exceptions.SerenityManagedException: localhost:1337 failed to respond" type="net.serenitybdd.model.exceptions.SerenityManagedException">net.serenitybdd.model.exceptions.SerenityManagedException: localhost:1337 failed to respond
+	at app//org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at app//org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at app//org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at app//org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+	at app//org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at app//org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:207)
+	at app//org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at app//org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at app//org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	at app//org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at app//org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at app//org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at app//io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+	at app//io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
+	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
+	at app//io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
+	at app//io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1332)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1087)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at app//io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at app//io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at app//io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at app//io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+	at app//io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1332)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1087)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at app//io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at app//io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at app//io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1332)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1087)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at app//io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at app//io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.executeCall(RequestSpecificationDecorated.java:309)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.execute(RequestSpecificationDecorated.java:268)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.post(RequestSpecificationDecorated.java:120)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.post(RequestSpecificationDecorated.java:38)
+	at app//net.serenitybdd.screenplay.rest.interactions.Post.performAs(Post.java:24)
+	at app//net.serenitybdd.screenplay.rest.interactions.Post$ByteBuddy$AQxbYhrV.performAs$accessor$2zfhzS5v(Unknown Source)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.rest.interactions.Post$ByteBuddy$AQxbYhrV.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//net.serenitybdd.screenplay.AnonymousPerformable.performAs(AnonymousPerformable.java:25)
+	at app//net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$CXfsWea8.performAs$accessor$zb71ODgq(Unknown Source)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$CXfsWea8.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//com.automation.tasks.CreatePSEPayment.performAs(CreatePSEPayment.java:27)
+	at app//com.automation.tasks.CreatePSEPayment$ByteBuddy$56JUO7JR.performAs$accessor$lBcvLyJJ(Unknown Source)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//com.automation.tasks.CreatePSEPayment$ByteBuddy$56JUO7JR.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//com.automation.features.PseTests.seeTheCreateServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation(PseTests.java:23)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at app//org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+	Suppressed: net.serenitybdd.model.exceptions.SerenityManagedException: localhost:1337 failed to respond
+		... 283 more
+</failure>
+  </testcase>
+  <testcase name="seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="0.202">
+    <failure message="net.serenitybdd.model.exceptions.SerenityManagedException: Connection refused (Connection refused)" type="net.serenitybdd.model.exceptions.SerenityManagedException">net.serenitybdd.model.exceptions.SerenityManagedException: Connection refused (Connection refused)
+	at java.base@11.0.17/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base@11.0.17/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base@11.0.17/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base@11.0.17/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base@11.0.17/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base@11.0.17/java.net.Socket.connect(Socket.java:608)
+	at app//org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at app//org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at app//org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at app//org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at app//org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at app//org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at app//org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at app//io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+	at app//io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
+	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
+	at app//io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
+	at app//io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1332)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1087)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at app//io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at app//io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at app//io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at app//io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+	at app//io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1332)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1087)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at app//io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at app//io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at app//io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1332)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1087)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at app//io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at app//io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.executeCall(RequestSpecificationDecorated.java:309)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.execute(RequestSpecificationDecorated.java:268)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.post(RequestSpecificationDecorated.java:120)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.post(RequestSpecificationDecorated.java:38)
+	at app//net.serenitybdd.screenplay.rest.interactions.Post.performAs(Post.java:24)
+	at app//net.serenitybdd.screenplay.rest.interactions.Post$ByteBuddy$AQxbYhrV.performAs$accessor$2zfhzS5v(Unknown Source)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.rest.interactions.Post$ByteBuddy$AQxbYhrV.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//net.serenitybdd.screenplay.AnonymousPerformable.performAs(AnonymousPerformable.java:25)
+	at app//net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$CXfsWea8.performAs$accessor$zb71ODgq(Unknown Source)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$CXfsWea8.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//com.automation.tasks.CreatePSEPayment.performAs(CreatePSEPayment.java:27)
+	at app//com.automation.tasks.CreatePSEPayment$ByteBuddy$56JUO7JR.performAs$accessor$lBcvLyJJ(Unknown Source)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//com.automation.tasks.CreatePSEPayment$ByteBuddy$56JUO7JR.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:193)
+	at app//com.automation.features.PseTests.seeTheUpdateServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation(PseTests.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at app//org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+	Suppressed: net.serenitybdd.model.exceptions.SerenityManagedException: Connection refused (Connection refused)
+		... 296 more
+</failure>
+  </testcase>
+  <testcase name="seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation()" classname="com.automation.features.PseTests" time="0.362">
+    <failure message="net.serenitybdd.model.exceptions.SerenityManagedException: Connection refused (Connection refused)" type="net.serenitybdd.model.exceptions.SerenityManagedException">net.serenitybdd.model.exceptions.SerenityManagedException: Connection refused (Connection refused)
+	at java.base@11.0.17/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base@11.0.17/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base@11.0.17/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base@11.0.17/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base@11.0.17/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base@11.0.17/java.net.Socket.connect(Socket.java:608)
+	at app//org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at app//org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at app//org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at app//org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at app//org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at app//org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at app//org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at app//io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+	at app//io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
+	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
+	at app//io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
+	at app//io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1332)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1087)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at app//io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at app//io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at app//io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at app//net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at app//io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at app//io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:146)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at app//io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at app//io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+	at app//io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1332)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1087)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at app//io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at app//io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at app//io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1332)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1087)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at app//io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at app//org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at app//io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.executeCall(RequestSpecificationDecorated.java:309)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.execute(RequestSpecificationDecorated.java:268)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.post(RequestSpecificationDecorated.java:120)
+	at app//net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.post(RequestSpecificationDecorated.java:38)
+	at app//net.serenitybdd.screenplay.rest.interactions.Post.performAs(Post.java:24)
+	at app//net.serenitybdd.screenplay.rest.interactions.Post$ByteBuddy$AQxbYhrV.performAs$accessor$2zfhzS5v(Unknown Source)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.rest.interactions.Post$ByteBuddy$AQxbYhrV.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//net.serenitybdd.screenplay.AnonymousPerformable.performAs(AnonymousPerformable.java:25)
+	at app//net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$CXfsWea8.performAs$accessor$zb71ODgq(Unknown Source)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.AnonymousTask$ByteBuddy$CXfsWea8.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//com.automation.tasks.CreatePSEPayment.performAs(CreatePSEPayment.java:27)
+	at app//com.automation.tasks.CreatePSEPayment$ByteBuddy$56JUO7JR.performAs$accessor$lBcvLyJJ(Unknown Source)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//com.automation.tasks.CreatePSEPayment$ByteBuddy$56JUO7JR.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:193)
+	at app//com.automation.features.PseTests.seeTheDeleteServiceResponseCorrectly_When_SubmitTheCorrectPSEPaymentInformation(PseTests.java:80)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@11.0.17/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at app//org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.17/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+	Suppressed: net.serenitybdd.model.exceptions.SerenityManagedException: Connection refused (Connection refused)
+		... 307 more
+</failure>
+  </testcase>
   <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
 Proxy:			<none>
@@ -19,39 +920,39 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "bella.keebler@yahoo.com",
-    "pseamount": 188651,
-    "psefullNameUser": "Miss Brandee Krajcik",
-    "psecellphone": "117-743-7256"
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "loree.homenick@hotmail.com",
+    "pseamount": 236652,
+    "psefullNameUser": "Shonda Weber",
+    "psecellphone": "928-691-0342"
 }
 HTTP/1.1 201 Created
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 230
-ETag: W/"e6-p5ZPrONVfpMbCDRbmxS6czXRD7w"
-Date: Sat, 30 Sep 2023 22:34:42 GMT
+Content-Length: 225
+ETag: W/"e1-SdOobr/VtaCEpTmQjjnecMWRwMw"
+Date: Thu, 05 Oct 2023 15:33:55 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "pseuserEmail": "bella.keebler@yahoo.com",
-    "psefullNameUser": "Miss Brandee Krajcik",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "117-743-7256",
-    "pseamount": 188651,
-    "_id": "6518a282b15d7ac86c3d9349",
+    "pseuserEmail": "loree.homenick@hotmail.com",
+    "psefullNameUser": "Shonda Weber",
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseamount": 236652,
+    "psecellphone": "928-691-0342",
+    "_id": "651ed762774d199481de9152",
     "__v": 0
 }
 Request method:	GET
-Request URI:	http://localhost:1337/api/v1/pse-payment/6518a282b15d7ac86c3d9349
+Request URI:	http://localhost:1337/api/v1/pse-payment/651ed762774d199481de9152
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=6518a282b15d7ac86c3d9349
+Path params:	id=651ed762774d199481de9152
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -60,23 +961,23 @@ Body:			<none>
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 288
-ETag: W/"120-bIAoT8kFXe2oU11nxak310+q8Ag"
-Date: Sat, 30 Sep 2023 22:34:44 GMT
+Content-Length: 282
+ETag: W/"11a-Ja7WOmH4iKM1YCsDpv9mYu6j9GQ"
+Date: Thu, 05 Oct 2023 15:33:56 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "status": "200",
+    "status": "OK",
     "message": "PSE payment request",
     "result": {
-        "_id": "6518a282b15d7ac86c3d9349",
-        "pseuserEmail": "bella.keebler@yahoo.com",
-        "psefullNameUser": "Miss Brandee Krajcik",
-        "psereference": "306279528",
-        "psereferencePse": "306279528",
-        "psecellphone": "117-743-7256",
-        "pseamount": 188651,
+        "_id": "651ed762774d199481de9152",
+        "pseuserEmail": "loree.homenick@hotmail.com",
+        "psefullNameUser": "Shonda Weber",
+        "psereference": "578961422",
+        "psereferencePse": "578961422",
+        "pseamount": 236652,
+        "psecellphone": "928-691-0342",
         "__v": 0
     }
 }
@@ -107,134 +1008,94 @@ Body:			<none>
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 2789
-ETag: W/"ae5-0CwaDx8CnkAP7CAoDnUBOGu00Bg"
-Date: Sat, 30 Sep 2023 22:34:45 GMT
+Content-Length: 1871
+ETag: W/"74f-XMAkgN25rYrAo2PiPHu0YaAoBe4"
+Date: Thu, 05 Oct 2023 15:33:56 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "status": "200",
+    "status": "OK",
     "message": "PSE payments request",
     "results": [
         {
-            "_id": "65185e610642165b525a4394",
-            "pseuserEmail": "USER4321@test.com",
+            "_id": "651c5ffb1d6049ea21c75b87",
+            "pseuserEmail": "user4321@test.com",
             "psefullNameUser": "USUARIO PSE PAYMENT 4321",
-            "psereference": "PSEO0000001",
-            "psereferencePse": "PSER00000001",
-            "psecellphone": "573225568899",
+            "psereference": "PSEO00001",
+            "psereferencePse": "PSER00001",
             "pseamount": 15000,
+            "psecellphone": "573225568899",
             "__v": 0
         },
         {
-            "_id": "6518a08eb15d7ac86c3d92f1",
-            "pseuserEmail": "isidro.harvey@gmail.com",
-            "psefullNameUser": "Terrence Jacobi",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "897-735-6150",
-            "pseamount": 602108,
+            "_id": "651c6192559968570651dcec",
+            "pseuserEmail": "user8615@test.com",
+            "psefullNameUser": "USUARIO PSE PAYMENT 8615",
+            "psereference": "PSEO25953",
+            "psereferencePse": "PSER56475",
+            "pseamount": 441734,
+            "psecellphone": "5710733312",
             "__v": 0
         },
         {
-            "_id": "6518a091b15d7ac86c3d92f6",
-            "pseuserEmail": "lynetta.labadie@yahoo.com",
-            "psefullNameUser": "Deidre Gibson",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "584-651-4417",
-            "pseamount": 142269,
+            "_id": "651c61de02dcc72eb67fae3f",
+            "pseuserEmail": "user2289@test.com",
+            "psefullNameUser": "USUARIO PSE PAYMENT 2289",
+            "psereference": "PSEO78663",
+            "psereferencePse": "PSER62339",
+            "pseamount": 684878,
+            "psecellphone": "5732603769",
             "__v": 0
         },
         {
-            "_id": "6518a093b15d7ac86c3d92fc",
-            "pseuserEmail": "wynona.rath@yahoo.com",
-            "psefullNameUser": "Dr. Jan Hand",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "(173) 442-4405",
-            "pseamount": 533223,
+            "_id": "651c626e5974ddf3d10cc2aa",
+            "pseuserEmail": "userpse7296@test.com",
+            "psefullNameUser": "USUARIO PSE",
+            "psereference": "PSEO246327",
+            "psereferencePse": "PSER164421",
+            "pseamount": 115199,
+            "psecellphone": "573292902472",
             "__v": 0
         },
         {
-            "_id": "6518a093b15d7ac86c3d9300",
-            "pseuserEmail": "tyron.okeefe@gmail.com",
-            "psefullNameUser": "Debbi Gulgowski",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "734-543-4335",
-            "pseamount": 498695,
+            "_id": "651dcaa3250bc8303f789ae1",
+            "pseuserEmail": "user7011@test.com",
+            "psefullNameUser": "USUARIO PSE PAYMENT 7011",
+            "psereference": "PSEO50459",
+            "psereferencePse": "PSER80419",
+            "pseamount": 907351,
+            "psecellphone": "5733860263",
             "__v": 0
         },
         {
-            "_id": "6518a19eb15d7ac86c3d9307",
-            "pseuserEmail": "colton.cummings@hotmail.com",
-            "psefullNameUser": "Roland Deckow",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "968.510.3828",
-            "pseamount": 523272,
+            "_id": "651dcad1c70d848affac2ff5",
+            "pseuserEmail": "user8251@test.com",
+            "psefullNameUser": "USUARIO PSE PAYMENT 8251",
+            "psereference": "PSEO64599",
+            "psereferencePse": "PSER16587",
+            "pseamount": 975876,
+            "psecellphone": "5717953704",
             "__v": 0
         },
         {
-            "_id": "6518a1a1b15d7ac86c3d9311",
-            "pseuserEmail": "myles.turner@yahoo.com",
-            "psefullNameUser": "Mohammad Sauer DDS",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "1-924-479-8511",
-            "pseamount": 271660,
+            "_id": "651ed494774d199481de913f",
+            "pseuserEmail": "wilbur.zemlak@hotmail.com",
+            "psefullNameUser": "Osvaldo Muller",
+            "psereference": "196237139",
+            "psereferencePse": "196237139",
+            "pseamount": 60704,
+            "psecellphone": "1-908-285-1496",
             "__v": 0
         },
         {
-            "_id": "6518a1a2b15d7ac86c3d9316",
-            "pseuserEmail": "kristen.considine@gmail.com",
-            "psefullNameUser": "Natasha Treutel",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "691.508.4249",
-            "pseamount": 239435,
-            "__v": 0
-        },
-        {
-            "_id": "6518a1d3b15d7ac86c3d932a",
-            "pseuserEmail": "micah.schoen@gmail.com",
-            "psefullNameUser": "Nora Parisian",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "864-361-4180",
-            "pseamount": 380766,
-            "__v": 0
-        },
-        {
-            "_id": "6518a1d6b15d7ac86c3d9335",
-            "pseuserEmail": "tyron.goyette@gmail.com",
-            "psefullNameUser": "Dr. Shavon Murray",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "501-760-8539",
-            "pseamount": 123938,
-            "__v": 0
-        },
-        {
-            "_id": "6518a1d6b15d7ac86c3d9339",
-            "pseuserEmail": "korey.brekke@gmail.com",
-            "psefullNameUser": "Daisy Mertz III",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "110-803-8155",
-            "pseamount": 142987,
-            "__v": 0
-        },
-        {
-            "_id": "6518a282b15d7ac86c3d9349",
-            "pseuserEmail": "bella.keebler@yahoo.com",
-            "psefullNameUser": "Miss Brandee Krajcik",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "117-743-7256",
-            "pseamount": 188651,
+            "_id": "651ed762774d199481de9152",
+            "pseuserEmail": "loree.homenick@hotmail.com",
+            "psefullNameUser": "Shonda Weber",
+            "psereference": "578961422",
+            "psereferencePse": "578961422",
+            "pseamount": 236652,
+            "psecellphone": "928-691-0342",
             "__v": 0
         }
     ]
@@ -242,134 +1103,94 @@ Keep-Alive: timeout=5
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 2789
-ETag: W/"ae5-0CwaDx8CnkAP7CAoDnUBOGu00Bg"
-Date: Sat, 30 Sep 2023 22:34:45 GMT
+Content-Length: 1871
+ETag: W/"74f-XMAkgN25rYrAo2PiPHu0YaAoBe4"
+Date: Thu, 05 Oct 2023 15:33:56 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "status": "200",
+    "status": "OK",
     "message": "PSE payments request",
     "results": [
         {
-            "_id": "65185e610642165b525a4394",
-            "pseuserEmail": "USER4321@test.com",
+            "_id": "651c5ffb1d6049ea21c75b87",
+            "pseuserEmail": "user4321@test.com",
             "psefullNameUser": "USUARIO PSE PAYMENT 4321",
-            "psereference": "PSEO0000001",
-            "psereferencePse": "PSER00000001",
-            "psecellphone": "573225568899",
+            "psereference": "PSEO00001",
+            "psereferencePse": "PSER00001",
             "pseamount": 15000,
+            "psecellphone": "573225568899",
             "__v": 0
         },
         {
-            "_id": "6518a08eb15d7ac86c3d92f1",
-            "pseuserEmail": "isidro.harvey@gmail.com",
-            "psefullNameUser": "Terrence Jacobi",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "897-735-6150",
-            "pseamount": 602108,
+            "_id": "651c6192559968570651dcec",
+            "pseuserEmail": "user8615@test.com",
+            "psefullNameUser": "USUARIO PSE PAYMENT 8615",
+            "psereference": "PSEO25953",
+            "psereferencePse": "PSER56475",
+            "pseamount": 441734,
+            "psecellphone": "5710733312",
             "__v": 0
         },
         {
-            "_id": "6518a091b15d7ac86c3d92f6",
-            "pseuserEmail": "lynetta.labadie@yahoo.com",
-            "psefullNameUser": "Deidre Gibson",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "584-651-4417",
-            "pseamount": 142269,
+            "_id": "651c61de02dcc72eb67fae3f",
+            "pseuserEmail": "user2289@test.com",
+            "psefullNameUser": "USUARIO PSE PAYMENT 2289",
+            "psereference": "PSEO78663",
+            "psereferencePse": "PSER62339",
+            "pseamount": 684878,
+            "psecellphone": "5732603769",
             "__v": 0
         },
         {
-            "_id": "6518a093b15d7ac86c3d92fc",
-            "pseuserEmail": "wynona.rath@yahoo.com",
-            "psefullNameUser": "Dr. Jan Hand",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "(173) 442-4405",
-            "pseamount": 533223,
+            "_id": "651c626e5974ddf3d10cc2aa",
+            "pseuserEmail": "userpse7296@test.com",
+            "psefullNameUser": "USUARIO PSE",
+            "psereference": "PSEO246327",
+            "psereferencePse": "PSER164421",
+            "pseamount": 115199,
+            "psecellphone": "573292902472",
             "__v": 0
         },
         {
-            "_id": "6518a093b15d7ac86c3d9300",
-            "pseuserEmail": "tyron.okeefe@gmail.com",
-            "psefullNameUser": "Debbi Gulgowski",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "734-543-4335",
-            "pseamount": 498695,
+            "_id": "651dcaa3250bc8303f789ae1",
+            "pseuserEmail": "user7011@test.com",
+            "psefullNameUser": "USUARIO PSE PAYMENT 7011",
+            "psereference": "PSEO50459",
+            "psereferencePse": "PSER80419",
+            "pseamount": 907351,
+            "psecellphone": "5733860263",
             "__v": 0
         },
         {
-            "_id": "6518a19eb15d7ac86c3d9307",
-            "pseuserEmail": "colton.cummings@hotmail.com",
-            "psefullNameUser": "Roland Deckow",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "968.510.3828",
-            "pseamount": 523272,
+            "_id": "651dcad1c70d848affac2ff5",
+            "pseuserEmail": "user8251@test.com",
+            "psefullNameUser": "USUARIO PSE PAYMENT 8251",
+            "psereference": "PSEO64599",
+            "psereferencePse": "PSER16587",
+            "pseamount": 975876,
+            "psecellphone": "5717953704",
             "__v": 0
         },
         {
-            "_id": "6518a1a1b15d7ac86c3d9311",
-            "pseuserEmail": "myles.turner@yahoo.com",
-            "psefullNameUser": "Mohammad Sauer DDS",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "1-924-479-8511",
-            "pseamount": 271660,
+            "_id": "651ed494774d199481de913f",
+            "pseuserEmail": "wilbur.zemlak@hotmail.com",
+            "psefullNameUser": "Osvaldo Muller",
+            "psereference": "196237139",
+            "psereferencePse": "196237139",
+            "pseamount": 60704,
+            "psecellphone": "1-908-285-1496",
             "__v": 0
         },
         {
-            "_id": "6518a1a2b15d7ac86c3d9316",
-            "pseuserEmail": "kristen.considine@gmail.com",
-            "psefullNameUser": "Natasha Treutel",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "691.508.4249",
-            "pseamount": 239435,
-            "__v": 0
-        },
-        {
-            "_id": "6518a1d3b15d7ac86c3d932a",
-            "pseuserEmail": "micah.schoen@gmail.com",
-            "psefullNameUser": "Nora Parisian",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "864-361-4180",
-            "pseamount": 380766,
-            "__v": 0
-        },
-        {
-            "_id": "6518a1d6b15d7ac86c3d9335",
-            "pseuserEmail": "tyron.goyette@gmail.com",
-            "psefullNameUser": "Dr. Shavon Murray",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "501-760-8539",
-            "pseamount": 123938,
-            "__v": 0
-        },
-        {
-            "_id": "6518a1d6b15d7ac86c3d9339",
-            "pseuserEmail": "korey.brekke@gmail.com",
-            "psefullNameUser": "Daisy Mertz III",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "110-803-8155",
-            "pseamount": 142987,
-            "__v": 0
-        },
-        {
-            "_id": "6518a282b15d7ac86c3d9349",
-            "pseuserEmail": "bella.keebler@yahoo.com",
-            "psefullNameUser": "Miss Brandee Krajcik",
-            "psereference": "306279528",
-            "psereferencePse": "306279528",
-            "psecellphone": "117-743-7256",
-            "pseamount": 188651,
+            "_id": "651ed762774d199481de9152",
+            "pseuserEmail": "loree.homenick@hotmail.com",
+            "psefullNameUser": "Shonda Weber",
+            "psereference": "578961422",
+            "psereferencePse": "578961422",
+            "pseamount": 236652,
+            "psecellphone": "928-691-0342",
             "__v": 0
         }
     ]
@@ -387,12 +1208,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-    "pseamount": 142362,
-    "psefullNameUser": "Mr. Genna Breitenberg",
-    "psecellphone": "1-835-412-5916"
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "tristan.koss@gmail.com",
+    "pseamount": 411213,
+    "psefullNameUser": "Anton Zemlak Sr.",
+    "psecellphone": "653-551-4990"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
@@ -407,12 +1228,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-    "pseamount": 142362,
-    "psefullNameUser": "Mr. Genna Breitenberg",
-    "psecellphone": "1-835-412-5916"
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "tristan.koss@gmail.com",
+    "pseamount": 411213,
+    "psefullNameUser": "Anton Zemlak Sr.",
+    "psecellphone": "653-551-4990"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
@@ -427,69 +1248,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-    "pseamount": 142362,
-    "psefullNameUser": "Mr. Genna Breitenberg",
-    "psecellphone": "1-835-412-5916"
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 238
-ETag: W/"ee-SLlrYXdDAQdTPPbuOfBaLfaGCXE"
-Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-    "psefullNameUser": "Mr. Genna Breitenberg",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "1-835-412-5916",
-    "pseamount": 142362,
-    "_id": "6518a285b15d7ac86c3d9355",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 238
-ETag: W/"ee-SLlrYXdDAQdTPPbuOfBaLfaGCXE"
-Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-    "psefullNameUser": "Mr. Genna Breitenberg",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "1-835-412-5916",
-    "pseamount": 142362,
-    "_id": "6518a285b15d7ac86c3d9355",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 238
-ETag: W/"ee-SLlrYXdDAQdTPPbuOfBaLfaGCXE"
-Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-    "psefullNameUser": "Mr. Genna Breitenberg",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "1-835-412-5916",
-    "pseamount": 142362,
-    "_id": "6518a285b15d7ac86c3d9355",
-    "__v": 0
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "tristan.koss@gmail.com",
+    "pseamount": 411213,
+    "psefullNameUser": "Anton Zemlak Sr.",
+    "psecellphone": "653-551-4990"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
@@ -504,12 +1268,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "pseamount": 108568,
-    "psefullNameUser": "Claudio Dooley II",
-    "psecellphone": "230.464.1047"
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "teena.oconner@hotmail.com",
+    "pseamount": 153213,
+    "psefullNameUser": "Joan Pfannerstill",
+    "psecellphone": "988-003-4061"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
@@ -524,12 +1288,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "pseamount": 108568,
-    "psefullNameUser": "Claudio Dooley II",
-    "psecellphone": "230.464.1047"
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "teena.oconner@hotmail.com",
+    "pseamount": 153213,
+    "psefullNameUser": "Joan Pfannerstill",
+    "psecellphone": "988-003-4061"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
@@ -544,12 +1308,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "pseamount": 108568,
-    "psefullNameUser": "Claudio Dooley II",
-    "psecellphone": "230.464.1047"
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "teena.oconner@hotmail.com",
+    "pseamount": 153213,
+    "psefullNameUser": "Joan Pfannerstill",
+    "psecellphone": "988-003-4061"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
@@ -564,252 +1328,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "pseamount": 108568,
-    "psefullNameUser": "Claudio Dooley II",
-    "psecellphone": "230.464.1047"
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 228
-ETag: W/"e4-q8FHHDU+xzH3mMxP4Q8Ub7Ko3QQ"
-Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "psefullNameUser": "Claudio Dooley II",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "230.464.1047",
-    "pseamount": 108568,
-    "_id": "6518a285b15d7ac86c3d9359",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 228
-ETag: W/"e4-q8FHHDU+xzH3mMxP4Q8Ub7Ko3QQ"
-Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "psefullNameUser": "Claudio Dooley II",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "230.464.1047",
-    "pseamount": 108568,
-    "_id": "6518a285b15d7ac86c3d9359",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 228
-ETag: W/"e4-q8FHHDU+xzH3mMxP4Q8Ub7Ko3QQ"
-Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "psefullNameUser": "Claudio Dooley II",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "230.464.1047",
-    "pseamount": 108568,
-    "_id": "6518a285b15d7ac86c3d9359",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 228
-ETag: W/"e4-q8FHHDU+xzH3mMxP4Q8Ub7Ko3QQ"
-Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "psefullNameUser": "Claudio Dooley II",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "230.464.1047",
-    "pseamount": 108568,
-    "_id": "6518a285b15d7ac86c3d9359",
-    "__v": 0
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/pse-payment/6518a285b15d7ac86c3d9359
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6518a285b15d7ac86c3d9359
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "corie.gibson@gmail.com",
-    "pseamount": 567504,
-    "psefullNameUser": "Heriberto Howe",
-    "psecellphone": "628-619-3539"
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/pse-payment/6518a285b15d7ac86c3d9359
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6518a285b15d7ac86c3d9359
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "corie.gibson@gmail.com",
-    "pseamount": 567504,
-    "psefullNameUser": "Heriberto Howe",
-    "psecellphone": "628-619-3539"
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/pse-payment/6518a285b15d7ac86c3d9359
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6518a285b15d7ac86c3d9359
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "corie.gibson@gmail.com",
-    "pseamount": 567504,
-    "psefullNameUser": "Heriberto Howe",
-    "psecellphone": "628-619-3539"
-}
-Request method:	PUT
-Request URI:	http://localhost:1337/api/v1/pse-payment/6518a285b15d7ac86c3d9359
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6518a285b15d7ac86c3d9359
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "corie.gibson@gmail.com",
-    "pseamount": 567504,
-    "psefullNameUser": "Heriberto Howe",
-    "psecellphone": "628-619-3539"
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 201
-ETag: W/"c9-QTsBtbkOnD7ZtpCsiKvFp2Nxi54"
-Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-    "message": "PSE payment updated successfull",
-    "idUpdated": "6518a285b15d7ac86c3d9359",
-    "result": {
-        "acknowledged": true,
-        "modifiedCount": 1,
-        "upsertedId": null,
-        "upsertedCount": 0,
-        "matchedCount": 1
-    }
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 201
-ETag: W/"c9-QTsBtbkOnD7ZtpCsiKvFp2Nxi54"
-Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-    "message": "PSE payment updated successfull",
-    "idUpdated": "6518a285b15d7ac86c3d9359",
-    "result": {
-        "acknowledged": true,
-        "modifiedCount": 1,
-        "upsertedId": null,
-        "upsertedCount": 0,
-        "matchedCount": 1
-    }
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 201
-ETag: W/"c9-QTsBtbkOnD7ZtpCsiKvFp2Nxi54"
-Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-    "message": "PSE payment updated successfull",
-    "idUpdated": "6518a285b15d7ac86c3d9359",
-    "result": {
-        "acknowledged": true,
-        "modifiedCount": 1,
-        "upsertedId": null,
-        "upsertedCount": 0,
-        "matchedCount": 1
-    }
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 201
-ETag: W/"c9-QTsBtbkOnD7ZtpCsiKvFp2Nxi54"
-Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-    "message": "PSE payment updated successfull",
-    "idUpdated": "6518a285b15d7ac86c3d9359",
-    "result": {
-        "acknowledged": true,
-        "modifiedCount": 1,
-        "upsertedId": null,
-        "upsertedCount": 0,
-        "matchedCount": 1
-    }
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "teena.oconner@hotmail.com",
+    "pseamount": 153213,
+    "psefullNameUser": "Joan Pfannerstill",
+    "psecellphone": "988-003-4061"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
@@ -824,12 +1348,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "pseamount": 595949,
-    "psefullNameUser": "Normand Wiza",
-    "psecellphone": "1-206-373-6738"
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "sidney.moen@gmail.com",
+    "pseamount": 65323,
+    "psefullNameUser": "Clifford Green",
+    "psecellphone": "420-174-4466"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
@@ -844,12 +1368,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "pseamount": 595949,
-    "psefullNameUser": "Normand Wiza",
-    "psecellphone": "1-206-373-6738"
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "sidney.moen@gmail.com",
+    "pseamount": 65323,
+    "psefullNameUser": "Clifford Green",
+    "psecellphone": "420-174-4466"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
@@ -864,12 +1388,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "pseamount": 595949,
-    "psefullNameUser": "Normand Wiza",
-    "psecellphone": "1-206-373-6738"
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "sidney.moen@gmail.com",
+    "pseamount": 65323,
+    "psefullNameUser": "Clifford Green",
+    "psecellphone": "420-174-4466"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
@@ -884,12 +1408,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "pseamount": 595949,
-    "psefullNameUser": "Normand Wiza",
-    "psecellphone": "1-206-373-6738"
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "sidney.moen@gmail.com",
+    "pseamount": 65323,
+    "psefullNameUser": "Clifford Green",
+    "psecellphone": "420-174-4466"
 }
 Request method:	POST
 Request URI:	http://localhost:1337/api/v1/pse-payment
@@ -904,237 +1428,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "pseamount": 595949,
-    "psefullNameUser": "Normand Wiza",
-    "psecellphone": "1-206-373-6738"
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 223
-ETag: W/"df-spHhXAJ71gBkHKhz9uuFpImwaGQ"
-Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "psefullNameUser": "Normand Wiza",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "1-206-373-6738",
-    "pseamount": 595949,
-    "_id": "6518a286b15d7ac86c3d9361",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 223
-ETag: W/"df-spHhXAJ71gBkHKhz9uuFpImwaGQ"
-Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "psefullNameUser": "Normand Wiza",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "1-206-373-6738",
-    "pseamount": 595949,
-    "_id": "6518a286b15d7ac86c3d9361",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 223
-ETag: W/"df-spHhXAJ71gBkHKhz9uuFpImwaGQ"
-Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "psefullNameUser": "Normand Wiza",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "1-206-373-6738",
-    "pseamount": 595949,
-    "_id": "6518a286b15d7ac86c3d9361",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 223
-ETag: W/"df-spHhXAJ71gBkHKhz9uuFpImwaGQ"
-Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "psefullNameUser": "Normand Wiza",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "1-206-373-6738",
-    "pseamount": 595949,
-    "_id": "6518a286b15d7ac86c3d9361",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 223
-ETag: W/"df-spHhXAJ71gBkHKhz9uuFpImwaGQ"
-Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "psefullNameUser": "Normand Wiza",
-    "psereference": "306279528",
-    "psereferencePse": "306279528",
-    "psecellphone": "1-206-373-6738",
-    "pseamount": 595949,
-    "_id": "6518a286b15d7ac86c3d9361",
-    "__v": 0
-}
-Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/pse-payment/6518a286b15d7ac86c3d9361
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6518a286b15d7ac86c3d9361
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/pse-payment/6518a286b15d7ac86c3d9361
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6518a286b15d7ac86c3d9361
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/pse-payment/6518a286b15d7ac86c3d9361
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6518a286b15d7ac86c3d9361
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/pse-payment/6518a286b15d7ac86c3d9361
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6518a286b15d7ac86c3d9361
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-Request URI:	http://localhost:1337/api/v1/pse-payment/6518a286b15d7ac86c3d9361
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=6518a286b15d7ac86c3d9361
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 78
-ETag: W/"4e-Af8yqi6GEqk3sMWo9nMoZirsi0o"
-Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-    "message": "PSE payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 78
-ETag: W/"4e-Af8yqi6GEqk3sMWo9nMoZirsi0o"
-Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-    "message": "PSE payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 78
-ETag: W/"4e-Af8yqi6GEqk3sMWo9nMoZirsi0o"
-Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-    "message": "PSE payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 78
-ETag: W/"4e-Af8yqi6GEqk3sMWo9nMoZirsi0o"
-Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-    "message": "PSE payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 78
-ETag: W/"4e-Af8yqi6GEqk3sMWo9nMoZirsi0o"
-Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-    "message": "PSE payment deleted successfull",
-    "items_deleted": 1
+    "psereference": "578961422",
+    "psereferencePse": "578961422",
+    "pseuserEmail": "sidney.moen@gmail.com",
+    "pseamount": 65323,
+    "psefullNameUser": "Clifford Green",
+    "psecellphone": "420-174-4466"
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

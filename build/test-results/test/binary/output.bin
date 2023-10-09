@@ -11,163 +11,183 @@
 Multiparts:		<none>
 Body:
 {
-     "ccreference": "306279528",
-#    "ccName": "Humberto O'Reilly",
-*    "ccNumber": "6759-3404-3434-6181-38",
+     "ccreference": "578961422",
+$    "ccName": "Britt McKenzie Sr.",
+$    "ccNumber": "5019292767102115",
     "cclevel": "VISA",
-    "ccMonthExp": 5,
-    "ccYearExp": 47,
-    "ccSecurityCode": 223,
-3    "ccuserEmail": "lakiesha.hagenes@hotmail.com",
-    "ccDues": "18",
-    "ccDate": "30/12/2023",
-    "ccamount": "261070",
-"    "cccellphone": "606.293.3947"
+    "ccMonthExp": 9,
+    "ccYearExp": 24,
+    "ccSecurityCode": 377,
+.    "ccuserEmail": "william.davis@gmail.com",
+    "ccDues": "35",
+    "ccPayDate": "2023-12-30",
+    "ccamount": "293764",
+"    "cccellphone": "244.930.0345"
 }
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-/    "pseuserEmail": "bella.keebler@yahoo.com",
-    "pseamount": 188651,
-/    "psefullNameUser": "Miss Brandee Krajcik",
-#    "psecellphone": "117-743-7256"
-}
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+2    "pseuserEmail": "loree.homenick@hotmail.com",
+    "pseamount": 236652,
+'    "psefullNameUser": "Shonda Weber",
+#    "psecellphone": "928-691-0342"
+}
+Request method:	POST
+7Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+"    "cashreference": "578961422",
+0    "cashuserEmail": "mary.macgyver@yahoo.com",
+    "cashamount": 425896,
+"    "cashcollectorCash": "Nequi",
+&    "cashcellphone": "(168) 666-1806"
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 193
+)ETag: W/"c1-31DwOhHEh+4FN/HzEZoc78YbS2s"
+$Date: Thu, 05 Oct 2023 15:33:55 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+"    "cashreference": "578961422",
+0    "cashuserEmail": "mary.macgyver@yahoo.com",
+"    "cashcollectorCash": "Nequi",
+    "cashamount": 425896,
+'    "cashcellphone": "(168) 666-1806",
+'    "_id": "651ed762774d199481de9154",
+    "__v": 0
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 225
+)ETag: W/"e1-SdOobr/VtaCEpTmQjjnecMWRwMw"
+$Date: Thu, 05 Oct 2023 15:33:55 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+2    "pseuserEmail": "loree.homenick@hotmail.com",
+'    "psefullNameUser": "Shonda Weber",
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+    "pseamount": 236652,
+$    "psecellphone": "928-691-0342",
+'    "_id": "651ed762774d199481de9152",
+    "__v": 0
+}
 HTTP/1.1 201 Created
 X-Powered-By: Express
 .Content-Type: application/json; charset=utf-8
-Content-Length: 327
-*ETag: W/"147-hCOyViyKOycH/XgWILf4IaaDrjc"
-$Date: Sat, 30 Sep 2023 22:34:42 GMT
+Content-Length: 322
+*ETag: W/"142-KtPd6rPCZd+i9Z3+Y41i9bTjMy4"
+$Date: Thu, 05 Oct 2023 15:33:55 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-     "ccreference": "306279528",
-#    "ccName": "Humberto O'Reilly",
-*    "ccNumber": "6759-3404-3434-6181-38",
+     "ccreference": "578961422",
+$    "ccName": "Britt McKenzie Sr.",
+$    "ccNumber": "5019292767102115",
     "cclevel": "VISA",
-    "ccMonthExp": 5,
-    "ccYearExp": 47,
-    "ccDues": 18,
-    "ccSecurityCode": 223,
-    "ccDate": "30/12/2023",
-3    "ccuserEmail": "lakiesha.hagenes@hotmail.com",
-    "ccamount": 261070,
-#    "cccellphone": "606.293.3947",
-'    "_id": "6518a282b15d7ac86c3d9347",
+    "ccMonthExp": 9,
+    "ccYearExp": 24,
+    "ccDues": 35,
+    "ccSecurityCode": 377,
+    "ccPayDate": "2023-12-30",
+.    "ccuserEmail": "william.davis@gmail.com",
+    "ccamount": "293764",
+#    "cccellphone": "244.930.0345",
+'    "_id": "651ed762774d199481de9150",
     "__v": 0
 }
-Request method:	POST
-7Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-"    "cashreference": "306279528",
-1    "cashuserEmail": "joseph.lebsack@yahoo.com",
-    "cashamount": 279338,
-#    "cashcollectorCash": "Efecty",
-&    "cashcellphone": "1-767-841-8434"
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 230
-)ETag: W/"e6-p5ZPrONVfpMbCDRbmxS6czXRD7w"
-$Date: Sat, 30 Sep 2023 22:34:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-/    "pseuserEmail": "bella.keebler@yahoo.com",
-/    "psefullNameUser": "Miss Brandee Krajcik",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-$    "psecellphone": "117-743-7256",
-    "pseamount": 188651,
-'    "_id": "6518a282b15d7ac86c3d9349",
-    "__v": 0
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:42 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
-}
+Request method:	GET
+ORequest URI:	http://localhost:1337/api/v1/pse-payment/651ed762774d199481de9152
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+)Path params:	id=651ed762774d199481de9152
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 Request method:	PUT
-WRequest URI:	http://localhost:1337/api/v1/credit-card-payment/6518a282b15d7ac86c3d9347
+WRequest URI:	http://localhost:1337/api/v1/credit-card-payment/651ed762774d199481de9150
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-)Path params:	id=6518a282b15d7ac86c3d9347
+)Path params:	id=651ed762774d199481de9150
 Headers:		Accept=*/*
 "				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-     "ccreference": "306279528",
-$    "ccName": "Victoria Aufderhar",
-'    "ccNumber": "3528-3839-2390-3675",
+     "ccreference": "578961422",
+&    "ccName": "Miss Carmelo Bartell",
+!    "ccNumber": "4108656811319",
     "cclevel": "VISA",
-    "ccMonthExp": 8,
-    "ccYearExp": 35,
-    "ccSecurityCode": 978,
-.    "ccuserEmail": "casey.corkery@yahoo.com",
-    "ccDues": "12",
-    "ccDate": "30/12/2023",
-    "ccamount": "533212",
-$    "cccellphone": "(265) 471-8387"
+    "ccMonthExp": 4,
+    "ccYearExp": 33,
+    "ccSecurityCode": 861,
+)    "ccuserEmail": "yuk.hane@yahoo.com",
+    "ccDues": "22",
+    "ccPayDate": "2023-12-30",
+    "ccamount": "137890",
+$    "cccellphone": "(227) 800-2809"
 }
+Request method:	DELETE
+PRequest URI:	http://localhost:1337/api/v1/cash-payment/651ed762774d199481de9154
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+)Path params:	id=651ed762774d199481de9154
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 HTTP/1.1 201 Created
 X-Powered-By: Express
 .Content-Type: application/json; charset=utf-8
-Content-Length: 209
-)ETag: W/"d1-CAlJeD1NkO10bhBNmaeH6jlf7Xs"
-$Date: Sat, 30 Sep 2023 22:34:43 GMT
+Content-Length: 208
+)ETag: W/"d0-gOSP1wciCOtB/MGd70Xc01P9SEk"
+$Date: Thu, 05 Oct 2023 15:33:56 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "status": "201",
+    "status": "OK",
 :    "message": "Credit card payment updated successfull",
--    "idUpdated": "6518a282b15d7ac86c3d9347",
+-    "idUpdated": "651ed762774d199481de9150",
     "result": {
         "acknowledged": true,
         "modifiedCount": 1,
@@ -176,371 +196,69 @@
         "matchedCount": 1
     }
 }
-Request method:	GET
-ORequest URI:	http://localhost:1337/api/v1/pse-payment/6518a282b15d7ac86c3d9349
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a282b15d7ac86c3d9349
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-?Request URI:	http://localhost:1337/api/v1/credit-card-payments
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-?Request URI:	http://localhost:1337/api/v1/credit-card-payments
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 288
-*ETag: W/"120-bIAoT8kFXe2oU11nxak310+q8Ag"
-$Date: Sat, 30 Sep 2023 22:34:44 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "200",
-&    "message": "PSE payment request",
-    "result": {
-+        "_id": "6518a282b15d7ac86c3d9349",
-3        "pseuserEmail": "bella.keebler@yahoo.com",
-3        "psefullNameUser": "Miss Brandee Krajcik",
-%        "psereference": "306279528",
-(        "psereferencePse": "306279528",
-(        "psecellphone": "117-743-7256",
-        "pseamount": 188651,
-        "__v": 0
-    }
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 2618
-*ETag: W/"a3a-EbLBkGh1Mb3COiXsmFsjhANpnx0"
-$Date: Sat, 30 Sep 2023 22:34:44 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "200",
-/    "message": "Credit card payments request",
-    "results": [
-
-        {
-/            "_id": "651872a009d12dc5e940555a",
-)            "ccreference": "CC00000001",
-/            "ccName": "USER CREDIT CARD 1133",
-/            "ccNumber": "4111 5555 8888 6666",
-            "cclevel": "VISA",
-            "ccMonthExp": 8,
-            "ccYearExp": 25,
-            "ccDues": 12,
-#            "ccSecurityCode": 123,
-$            "ccDate": "23/09/2024",
-0            "ccuserEmail": "USER1133@test.com",
-            "ccamount": 12500,
-+            "cccellphone": "573256589987",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a19eb15d7ac86c3d9309",
-(            "ccreference": "306279528",
-+            "ccName": "Jadwiga Bahringer",
-,            "ccNumber": "6771432216647817",
-            "cclevel": "VISA",
-            "ccMonthExp": 9,
-            "ccYearExp": 31,
-            "ccDues": 2,
-#            "ccSecurityCode": 685,
-$            "ccDate": "30/12/2023",
-8            "ccuserEmail": "alysia.bernhard@yahoo.com",
-             "ccamount": 172982,
--            "cccellphone": "1-244-108-6766",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a1a2b15d7ac86c3d9318",
-(            "ccreference": "306279528",
-*            "ccName": "Edythe Armstrong",
-/            "ccNumber": "6771-8960-6252-3639",
-            "cclevel": "VISA",
-            "ccMonthExp": 4,
-            "ccYearExp": 46,
-            "ccDues": 33,
-#            "ccSecurityCode": 280,
-$            "ccDate": "30/12/2023",
-5            "ccuserEmail": "bunny.hammes@yahoo.com",
-             "ccamount": 332686,
--            "cccellphone": "(583) 365-6574",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a1a3b15d7ac86c3d931d",
-(            "ccreference": "306279528",
-%            "ccName": "Jarvis Koch",
-/            "ccNumber": "6771-8934-1174-5419",
-            "cclevel": "VISA",
-            "ccMonthExp": 8,
-            "ccYearExp": 25,
-            "ccDues": 34,
-#            "ccSecurityCode": 192,
-$            "ccDate": "30/12/2023",
-9            "ccuserEmail": "lyndia.bahringer@yahoo.com",
-             "ccamount": 395010,
-+            "cccellphone": "813-906-7807",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a1d3b15d7ac86c3d9328",
-(            "ccreference": "306279528",
-%            "ccName": "Malia Klein",
--            "ccNumber": "3499-338946-19040",
-            "cclevel": "VISA",
-            "ccMonthExp": 1,
-            "ccYearExp": 38,
-            "ccDues": 31,
-#            "ccSecurityCode": 346,
-$            "ccDate": "30/12/2023",
-5            "ccuserEmail": "roger.will@hotmail.com",
-             "ccamount": 650395,
--            "cccellphone": "1-629-197-8221",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a1d6b15d7ac86c3d9333",
-(            "ccreference": "306279528",
-%            "ccName": "Edda Dooley",
-,            "ccNumber": "6706748700955709",
-            "cclevel": "VISA",
-            "ccMonthExp": 7,
-            "ccYearExp": 29,
-            "ccDues": 13,
-#            "ccSecurityCode": 664,
-$            "ccDate": "30/12/2023",
-4            "ccuserEmail": "kyong.blick@gmail.com",
-             "ccamount": 407818,
--            "cccellphone": "(536) 227-7810",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a1d6b15d7ac86c3d9337",
-(            "ccreference": "306279528",
-)            "ccName": "Janessa Goldner",
-3            "ccNumber": "6767-1527-1167-7439-743",
-            "cclevel": "VISA",
-            "ccMonthExp": 9,
-            "ccYearExp": 30,
-            "ccDues": 2,
-#            "ccSecurityCode": 899,
-$            "ccDate": "30/12/2023",
-:            "ccuserEmail": "carlton.rosenbaum@gmail.com",
-             "ccamount": 275030,
--            "cccellphone": "1-763-014-2414",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a282b15d7ac86c3d9347",
-(            "ccreference": "306279528",
-,            "ccName": "Victoria Aufderhar",
-/            "ccNumber": "3528-3839-2390-3675",
-            "cclevel": "VISA",
-            "ccMonthExp": 8,
-            "ccYearExp": 35,
-            "ccDues": 12,
-#            "ccSecurityCode": 978,
-$            "ccDate": "30/12/2023",
-6            "ccuserEmail": "casey.corkery@yahoo.com",
-             "ccamount": 533212,
--            "cccellphone": "(265) 471-8387",
-            "__v": 0
-
-        }
-    ]
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 2618
-*ETag: W/"a3a-EbLBkGh1Mb3COiXsmFsjhANpnx0"
-$Date: Sat, 30 Sep 2023 22:34:44 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "200",
-/    "message": "Credit card payments request",
-    "results": [
-
-        {
-/            "_id": "651872a009d12dc5e940555a",
-)            "ccreference": "CC00000001",
-/            "ccName": "USER CREDIT CARD 1133",
-/            "ccNumber": "4111 5555 8888 6666",
-            "cclevel": "VISA",
-            "ccMonthExp": 8,
-            "ccYearExp": 25,
-            "ccDues": 12,
-#            "ccSecurityCode": 123,
-$            "ccDate": "23/09/2024",
-0            "ccuserEmail": "USER1133@test.com",
-            "ccamount": 12500,
-+            "cccellphone": "573256589987",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a19eb15d7ac86c3d9309",
-(            "ccreference": "306279528",
-+            "ccName": "Jadwiga Bahringer",
-,            "ccNumber": "6771432216647817",
-            "cclevel": "VISA",
-            "ccMonthExp": 9,
-            "ccYearExp": 31,
-            "ccDues": 2,
-#            "ccSecurityCode": 685,
-$            "ccDate": "30/12/2023",
-8            "ccuserEmail": "alysia.bernhard@yahoo.com",
-             "ccamount": 172982,
--            "cccellphone": "1-244-108-6766",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a1a2b15d7ac86c3d9318",
-(            "ccreference": "306279528",
-*            "ccName": "Edythe Armstrong",
-/            "ccNumber": "6771-8960-6252-3639",
-            "cclevel": "VISA",
-            "ccMonthExp": 4,
-            "ccYearExp": 46,
-            "ccDues": 33,
-#            "ccSecurityCode": 280,
-$            "ccDate": "30/12/2023",
-5            "ccuserEmail": "bunny.hammes@yahoo.com",
-             "ccamount": 332686,
--            "cccellphone": "(583) 365-6574",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a1a3b15d7ac86c3d931d",
-(            "ccreference": "306279528",
-%            "ccName": "Jarvis Koch",
-/            "ccNumber": "6771-8934-1174-5419",
-            "cclevel": "VISA",
-            "ccMonthExp": 8,
-            "ccYearExp": 25,
-            "ccDues": 34,
-#            "ccSecurityCode": 192,
-$            "ccDate": "30/12/2023",
-9            "ccuserEmail": "lyndia.bahringer@yahoo.com",
-             "ccamount": 395010,
-+            "cccellphone": "813-906-7807",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a1d3b15d7ac86c3d9328",
-(            "ccreference": "306279528",
-%            "ccName": "Malia Klein",
--            "ccNumber": "3499-338946-19040",
-            "cclevel": "VISA",
-            "ccMonthExp": 1,
-            "ccYearExp": 38,
-            "ccDues": 31,
-#            "ccSecurityCode": 346,
-$            "ccDate": "30/12/2023",
-5            "ccuserEmail": "roger.will@hotmail.com",
-             "ccamount": 650395,
--            "cccellphone": "1-629-197-8221",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a1d6b15d7ac86c3d9333",
-(            "ccreference": "306279528",
-%            "ccName": "Edda Dooley",
-,            "ccNumber": "6706748700955709",
-            "cclevel": "VISA",
-            "ccMonthExp": 7,
-            "ccYearExp": 29,
-            "ccDues": 13,
-#            "ccSecurityCode": 664,
-$            "ccDate": "30/12/2023",
-4            "ccuserEmail": "kyong.blick@gmail.com",
-             "ccamount": 407818,
--            "cccellphone": "(536) 227-7810",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a1d6b15d7ac86c3d9337",
-(            "ccreference": "306279528",
-)            "ccName": "Janessa Goldner",
-3            "ccNumber": "6767-1527-1167-7439-743",
-            "cclevel": "VISA",
-            "ccMonthExp": 9,
-            "ccYearExp": 30,
-            "ccDues": 2,
-#            "ccSecurityCode": 899,
-$            "ccDate": "30/12/2023",
-:            "ccuserEmail": "carlton.rosenbaum@gmail.com",
-             "ccamount": 275030,
--            "cccellphone": "1-763-014-2414",
-            "__v": 0
-        },
-
-        {
-/            "_id": "6518a282b15d7ac86c3d9347",
-(            "ccreference": "306279528",
-,            "ccName": "Victoria Aufderhar",
-/            "ccNumber": "3528-3839-2390-3675",
-            "cclevel": "VISA",
-            "ccMonthExp": 8,
-            "ccYearExp": 35,
-            "ccDues": 12,
-#            "ccSecurityCode": 978,
-$            "ccDate": "30/12/2023",
-6            "ccuserEmail": "casey.corkery@yahoo.com",
-             "ccamount": 533212,
--            "cccellphone": "(265) 471-8387",
-            "__v": 0
-
-        }
-    ]
-}
-Request method:	POST
->Request URI:	http://localhost:1337/api/v1/credit-card-payment
+HTTP/1.1 200 OK
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 282
+*ETag: W/"11a-Ja7WOmH4iKM1YCsDpv9mYu6j9GQ"
+$Date: Thu, 05 Oct 2023 15:33:56 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "OK",
+&    "message": "PSE payment request",
+    "result": {
++        "_id": "651ed762774d199481de9152",
+6        "pseuserEmail": "loree.homenick@hotmail.com",
++        "psefullNameUser": "Shonda Weber",
+%        "psereference": "578961422",
+(        "psereferencePse": "578961422",
+        "pseamount": 236652,
+(        "psecellphone": "928-691-0342",
+        "__v": 0
+    }
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 78
+)ETag: W/"4e-cEfuziR6MsTpAeeaQxCQ2WSbdGE"
+$Date: Thu, 05 Oct 2023 15:33:56 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "OK",
+3    "message": "Cash payment deleted successfull",
+    "items_deleted": 1
+}
+Request method:	GET
+8Request URI:	http://localhost:1337/api/v1/cash-payments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+8Request URI:	http://localhost:1337/api/v1/cash-payments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+?Request URI:	http://localhost:1337/api/v1/credit-card-payments
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -550,23 +268,9 @@
 "				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-     "ccreference": "306279528",
-    "ccName": "Marylee Zieme",
-'    "ccNumber": "6007-2201-4615-6587",
-    "cclevel": "VISA",
-    "ccMonthExp": 1,
-    "ccYearExp": 33,
-    "ccSecurityCode": 623,
--    "ccuserEmail": "dion.lesch@hotmail.com",
-    "ccDues": "33",
-    "ccDate": "30/12/2023",
-    "ccamount": "525101",
-$    "cccellphone": "1-074-928-8403"
-}
-Request method:	POST
->Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Body:			<none>
+Request method:	GET
+?Request URI:	http://localhost:1337/api/v1/credit-card-payments
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -576,122 +280,7 @@
 "				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-     "ccreference": "306279528",
-    "ccName": "Marylee Zieme",
-'    "ccNumber": "6007-2201-4615-6587",
-    "cclevel": "VISA",
-    "ccMonthExp": 1,
-    "ccYearExp": 33,
-    "ccSecurityCode": 623,
--    "ccuserEmail": "dion.lesch@hotmail.com",
-    "ccDues": "33",
-    "ccDate": "30/12/2023",
-    "ccamount": "525101",
-$    "cccellphone": "1-074-928-8403"
-}
-Request method:	POST
->Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-     "ccreference": "306279528",
-    "ccName": "Marylee Zieme",
-'    "ccNumber": "6007-2201-4615-6587",
-    "cclevel": "VISA",
-    "ccMonthExp": 1,
-    "ccYearExp": 33,
-    "ccSecurityCode": 623,
--    "ccuserEmail": "dion.lesch@hotmail.com",
-    "ccDues": "33",
-    "ccDate": "30/12/2023",
-    "ccamount": "525101",
-$    "cccellphone": "1-074-928-8403"
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 316
-*ETag: W/"13c-qgnCIgt7nPRS0axT30/OAB1j7sc"
-$Date: Sat, 30 Sep 2023 22:34:44 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-     "ccreference": "306279528",
-    "ccName": "Marylee Zieme",
-'    "ccNumber": "6007-2201-4615-6587",
-    "cclevel": "VISA",
-    "ccMonthExp": 1,
-    "ccYearExp": 33,
-    "ccDues": 33,
-    "ccSecurityCode": 623,
-    "ccDate": "30/12/2023",
--    "ccuserEmail": "dion.lesch@hotmail.com",
-    "ccamount": 525101,
-%    "cccellphone": "1-074-928-8403",
-'    "_id": "6518a284b15d7ac86c3d9350",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 316
-*ETag: W/"13c-qgnCIgt7nPRS0axT30/OAB1j7sc"
-$Date: Sat, 30 Sep 2023 22:34:44 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-     "ccreference": "306279528",
-    "ccName": "Marylee Zieme",
-'    "ccNumber": "6007-2201-4615-6587",
-    "cclevel": "VISA",
-    "ccMonthExp": 1,
-    "ccYearExp": 33,
-    "ccDues": 33,
-    "ccSecurityCode": 623,
-    "ccDate": "30/12/2023",
--    "ccuserEmail": "dion.lesch@hotmail.com",
-    "ccamount": 525101,
-%    "cccellphone": "1-074-928-8403",
-'    "_id": "6518a284b15d7ac86c3d9350",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 316
-*ETag: W/"13c-qgnCIgt7nPRS0axT30/OAB1j7sc"
-$Date: Sat, 30 Sep 2023 22:34:44 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-     "ccreference": "306279528",
-    "ccName": "Marylee Zieme",
-'    "ccNumber": "6007-2201-4615-6587",
-    "cclevel": "VISA",
-    "ccMonthExp": 1,
-    "ccYearExp": 33,
-    "ccDues": 33,
-    "ccSecurityCode": 623,
-    "ccDate": "30/12/2023",
--    "ccuserEmail": "dion.lesch@hotmail.com",
-    "ccamount": 525101,
-%    "cccellphone": "1-074-928-8403",
-'    "_id": "6518a284b15d7ac86c3d9350",
-    "__v": 0
-}
+Body:			<none>
 	Request method:	GET
 	7Request URI:	http://localhost:1337/api/v1/pse-payments
 	Proxy:			<none>
@@ -716,149 +305,553 @@
 	Cookies:		<none>
 	Multiparts:		<none>
 	Body:			<none>
+HTTP/1.1 200 OK
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 1759
+*ETag: W/"6df-ikf9bifM7oHjmsvpkPAoBew+nxI"
+$Date: Thu, 05 Oct 2023 15:33:56 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "OK",
+(    "message": "Cash payments request",
+    "results": [
+
+        {
+/            "_id": "651c5feb1d6049ea21c75b83",
+*            "cashreference": "CASH00001",
+2            "cashuserEmail": "user1234@test.com",
++            "cashcollectorCash": "Efecty",
+!            "cashamount": 15000,
+-            "cashcellphone": "573225568899",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c60531d6049ea21c75b8d",
++            "cashreference": "CASHCYP061",
+3            "cashuserEmail": "cypre5191@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 753127,
+-            "cashcellphone": "573269153262",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c605f1d6049ea21c75b91",
++            "cashreference": "CASHCYP255",
+2            "cashuserEmail": "cypre709@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 601032,
+-            "cashcellphone": "573279588072",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c60b551ce26e240c9e1e4",
++            "cashreference": "CASHCYP031",
+6            "cashuserEmail": "usercash7328@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 285774,
+-            "cashcellphone": "573264506884",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c61927e2c8987e1fbc59b",
+*            "cashreference": "CASH92045",
+2            "cashuserEmail": "user6584@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 875210,
++            "cashcellphone": "5760179797",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c61dec3f836da381f6767",
+*            "cashreference": "CASH83636",
+2            "cashuserEmail": "user4616@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 887038,
++            "cashcellphone": "5774246754",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c62585974ddf3d10cc2a2",
++            "cashreference": "CASHCYP704",
+6            "cashuserEmail": "usercash8037@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 614958,
+-            "cashcellphone": "573248565926",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651dcaa393d3b86af837a6f0",
+*            "cashreference": "CASH90115",
+2            "cashuserEmail": "user8848@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 978946,
++            "cashcellphone": "5779522418",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651ed496774d199481de9147",
+*            "cashreference": "196237139",
+;            "cashuserEmail": "sterling.dickens@yahoo.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 788455,
+-            "cashcellphone": "916.458.0602",
+            "__v": 0
+
+        }
+    ]
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 1931
+*ETag: W/"78b-vMg+AcxQwtwxJSIxVPohRR8la1w"
+$Date: Thu, 05 Oct 2023 15:33:56 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "OK",
+/    "message": "Credit card payments request",
+    "results": [
+
+        {
+/            "_id": "651c5ff31d6049ea21c75b85",
+)            "ccreference": "CC00000001",
+/            "ccName": "USER CREDIT CARD 1133",
+,            "ccNumber": "4111555588886666",
+            "cclevel": "VISA",
+            "ccMonthExp": 8,
+            "ccYearExp": 25,
+            "ccDues": 12,
+#            "ccSecurityCode": 123,
+'            "ccPayDate": "23/09/2024",
+0            "ccuserEmail": "user1133@test.com",
+!            "ccamount": "12500",
++            "cccellphone": "573256589987",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c61deb58877db7d8eb55c",
+&            "ccreference": "CC43686",
+%            "ccName": "USER CC 471",
+,            "ccNumber": "4111555588886666",
+            "cclevel": "VISA",
+            "ccMonthExp": 4,
+            "ccYearExp": 29,
+            "ccDues": 7,
+#            "ccSecurityCode": 471,
+'            "ccPayDate": "2023-12-25",
+/            "ccuserEmail": "user471@test.com",
+"            "ccamount": "806828",
+)            "cccellphone": "5793896440",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c62675974ddf3d10cc2a6",
+)            "ccreference": "CCUSER7036",
+%            "ccName": "USER CC 566",
+,            "ccNumber": "4111555588886666",
+            "cclevel": "VISA",
+            "ccMonthExp": 3,
+            "ccYearExp": 37,
+            "ccDues": 40,
+#            "ccSecurityCode": 566,
+'            "ccPayDate": "2023-10-03",
+1            "ccuserEmail": "usercc566@test.com",
+"            "ccamount": "486311",
++            "cccellphone": "573293976486",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651dcaa3f654dac2fa2fc768",
+%            "ccreference": "CC2151",
+%            "ccName": "USER CC 834",
+,            "ccNumber": "4111555588886666",
+            "cclevel": "VISA",
+            "ccMonthExp": 4,
+            "ccYearExp": 25,
+            "ccDues": 8,
+HTTP/1.1 200 OK
+#            "ccSecurityCode": 834,
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 1759
+*ETag: W/"6df-ikf9bifM7oHjmsvpkPAoBew+nxI"
+$Date: Thu, 05 Oct 2023 15:33:56 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "OK",
+(    "message": "Cash payments request",
+    "results": [
+
+        {
+/            "_id": "651c5feb1d6049ea21c75b83",
+*            "cashreference": "CASH00001",
+2            "cashuserEmail": "user1234@test.com",
++            "cashcollectorCash": "Efecty",
+!            "cashamount": 15000,
+-            "cashcellphone": "573225568899",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c60531d6049ea21c75b8d",
++            "cashreference": "CASHCYP061",
+3            "cashuserEmail": "cypre5191@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 753127,
+-            "cashcellphone": "573269153262",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c605f1d6049ea21c75b91",
++            "cashreference": "CASHCYP255",
+2            "cashuserEmail": "cypre709@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 601032,
+-            "cashcellphone": "573279588072",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c60b551ce26e240c9e1e4",
++            "cashreference": "CASHCYP031",
+6            "cashuserEmail": "usercash7328@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 285774,
+-            "cashcellphone": "573264506884",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c61927e2c8987e1fbc59b",
+*            "cashreference": "CASH92045",
+2            "cashuserEmail": "user6584@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 875210,
++            "cashcellphone": "5760179797",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c61dec3f836da381f6767",
+*            "cashreference": "CASH83636",
+2            "cashuserEmail": "user4616@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 887038,
++            "cashcellphone": "5774246754",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c62585974ddf3d10cc2a2",
++            "cashreference": "CASHCYP704",
+6            "cashuserEmail": "usercash8037@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 614958,
+-            "cashcellphone": "573248565926",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651dcaa393d3b86af837a6f0",
+*            "cashreference": "CASH90115",
+2            "cashuserEmail": "user8848@test.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 978946,
++            "cashcellphone": "5779522418",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651ed496774d199481de9147",
+*            "cashreference": "196237139",
+;            "cashuserEmail": "sterling.dickens@yahoo.com",
++            "cashcollectorCash": "Efecty",
+"            "cashamount": 788455,
+-            "cashcellphone": "916.458.0602",
+'            "ccPayDate": "2023-12-25",
+/            "ccuserEmail": "user834@test.com",
+"            "ccamount": "385592",
+)            "cccellphone": "5713603598",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651dcad12f1e84810804f5a1",
+&            "ccreference": "CC93241",
+%            "ccName": "USER CC 775",
+,            "ccNumber": "4111555588886666",
+            "cclevel": "VISA",
+            "ccMonthExp": 9,
+            "ccYearExp": 28,
+            "ccDues": 32,
+#            "ccSecurityCode": 775,
+'            "ccPayDate": "2023-12-25",
+/            "ccuserEmail": "user775@test.com",
+!            "ccamount": "65503",
+)            "cccellphone": "5729846523",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651ed762774d199481de9150",
+(            "ccreference": "578961422",
+,            "ccName": "Britt McKenzie Sr.",
+,            "ccNumber": "5019292767102115",
+            "cclevel": "VISA",
+            "ccMonthExp": 9,
+            "ccYearExp": 24,
+            "ccDues": 35,
+#            "ccSecurityCode": 377,
+'            "ccPayDate": "2023-12-30",
+1            "ccuserEmail": "yuk.hane@yahoo.com",
+"            "ccamount": "293764",
+-            "cccellphone": "(227) 800-2809",
+            "__v": 0
+
+        }
+    ]
+}
+            "__v": 0
+
+        }
+    ]
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 1931
+*ETag: W/"78b-vMg+AcxQwtwxJSIxVPohRR8la1w"
+$Date: Thu, 05 Oct 2023 15:33:56 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "OK",
+/    "message": "Credit card payments request",
+    "results": [
+
+        {
+/            "_id": "651c5ff31d6049ea21c75b85",
+)            "ccreference": "CC00000001",
+/            "ccName": "USER CREDIT CARD 1133",
+,            "ccNumber": "4111555588886666",
+            "cclevel": "VISA",
+            "ccMonthExp": 8,
+            "ccYearExp": 25,
+            "ccDues": 12,
+#            "ccSecurityCode": 123,
+'            "ccPayDate": "23/09/2024",
+0            "ccuserEmail": "user1133@test.com",
+!            "ccamount": "12500",
++            "cccellphone": "573256589987",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c61deb58877db7d8eb55c",
+&            "ccreference": "CC43686",
+%            "ccName": "USER CC 471",
+,            "ccNumber": "4111555588886666",
+            "cclevel": "VISA",
+            "ccMonthExp": 4,
+            "ccYearExp": 29,
+            "ccDues": 7,
+#            "ccSecurityCode": 471,
+'            "ccPayDate": "2023-12-25",
+/            "ccuserEmail": "user471@test.com",
+"            "ccamount": "806828",
+)            "cccellphone": "5793896440",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651c62675974ddf3d10cc2a6",
+)            "ccreference": "CCUSER7036",
+%            "ccName": "USER CC 566",
+,            "ccNumber": "4111555588886666",
+            "cclevel": "VISA",
+            "ccMonthExp": 3,
+            "ccYearExp": 37,
+            "ccDues": 40,
+#            "ccSecurityCode": 566,
+'            "ccPayDate": "2023-10-03",
+1            "ccuserEmail": "usercc566@test.com",
+"            "ccamount": "486311",
++            "cccellphone": "573293976486",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651dcaa3f654dac2fa2fc768",
+%            "ccreference": "CC2151",
+%            "ccName": "USER CC 834",
+,            "ccNumber": "4111555588886666",
+            "cclevel": "VISA",
+            "ccMonthExp": 4,
+            "ccYearExp": 25,
+            "ccDues": 8,
+#            "ccSecurityCode": 834,
+'            "ccPayDate": "2023-12-25",
+/            "ccuserEmail": "user834@test.com",
+"            "ccamount": "385592",
+)            "cccellphone": "5713603598",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651dcad12f1e84810804f5a1",
+&            "ccreference": "CC93241",
+%            "ccName": "USER CC 775",
+,            "ccNumber": "4111555588886666",
+            "cclevel": "VISA",
+            "ccMonthExp": 9,
+            "ccYearExp": 28,
+            "ccDues": 32,
+#            "ccSecurityCode": 775,
+'            "ccPayDate": "2023-12-25",
+/            "ccuserEmail": "user775@test.com",
+!            "ccamount": "65503",
+)            "cccellphone": "5729846523",
+            "__v": 0
+        },
+
+        {
+/            "_id": "651ed762774d199481de9150",
+(            "ccreference": "578961422",
+,            "ccName": "Britt McKenzie Sr.",
+,            "ccNumber": "5019292767102115",
+            "cclevel": "VISA",
+            "ccMonthExp": 9,
+            "ccYearExp": 24,
+            "ccDues": 35,
+#            "ccSecurityCode": 377,
+'            "ccPayDate": "2023-12-30",
+1            "ccuserEmail": "yuk.hane@yahoo.com",
+"            "ccamount": "293764",
+-            "cccellphone": "(227) 800-2809",
+            "__v": 0
+
+        }
+    ]
+}
 	HTTP/1.1 200 OK
 	X-Powered-By: Express
 	.Content-Type: application/json; charset=utf-8
-	Content-Length: 2789
-	*ETag: W/"ae5-0CwaDx8CnkAP7CAoDnUBOGu00Bg"
-	$Date: Sat, 30 Sep 2023 22:34:45 GMT
+	Content-Length: 1871
+	*ETag: W/"74f-XMAkgN25rYrAo2PiPHu0YaAoBe4"
+	$Date: Thu, 05 Oct 2023 15:33:56 GMT
 	Connection: keep-alive
 	Keep-Alive: timeout=5
 	
 	{
-	    "status": "200",
+	    "status": "OK",
 	'    "message": "PSE payments request",
 	    "results": [
 	
         {
-	/            "_id": "65185e610642165b525a4394",
-	1            "pseuserEmail": "USER4321@test.com",
+	/            "_id": "651c5ffb1d6049ea21c75b87",
+	1            "pseuserEmail": "user4321@test.com",
 	;            "psefullNameUser": "USUARIO PSE PAYMENT 4321",
-	+            "psereference": "PSEO0000001",
-	/            "psereferencePse": "PSER00000001",
-	,            "psecellphone": "573225568899",
+	)            "psereference": "PSEO00001",
+	,            "psereferencePse": "PSER00001",
 	             "pseamount": 15000,
+	,            "psecellphone": "573225568899",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a08eb15d7ac86c3d92f1",
-	7            "pseuserEmail": "isidro.harvey@gmail.com",
-	2            "psefullNameUser": "Terrence Jacobi",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "897-735-6150",
-	!            "pseamount": 602108,
+	/            "_id": "651c6192559968570651dcec",
+	1            "pseuserEmail": "user8615@test.com",
+	;            "psefullNameUser": "USUARIO PSE PAYMENT 8615",
+	)            "psereference": "PSEO25953",
+	,            "psereferencePse": "PSER56475",
+	!            "pseamount": 441734,
+	*            "psecellphone": "5710733312",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a091b15d7ac86c3d92f6",
-	9            "pseuserEmail": "lynetta.labadie@yahoo.com",
-	0            "psefullNameUser": "Deidre Gibson",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "584-651-4417",
-	!            "pseamount": 142269,
+	/            "_id": "651c61de02dcc72eb67fae3f",
+	1            "pseuserEmail": "user2289@test.com",
+	;            "psefullNameUser": "USUARIO PSE PAYMENT 2289",
+	)            "psereference": "PSEO78663",
+	,            "psereferencePse": "PSER62339",
+	!            "pseamount": 684878,
+	*            "psecellphone": "5732603769",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a093b15d7ac86c3d92fc",
-	5            "pseuserEmail": "wynona.rath@yahoo.com",
-	/            "psefullNameUser": "Dr. Jan Hand",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	.            "psecellphone": "(173) 442-4405",
-	!            "pseamount": 533223,
+	/            "_id": "651c626e5974ddf3d10cc2aa",
+	4            "pseuserEmail": "userpse7296@test.com",
+	.            "psefullNameUser": "USUARIO PSE",
+	*            "psereference": "PSEO246327",
+	-            "psereferencePse": "PSER164421",
+	!            "pseamount": 115199,
+	,            "psecellphone": "573292902472",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a093b15d7ac86c3d9300",
-	6            "pseuserEmail": "tyron.okeefe@gmail.com",
-	2            "psefullNameUser": "Debbi Gulgowski",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "734-543-4335",
-	!            "pseamount": 498695,
+	/            "_id": "651dcaa3250bc8303f789ae1",
+	1            "pseuserEmail": "user7011@test.com",
+	;            "psefullNameUser": "USUARIO PSE PAYMENT 7011",
+	)            "psereference": "PSEO50459",
+	,            "psereferencePse": "PSER80419",
+	!            "pseamount": 907351,
+	*            "psecellphone": "5733860263",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a19eb15d7ac86c3d9307",
-	;            "pseuserEmail": "colton.cummings@hotmail.com",
-	0            "psefullNameUser": "Roland Deckow",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "968.510.3828",
-	!            "pseamount": 523272,
+	/            "_id": "651dcad1c70d848affac2ff5",
+	1            "pseuserEmail": "user8251@test.com",
+	;            "psefullNameUser": "USUARIO PSE PAYMENT 8251",
+	)            "psereference": "PSEO64599",
+	,            "psereferencePse": "PSER16587",
+	!            "pseamount": 975876,
+	*            "psecellphone": "5717953704",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a1a1b15d7ac86c3d9311",
-	6            "pseuserEmail": "myles.turner@yahoo.com",
-	5            "psefullNameUser": "Mohammad Sauer DDS",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	.            "psecellphone": "1-924-479-8511",
-	!            "pseamount": 271660,
+	/            "_id": "651ed494774d199481de913f",
+	9            "pseuserEmail": "wilbur.zemlak@hotmail.com",
+	1            "psefullNameUser": "Osvaldo Muller",
+	)            "psereference": "196237139",
+	,            "psereferencePse": "196237139",
+	             "pseamount": 60704,
+	.            "psecellphone": "1-908-285-1496",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a1a2b15d7ac86c3d9316",
-	;            "pseuserEmail": "kristen.considine@gmail.com",
-	2            "psefullNameUser": "Natasha Treutel",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "691.508.4249",
-	!            "pseamount": 239435,
-	            "__v": 0
-	        },
-	
-        {
-	/            "_id": "6518a1d3b15d7ac86c3d932a",
-	6            "pseuserEmail": "micah.schoen@gmail.com",
-	0            "psefullNameUser": "Nora Parisian",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "864-361-4180",
-	!            "pseamount": 380766,
-	            "__v": 0
-	        },
-	
-        {
-	/            "_id": "6518a1d6b15d7ac86c3d9335",
-	7            "pseuserEmail": "tyron.goyette@gmail.com",
-	4            "psefullNameUser": "Dr. Shavon Murray",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "501-760-8539",
-	!            "pseamount": 123938,
-	            "__v": 0
-	        },
-	
-        {
-	/            "_id": "6518a1d6b15d7ac86c3d9339",
-	6            "pseuserEmail": "korey.brekke@gmail.com",
-	2            "psefullNameUser": "Daisy Mertz III",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "110-803-8155",
-	!            "pseamount": 142987,
-	            "__v": 0
-	        },
-	
-        {
-	/            "_id": "6518a282b15d7ac86c3d9349",
-	7            "pseuserEmail": "bella.keebler@yahoo.com",
-	7            "psefullNameUser": "Miss Brandee Krajcik",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "117-743-7256",
-	!            "pseamount": 188651,
+	/            "_id": "651ed762774d199481de9152",
+	:            "pseuserEmail": "loree.homenick@hotmail.com",
+	/            "psefullNameUser": "Shonda Weber",
+	)            "psereference": "578961422",
+	,            "psereferencePse": "578961422",
+	!            "pseamount": 236652,
+	,            "psecellphone": "928-691-0342",
 	            "__v": 0
 	
         }
@@ -867,146 +860,102 @@
 	HTTP/1.1 200 OK
 	X-Powered-By: Express
 	.Content-Type: application/json; charset=utf-8
-	Content-Length: 2789
-	*ETag: W/"ae5-0CwaDx8CnkAP7CAoDnUBOGu00Bg"
-	$Date: Sat, 30 Sep 2023 22:34:45 GMT
+	Content-Length: 1871
+	*ETag: W/"74f-XMAkgN25rYrAo2PiPHu0YaAoBe4"
+	$Date: Thu, 05 Oct 2023 15:33:56 GMT
 	Connection: keep-alive
 	Keep-Alive: timeout=5
 	
 	{
-	    "status": "200",
+	    "status": "OK",
 	'    "message": "PSE payments request",
 	    "results": [
 	
         {
-	/            "_id": "65185e610642165b525a4394",
-	1            "pseuserEmail": "USER4321@test.com",
+	/            "_id": "651c5ffb1d6049ea21c75b87",
+	1            "pseuserEmail": "user4321@test.com",
 	;            "psefullNameUser": "USUARIO PSE PAYMENT 4321",
-	+            "psereference": "PSEO0000001",
-	/            "psereferencePse": "PSER00000001",
-	,            "psecellphone": "573225568899",
+	)            "psereference": "PSEO00001",
+	,            "psereferencePse": "PSER00001",
 	             "pseamount": 15000,
+	,            "psecellphone": "573225568899",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a08eb15d7ac86c3d92f1",
-	7            "pseuserEmail": "isidro.harvey@gmail.com",
-	2            "psefullNameUser": "Terrence Jacobi",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "897-735-6150",
-	!            "pseamount": 602108,
+	/            "_id": "651c6192559968570651dcec",
+	1            "pseuserEmail": "user8615@test.com",
+	;            "psefullNameUser": "USUARIO PSE PAYMENT 8615",
+	)            "psereference": "PSEO25953",
+	,            "psereferencePse": "PSER56475",
+	!            "pseamount": 441734,
+	*            "psecellphone": "5710733312",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a091b15d7ac86c3d92f6",
-	9            "pseuserEmail": "lynetta.labadie@yahoo.com",
-	0            "psefullNameUser": "Deidre Gibson",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "584-651-4417",
-	!            "pseamount": 142269,
+	/            "_id": "651c61de02dcc72eb67fae3f",
+	1            "pseuserEmail": "user2289@test.com",
+	;            "psefullNameUser": "USUARIO PSE PAYMENT 2289",
+	)            "psereference": "PSEO78663",
+	,            "psereferencePse": "PSER62339",
+	!            "pseamount": 684878,
+	*            "psecellphone": "5732603769",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a093b15d7ac86c3d92fc",
-	5            "pseuserEmail": "wynona.rath@yahoo.com",
-	/            "psefullNameUser": "Dr. Jan Hand",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	.            "psecellphone": "(173) 442-4405",
-	!            "pseamount": 533223,
+	/            "_id": "651c626e5974ddf3d10cc2aa",
+	4            "pseuserEmail": "userpse7296@test.com",
+	.            "psefullNameUser": "USUARIO PSE",
+	*            "psereference": "PSEO246327",
+	-            "psereferencePse": "PSER164421",
+	!            "pseamount": 115199,
+	,            "psecellphone": "573292902472",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a093b15d7ac86c3d9300",
-	6            "pseuserEmail": "tyron.okeefe@gmail.com",
-	2            "psefullNameUser": "Debbi Gulgowski",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "734-543-4335",
-	!            "pseamount": 498695,
+	/            "_id": "651dcaa3250bc8303f789ae1",
+	1            "pseuserEmail": "user7011@test.com",
+	;            "psefullNameUser": "USUARIO PSE PAYMENT 7011",
+	)            "psereference": "PSEO50459",
+	,            "psereferencePse": "PSER80419",
+	!            "pseamount": 907351,
+	*            "psecellphone": "5733860263",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a19eb15d7ac86c3d9307",
-	;            "pseuserEmail": "colton.cummings@hotmail.com",
-	0            "psefullNameUser": "Roland Deckow",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "968.510.3828",
-	!            "pseamount": 523272,
+	/            "_id": "651dcad1c70d848affac2ff5",
+	1            "pseuserEmail": "user8251@test.com",
+	;            "psefullNameUser": "USUARIO PSE PAYMENT 8251",
+	)            "psereference": "PSEO64599",
+	,            "psereferencePse": "PSER16587",
+	!            "pseamount": 975876,
+	*            "psecellphone": "5717953704",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a1a1b15d7ac86c3d9311",
-	6            "pseuserEmail": "myles.turner@yahoo.com",
-	5            "psefullNameUser": "Mohammad Sauer DDS",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	.            "psecellphone": "1-924-479-8511",
-	!            "pseamount": 271660,
+	/            "_id": "651ed494774d199481de913f",
+	9            "pseuserEmail": "wilbur.zemlak@hotmail.com",
+	1            "psefullNameUser": "Osvaldo Muller",
+	)            "psereference": "196237139",
+	,            "psereferencePse": "196237139",
+	             "pseamount": 60704,
+	.            "psecellphone": "1-908-285-1496",
 	            "__v": 0
 	        },
 	
         {
-	/            "_id": "6518a1a2b15d7ac86c3d9316",
-	;            "pseuserEmail": "kristen.considine@gmail.com",
-	2            "psefullNameUser": "Natasha Treutel",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "691.508.4249",
-	!            "pseamount": 239435,
-	            "__v": 0
-	        },
-	
-        {
-	/            "_id": "6518a1d3b15d7ac86c3d932a",
-	6            "pseuserEmail": "micah.schoen@gmail.com",
-	0            "psefullNameUser": "Nora Parisian",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "864-361-4180",
-	!            "pseamount": 380766,
-	            "__v": 0
-	        },
-	
-        {
-	/            "_id": "6518a1d6b15d7ac86c3d9335",
-	7            "pseuserEmail": "tyron.goyette@gmail.com",
-	4            "psefullNameUser": "Dr. Shavon Murray",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "501-760-8539",
-	!            "pseamount": 123938,
-	            "__v": 0
-	        },
-	
-        {
-	/            "_id": "6518a1d6b15d7ac86c3d9339",
-	6            "pseuserEmail": "korey.brekke@gmail.com",
-	2            "psefullNameUser": "Daisy Mertz III",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "110-803-8155",
-	!            "pseamount": 142987,
-	            "__v": 0
-	        },
-	
-        {
-	/            "_id": "6518a282b15d7ac86c3d9349",
-	7            "pseuserEmail": "bella.keebler@yahoo.com",
-	7            "psefullNameUser": "Miss Brandee Krajcik",
-	)            "psereference": "306279528",
-	,            "psereferencePse": "306279528",
-	,            "psecellphone": "117-743-7256",
-	!            "pseamount": 188651,
+	/            "_id": "651ed762774d199481de9152",
+	:            "pseuserEmail": "loree.homenick@hotmail.com",
+	/            "psefullNameUser": "Shonda Weber",
+	)            "psereference": "578961422",
+	,            "psereferencePse": "578961422",
+	!            "pseamount": 236652,
+	,            "psecellphone": "928-691-0342",
 	            "__v": 0
 	
         }
@@ -1039,29 +988,29 @@
 
 {
 
-     "ccreference": "306279528",
+     "ccreference": "578961422",
 
-!    "ccName": "Laci Nienow PhD",
+!    "ccName": "Brock Dickinson",
 
-$    "ccNumber": "3684-346546-5434",
+$    "ccNumber": "6706018797983125",
 
     "cclevel": "VISA",
 
-    "ccMonthExp": 4,
+    "ccMonthExp": 1,
 
-    "ccYearExp": 23,
+    "ccYearExp": 33,
 
-    "ccSecurityCode": 536,
+    "ccSecurityCode": 902,
 
-.    "ccuserEmail": "denise.cole@hotmail.com",
+.    "ccuserEmail": "ernesto.green@gmail.com",
 
-    "ccDues": "11",
+    "ccDues": "5",
 
-    "ccDate": "30/12/2023",
+    "ccPayDate": "2023-12-30",
 
-    "ccamount": "290843",
+    "ccamount": "485320",
 
-$    "cccellphone": "(453) 302-8156"
+$    "cccellphone": "1-062-488-2410"
 
 }
 
@@ -1091,29 +1040,29 @@ $    "cccellphone": "(453) 302-8156"
 
 {
 
-     "ccreference": "306279528",
+     "ccreference": "578961422",
 
-!    "ccName": "Laci Nienow PhD",
+!    "ccName": "Brock Dickinson",
 
-$    "ccNumber": "3684-346546-5434",
+$    "ccNumber": "6706018797983125",
 
     "cclevel": "VISA",
 
-    "ccMonthExp": 4,
+    "ccMonthExp": 1,
 
-    "ccYearExp": 23,
+    "ccYearExp": 33,
 
-    "ccSecurityCode": 536,
+    "ccSecurityCode": 902,
 
-.    "ccuserEmail": "denise.cole@hotmail.com",
+.    "ccuserEmail": "ernesto.green@gmail.com",
 
-    "ccDues": "11",
+    "ccDues": "5",
 
-    "ccDate": "30/12/2023",
+    "ccPayDate": "2023-12-30",
 
-    "ccamount": "290843",
+    "ccamount": "485320",
 
-$    "cccellphone": "(453) 302-8156"
+$    "cccellphone": "1-062-488-2410"
 
 }
 
@@ -1143,960 +1092,380 @@ $    "cccellphone": "(453) 302-8156"
 
 {
 
-     "ccreference": "306279528",
+     "ccreference": "578961422",
 
-!    "ccName": "Laci Nienow PhD",
+!    "ccName": "Brock Dickinson",
 
-$    "ccNumber": "3684-346546-5434",
-
-    "cclevel": "VISA",
-
-    "ccMonthExp": 4,
-
-    "ccYearExp": 23,
-
-    "ccSecurityCode": 536,
-
-.    "ccuserEmail": "denise.cole@hotmail.com",
-
-    "ccDues": "11",
-
-    "ccDate": "30/12/2023",
-
-    "ccamount": "290843",
-
-$    "cccellphone": "(453) 302-8156"
-
-}
-
-Request method:	POST
-
->Request URI:	http://localhost:1337/api/v1/credit-card-payment
-
-Proxy:			<none>
-
-Request params:	<none>
-
-Query params:	<none>
-
-Form params:	<none>
-
-Path params:	<none>
-
-Headers:		Accept=*/*
-
-"				Content-Type=application/json
-
-Cookies:		<none>
-
-Multiparts:		<none>
-
-Body:
-
-{
-
-     "ccreference": "306279528",
-
-!    "ccName": "Laci Nienow PhD",
-
-$    "ccNumber": "3684-346546-5434",
+$    "ccNumber": "6706018797983125",
 
     "cclevel": "VISA",
 
-    "ccMonthExp": 4,
+    "ccMonthExp": 1,
 
-    "ccYearExp": 23,
+    "ccYearExp": 33,
 
-    "ccSecurityCode": 536,
+    "ccSecurityCode": 902,
 
-.    "ccuserEmail": "denise.cole@hotmail.com",
+.    "ccuserEmail": "ernesto.green@gmail.com",
 
-    "ccDues": "11",
+    "ccDues": "5",
 
-    "ccDate": "30/12/2023",
+    "ccPayDate": "2023-12-30",
 
-    "ccamount": "290843",
+    "ccamount": "485320",
 
-$    "cccellphone": "(453) 302-8156"
-
-}
-
-HTTP/1.1 201 Created
-
-X-Powered-By: Express
-
-.Content-Type: application/json; charset=utf-8
-
-Content-Length: 316
-
-*ETag: W/"13c-aOBxoIIxwbFiE6l/DHmtF0WO/pA"
-
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-
-Connection: keep-alive
-
-Keep-Alive: timeout=5
-
-
-
-{
-
-     "ccreference": "306279528",
-
-!    "ccName": "Laci Nienow PhD",
-
-$    "ccNumber": "3684-346546-5434",
-
-    "cclevel": "VISA",
-
-    "ccMonthExp": 4,
-
-    "ccYearExp": 23,
-
-    "ccDues": 11,
-
-    "ccSecurityCode": 536,
-
-    "ccDate": "30/12/2023",
-
-.    "ccuserEmail": "denise.cole@hotmail.com",
-
-    "ccamount": 290843,
-
-%    "cccellphone": "(453) 302-8156",
-
-'    "_id": "6518a285b15d7ac86c3d9353",
-
-    "__v": 0
+$    "cccellphone": "1-062-488-2410"
 
 }
-
-HTTP/1.1 201 Created
-
-X-Powered-By: Express
-
-.Content-Type: application/json; charset=utf-8
-
-Content-Length: 316
-
-*ETag: W/"13c-aOBxoIIxwbFiE6l/DHmtF0WO/pA"
-
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-
-Connection: keep-alive
-
-Keep-Alive: timeout=5
-
-
-
-{
-
-     "ccreference": "306279528",
-
-!    "ccName": "Laci Nienow PhD",
-
-$    "ccNumber": "3684-346546-5434",
-
-    "cclevel": "VISA",
-
-    "ccMonthExp": 4,
-
-    "ccYearExp": 23,
-
-    "ccDues": 11,
-
-    "ccSecurityCode": 536,
-
-    "ccDate": "30/12/2023",
-
-.    "ccuserEmail": "denise.cole@hotmail.com",
-
-    "ccamount": 290843,
-
-%    "cccellphone": "(453) 302-8156",
-
-'    "_id": "6518a285b15d7ac86c3d9353",
-
-    "__v": 0
-
-}
-
-HTTP/1.1 201 Created
-
-X-Powered-By: Express
-
-.Content-Type: application/json; charset=utf-8
-
-Content-Length: 316
-
-*ETag: W/"13c-aOBxoIIxwbFiE6l/DHmtF0WO/pA"
-
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-
-Connection: keep-alive
-
-Keep-Alive: timeout=5
-
-
-
-{
-
-     "ccreference": "306279528",
-
-!    "ccName": "Laci Nienow PhD",
-
-$    "ccNumber": "3684-346546-5434",
-
-    "cclevel": "VISA",
-
-    "ccMonthExp": 4,
-
-    "ccYearExp": 23,
-
-    "ccDues": 11,
-
-    "ccSecurityCode": 536,
-
-    "ccDate": "30/12/2023",
-
-.    "ccuserEmail": "denise.cole@hotmail.com",
-
-    "ccamount": 290843,
-
-%    "cccellphone": "(453) 302-8156",
-
-'    "_id": "6518a285b15d7ac86c3d9353",
-
-    "__v": 0
-
-}
-
-HTTP/1.1 201 Created
-
-X-Powered-By: Express
-
-.Content-Type: application/json; charset=utf-8
-
-Content-Length: 316
-
-*ETag: W/"13c-aOBxoIIxwbFiE6l/DHmtF0WO/pA"
-
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-
-Connection: keep-alive
-
-Keep-Alive: timeout=5
-
-
-
-{
-
-     "ccreference": "306279528",
-
-!    "ccName": "Laci Nienow PhD",
-
-$    "ccNumber": "3684-346546-5434",
-
-    "cclevel": "VISA",
-
-    "ccMonthExp": 4,
-
-    "ccYearExp": 23,
-
-    "ccDues": 11,
-
-    "ccSecurityCode": 536,
-
-    "ccDate": "30/12/2023",
-
-.    "ccuserEmail": "denise.cole@hotmail.com",
-
-    "ccamount": 290843,
-
-%    "cccellphone": "(453) 302-8156",
-
-'    "_id": "6518a285b15d7ac86c3d9353",
-
-    "__v": 0
-
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-4    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-    "pseamount": 142362,
-0    "psefullNameUser": "Mr. Genna Breitenberg",
-%    "psecellphone": "1-835-412-5916"
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-4    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-    "pseamount": 142362,
-0    "psefullNameUser": "Mr. Genna Breitenberg",
-%    "psecellphone": "1-835-412-5916"
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-4    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-    "pseamount": 142362,
-0    "psefullNameUser": "Mr. Genna Breitenberg",
-%    "psecellphone": "1-835-412-5916"
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 238
-)ETag: W/"ee-SLlrYXdDAQdTPPbuOfBaLfaGCXE"
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-4    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-0    "psefullNameUser": "Mr. Genna Breitenberg",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-&    "psecellphone": "1-835-412-5916",
-    "pseamount": 142362,
-'    "_id": "6518a285b15d7ac86c3d9355",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 238
-)ETag: W/"ee-SLlrYXdDAQdTPPbuOfBaLfaGCXE"
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-4    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-0    "psefullNameUser": "Mr. Genna Breitenberg",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-&    "psecellphone": "1-835-412-5916",
-    "pseamount": 142362,
-'    "_id": "6518a285b15d7ac86c3d9355",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 238
-)ETag: W/"ee-SLlrYXdDAQdTPPbuOfBaLfaGCXE"
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-4    "pseuserEmail": "edgardo.prosacco@hotmail.com",
-0    "psefullNameUser": "Mr. Genna Breitenberg",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-&    "psecellphone": "1-835-412-5916",
-    "pseamount": 142362,
-'    "_id": "6518a285b15d7ac86c3d9355",
-    "__v": 0
-}
-Request method:	GET
-8Request URI:	http://localhost:1337/api/v1/cash-payments
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-8Request URI:	http://localhost:1337/api/v1/cash-payments
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 248
-)ETag: W/"f8-guE3mJLyeR/GrhV/QtJ2/OAuM8Q"
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "OK",
-(    "message": "Cash payments request",
-    "results": [
-
-        {
-/            "_id": "651872a709d12dc5e940555c",
-+            "cashreference": "CASH000001",
-2            "cashuserEmail": "USER1234@test.com",
-+            "cashcollectorCash": "Efecty",
-!            "cashamount": 15000,
--            "cashcellphone": "573225568899",
-            "__v": 0
-
-        }
-    ]
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 248
-)ETag: W/"f8-guE3mJLyeR/GrhV/QtJ2/OAuM8Q"
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "OK",
-(    "message": "Cash payments request",
-    "results": [
-
-        {
-/            "_id": "651872a709d12dc5e940555c",
-+            "cashreference": "CASH000001",
-2            "cashuserEmail": "USER1234@test.com",
-+            "cashcollectorCash": "Efecty",
-!            "cashamount": 15000,
--            "cashcellphone": "573225568899",
-            "__v": 0
-
-        }
-    ]
-}
-
-Request method:	GET
-
-WRequest URI:	http://localhost:1337/api/v1/credit-card-payment/6518a285b15d7ac86c3d9353
-
-Proxy:			<none>
-
-Request params:	<none>
-
-Query params:	<none>
-
-Form params:	<none>
-
-)Path params:	id=6518a285b15d7ac86c3d9353
-
-Headers:		Accept=*/*
-
-"				Content-Type=application/json
-
-Cookies:		<none>
-
-Multiparts:		<none>
-
-Body:			<none>
-
-Request method:	GET
-
-WRequest URI:	http://localhost:1337/api/v1/credit-card-payment/6518a285b15d7ac86c3d9353
-
-Proxy:			<none>
-
-Request params:	<none>
-
-Query params:	<none>
-
-Form params:	<none>
-
-)Path params:	id=6518a285b15d7ac86c3d9353
-
-Headers:		Accept=*/*
-
-"				Content-Type=application/json
-
-Cookies:		<none>
-
-Multiparts:		<none>
-
-Body:			<none>
-
-Request method:	GET
-
-WRequest URI:	http://localhost:1337/api/v1/credit-card-payment/6518a285b15d7ac86c3d9353
-
-Proxy:			<none>
-
-Request params:	<none>
-
-Query params:	<none>
-
-Form params:	<none>
-
-)Path params:	id=6518a285b15d7ac86c3d9353
-
-Headers:		Accept=*/*
-
-"				Content-Type=application/json
-
-Cookies:		<none>
-
-Multiparts:		<none>
-
-Body:			<none>
-
-Request method:	GET
-
-WRequest URI:	http://localhost:1337/api/v1/credit-card-payment/6518a285b15d7ac86c3d9353
-
-Proxy:			<none>
-
-Request params:	<none>
-
-Query params:	<none>
-
-Form params:	<none>
-
-)Path params:	id=6518a285b15d7ac86c3d9353
-
-Headers:		Accept=*/*
-
-"				Content-Type=application/json
-
-Cookies:		<none>
-
-Multiparts:		<none>
-
-Body:			<none>
-
-HTTP/1.1 200 OK
-
-X-Powered-By: Express
-
-.Content-Type: application/json; charset=utf-8
-
-Content-Length: 382
-
-*ETag: W/"17e-i7BWB5wgQW6qe9qosf1nS/RM91E"
-
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-
-Connection: keep-alive
-
-Keep-Alive: timeout=5
-
-
-
-{
-
-    "status": "200",
-
-.    "message": "Credit card payment request",
-
-    "result": {
-
-+        "_id": "6518a285b15d7ac86c3d9353",
-
-$        "ccreference": "306279528",
-
-%        "ccName": "Laci Nienow PhD",
-
-(        "ccNumber": "3684-346546-5434",
-
-        "cclevel": "VISA",
-
-        "ccMonthExp": 4,
-
-        "ccYearExp": 23,
-
-        "ccDues": 11,
-
-        "ccSecurityCode": 536,
-
-         "ccDate": "30/12/2023",
-
-2        "ccuserEmail": "denise.cole@hotmail.com",
-
-        "ccamount": 290843,
-
-)        "cccellphone": "(453) 302-8156",
-
-        "__v": 0
-
-    }
-
-}
-
-HTTP/1.1 200 OK
-
-X-Powered-By: Express
-
-.Content-Type: application/json; charset=utf-8
-
-Content-Length: 382
-
-*ETag: W/"17e-i7BWB5wgQW6qe9qosf1nS/RM91E"
-
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-
-Connection: keep-alive
-
-Keep-Alive: timeout=5
-
-
-
-{
-
-    "status": "200",
-
-.    "message": "Credit card payment request",
-
-    "result": {
-
-+        "_id": "6518a285b15d7ac86c3d9353",
-
-$        "ccreference": "306279528",
-
-%        "ccName": "Laci Nienow PhD",
-
-(        "ccNumber": "3684-346546-5434",
-
-        "cclevel": "VISA",
-
-        "ccMonthExp": 4,
-
-        "ccYearExp": 23,
-
-        "ccDues": 11,
-
-        "ccSecurityCode": 536,
-
-         "ccDate": "30/12/2023",
-
-2        "ccuserEmail": "denise.cole@hotmail.com",
-
-        "ccamount": 290843,
-
-)        "cccellphone": "(453) 302-8156",
-
-        "__v": 0
-
-    }
-
-}
-
-HTTP/1.1 200 OK
-
-X-Powered-By: Express
-
-.Content-Type: application/json; charset=utf-8
-
-Content-Length: 382
-
-*ETag: W/"17e-i7BWB5wgQW6qe9qosf1nS/RM91E"
-
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-
-Connection: keep-alive
-
-Keep-Alive: timeout=5
-
-
-
-{
-
-    "status": "200",
-
-.    "message": "Credit card payment request",
-
-    "result": {
-
-+        "_id": "6518a285b15d7ac86c3d9353",
-
-$        "ccreference": "306279528",
-
-%        "ccName": "Laci Nienow PhD",
-
-(        "ccNumber": "3684-346546-5434",
-
-        "cclevel": "VISA",
-
-        "ccMonthExp": 4,
-
-        "ccYearExp": 23,
-
-        "ccDues": 11,
-
-        "ccSecurityCode": 536,
-
-         "ccDate": "30/12/2023",
-
-2        "ccuserEmail": "denise.cole@hotmail.com",
-
-        "ccamount": 290843,
-
-)        "cccellphone": "(453) 302-8156",
-
-        "__v": 0
-
-    }
-
-}
-
-HTTP/1.1 200 OK
-
-X-Powered-By: Express
-
-.Content-Type: application/json; charset=utf-8
-
-Content-Length: 382
-
-*ETag: W/"17e-i7BWB5wgQW6qe9qosf1nS/RM91E"
-
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-
-Connection: keep-alive
-
-Keep-Alive: timeout=5
-
-
-
-{
-
-    "status": "200",
-
-.    "message": "Credit card payment request",
-
-    "result": {
-
-+        "_id": "6518a285b15d7ac86c3d9353",
-
-$        "ccreference": "306279528",
-
-%        "ccName": "Laci Nienow PhD",
-
-(        "ccNumber": "3684-346546-5434",
-
-        "cclevel": "VISA",
-
-        "ccMonthExp": 4,
-
-        "ccYearExp": 23,
-
-        "ccDues": 11,
-
-        "ccSecurityCode": 536,
-
-         "ccDate": "30/12/2023",
-
-2        "ccuserEmail": "denise.cole@hotmail.com",
-
-        "ccamount": 290843,
-
-)        "cccellphone": "(453) 302-8156",
-
-        "__v": 0
-
-    }
-
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-0    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "pseamount": 108568,
-,    "psefullNameUser": "Claudio Dooley II",
-#    "psecellphone": "230.464.1047"
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-0    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "pseamount": 108568,
-,    "psefullNameUser": "Claudio Dooley II",
-#    "psecellphone": "230.464.1047"
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-0    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "pseamount": 108568,
-,    "psefullNameUser": "Claudio Dooley II",
-#    "psecellphone": "230.464.1047"
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-0    "pseuserEmail": "antwan.sauer@hotmail.com",
-    "pseamount": 108568,
-,    "psefullNameUser": "Claudio Dooley II",
-#    "psecellphone": "230.464.1047"
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 228
-)ETag: W/"e4-q8FHHDU+xzH3mMxP4Q8Ub7Ko3QQ"
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-0    "pseuserEmail": "antwan.sauer@hotmail.com",
-,    "psefullNameUser": "Claudio Dooley II",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-$    "psecellphone": "230.464.1047",
-    "pseamount": 108568,
-'    "_id": "6518a285b15d7ac86c3d9359",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 228
-)ETag: W/"e4-q8FHHDU+xzH3mMxP4Q8Ub7Ko3QQ"
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-0    "pseuserEmail": "antwan.sauer@hotmail.com",
-,    "psefullNameUser": "Claudio Dooley II",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-$    "psecellphone": "230.464.1047",
-    "pseamount": 108568,
-'    "_id": "6518a285b15d7ac86c3d9359",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 228
-)ETag: W/"e4-q8FHHDU+xzH3mMxP4Q8Ub7Ko3QQ"
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-0    "pseuserEmail": "antwan.sauer@hotmail.com",
-,    "psefullNameUser": "Claudio Dooley II",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-$    "psecellphone": "230.464.1047",
-    "pseamount": 108568,
-'    "_id": "6518a285b15d7ac86c3d9359",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 228
-)ETag: W/"e4-q8FHHDU+xzH3mMxP4Q8Ub7Ko3QQ"
-$Date: Sat, 30 Sep 2023 22:34:45 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-0    "pseuserEmail": "antwan.sauer@hotmail.com",
-,    "psefullNameUser": "Claudio Dooley II",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-$    "psecellphone": "230.464.1047",
-    "pseamount": 108568,
-'    "_id": "6518a285b15d7ac86c3d9359",
-    "__v": 0
-}
+Request method:	POST
+7Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+"    "cashreference": "578961422",
+,    "cashuserEmail": "rob.zieme@gmail.com",
+    "cashamount": 748023,
+#    "cashcollectorCash": "Baloto",
+$    "cashcellphone": "672-680-7528"
+}
+Request method:	POST
+7Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+"    "cashreference": "578961422",
+,    "cashuserEmail": "rob.zieme@gmail.com",
+    "cashamount": 748023,
+#    "cashcollectorCash": "Baloto",
+$    "cashcellphone": "672-680-7528"
+}
+Request method:	POST
+7Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+"    "cashreference": "578961422",
+,    "cashuserEmail": "rob.zieme@gmail.com",
+    "cashamount": 748023,
+#    "cashcollectorCash": "Baloto",
+$    "cashcellphone": "672-680-7528"
+}
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+.    "pseuserEmail": "tristan.koss@gmail.com",
+    "pseamount": 411213,
++    "psefullNameUser": "Anton Zemlak Sr.",
+#    "psecellphone": "653-551-4990"
+}
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+.    "pseuserEmail": "tristan.koss@gmail.com",
+    "pseamount": 411213,
++    "psefullNameUser": "Anton Zemlak Sr.",
+#    "psecellphone": "653-551-4990"
+}
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+.    "pseuserEmail": "tristan.koss@gmail.com",
+    "pseamount": 411213,
++    "psefullNameUser": "Anton Zemlak Sr.",
+#    "psecellphone": "653-551-4990"
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 188
+)ETag: W/"bc-Rrvr91uFTULxNwO0lh0OueNv8ww"
+$Date: Thu, 05 Oct 2023 15:33:56 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+"    "cashreference": "578961422",
+,    "cashuserEmail": "rob.zieme@gmail.com",
+#    "cashcollectorCash": "Baloto",
+    "cashamount": 748023,
+%    "cashcellphone": "672-680-7528",
+'    "_id": "651ed764774d199481de915e",
+    "__v": 0
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 188
+)ETag: W/"bc-Rrvr91uFTULxNwO0lh0OueNv8ww"
+$Date: Thu, 05 Oct 2023 15:33:56 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+"    "cashreference": "578961422",
+,    "cashuserEmail": "rob.zieme@gmail.com",
+#    "cashcollectorCash": "Baloto",
+    "cashamount": 748023,
+%    "cashcellphone": "672-680-7528",
+'    "_id": "651ed764774d199481de915e",
+    "__v": 0
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 188
+)ETag: W/"bc-Rrvr91uFTULxNwO0lh0OueNv8ww"
+$Date: Thu, 05 Oct 2023 15:33:56 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+"    "cashreference": "578961422",
+,    "cashuserEmail": "rob.zieme@gmail.com",
+#    "cashcollectorCash": "Baloto",
+    "cashamount": 748023,
+%    "cashcellphone": "672-680-7528",
+'    "_id": "651ed764774d199481de915e",
+    "__v": 0
+}
+Request method:	GET
+PRequest URI:	http://localhost:1337/api/v1/cash-payment/651ed764774d199481de915e
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+)Path params:	id=651ed764774d199481de915e
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+PRequest URI:	http://localhost:1337/api/v1/cash-payment/651ed764774d199481de915e
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+)Path params:	id=651ed764774d199481de915e
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+PRequest URI:	http://localhost:1337/api/v1/cash-payment/651ed764774d199481de915e
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+)Path params:	id=651ed764774d199481de915e
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 246
+)ETag: W/"f6-md5AGe+WFsvoHOei63UrpP6WEjY"
+$Date: Thu, 05 Oct 2023 15:33:57 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "OK",
+'    "message": "Cash payment request",
+    "result": {
++        "_id": "651ed764774d199481de915e",
+&        "cashreference": "578961422",
+0        "cashuserEmail": "rob.zieme@gmail.com",
+'        "cashcollectorCash": "Baloto",
+        "cashamount": 748023,
+)        "cashcellphone": "672-680-7528",
+        "__v": 0
+    }
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 246
+)ETag: W/"f6-md5AGe+WFsvoHOei63UrpP6WEjY"
+$Date: Thu, 05 Oct 2023 15:33:57 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "OK",
+'    "message": "Cash payment request",
+    "result": {
++        "_id": "651ed764774d199481de915e",
+&        "cashreference": "578961422",
+0        "cashuserEmail": "rob.zieme@gmail.com",
+'        "cashcollectorCash": "Baloto",
+        "cashamount": 748023,
+)        "cashcellphone": "672-680-7528",
+        "__v": 0
+    }
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+.Content-Type: application/json; charset=utf-8
+Content-Length: 246
+)ETag: W/"f6-md5AGe+WFsvoHOei63UrpP6WEjY"
+$Date: Thu, 05 Oct 2023 15:33:57 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "status": "OK",
+'    "message": "Cash payment request",
+    "result": {
++        "_id": "651ed764774d199481de915e",
+&        "cashreference": "578961422",
+0        "cashuserEmail": "rob.zieme@gmail.com",
+'        "cashcollectorCash": "Baloto",
+        "cashamount": 748023,
+)        "cashcellphone": "672-680-7528",
+        "__v": 0
+    }
+}
+Request method:	POST
+7Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+"    "cashreference": "578961422",
+1    "cashuserEmail": "joesph.wuckert@gmail.com",
+    "cashamount": 387098,
+#    "cashcollectorCash": "Baloto",
+$    "cashcellphone": "549.163.4284"
+}
+Request method:	POST
+7Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+"    "cashreference": "578961422",
+1    "cashuserEmail": "joesph.wuckert@gmail.com",
+    "cashamount": 387098,
+#    "cashcollectorCash": "Baloto",
+$    "cashcellphone": "549.163.4284"
+}
+Request method:	POST
+7Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+"    "cashreference": "578961422",
+1    "cashuserEmail": "joesph.wuckert@gmail.com",
+    "cashamount": 387098,
+#    "cashcollectorCash": "Baloto",
+$    "cashcellphone": "549.163.4284"
+}
+Request method:	POST
+7Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+"    "cashreference": "578961422",
+1    "cashuserEmail": "joesph.wuckert@gmail.com",
+    "cashamount": 387098,
+#    "cashcollectorCash": "Baloto",
+$    "cashcellphone": "549.163.4284"
+}
 Request method:	POST
 7Request URI:	http://localhost:1337/api/v1/cash-payment
 Proxy:			<none>
@@ -2110,11 +1479,11 @@ $        "ccreference": "306279528",
 Multiparts:		<none>
 Body:
 {
-"    "cashreference": "306279528",
-1    "cashuserEmail": "reba.ruecker@hotmail.com",
-    "cashamount": 721892,
-#    "cashcollectorCash": "Baloto",
-$    "cashcellphone": "576.761.0901"
+"    "cashreference": "578961422",
+.    "cashuserEmail": "mandy.orn@hotmail.com",
+    "cashamount": 550524,
+"    "cashcollectorCash": "Nequi",
+$    "cashcellphone": "134-079-6147"
 }
 Request method:	POST
 7Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -2129,11 +1498,11 @@ $        "ccreference": "306279528",
 Multiparts:		<none>
 Body:
 {
-"    "cashreference": "306279528",
-1    "cashuserEmail": "reba.ruecker@hotmail.com",
-    "cashamount": 721892,
-#    "cashcollectorCash": "Baloto",
-$    "cashcellphone": "576.761.0901"
+"    "cashreference": "578961422",
+.    "cashuserEmail": "mandy.orn@hotmail.com",
+    "cashamount": 550524,
+"    "cashcollectorCash": "Nequi",
+$    "cashcellphone": "134-079-6147"
 }
 Request method:	POST
 7Request URI:	http://localhost:1337/api/v1/cash-payment
@@ -2148,1318 +1517,461 @@ $        "ccreference": "306279528",
 Multiparts:		<none>
 Body:
 {
-"    "cashreference": "306279528",
-1    "cashuserEmail": "reba.ruecker@hotmail.com",
-    "cashamount": 721892,
-#    "cashcollectorCash": "Baloto",
-$    "cashcellphone": "576.761.0901"
+"    "cashreference": "578961422",
+.    "cashuserEmail": "mandy.orn@hotmail.com",
+    "cashamount": 550524,
+"    "cashcollectorCash": "Nequi",
+$    "cashcellphone": "134-079-6147"
 }
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
+Request method:	POST
+7Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
+"    "cashreference": "578961422",
+.    "cashuserEmail": "mandy.orn@hotmail.com",
+    "cashamount": 550524,
+"    "cashcollectorCash": "Nequi",
+$    "cashcellphone": "134-079-6147"
 }
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
+Request method:	POST
+7Request URI:	http://localhost:1337/api/v1/cash-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
 {
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
+"    "cashreference": "578961422",
+.    "cashuserEmail": "mandy.orn@hotmail.com",
+    "cashamount": 550524,
+"    "cashcollectorCash": "Nequi",
+$    "cashcellphone": "134-079-6147"
 }
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
-}
-Request method:	POST
->Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-     "ccreference": "306279528",
-$    "ccName": "Ms. Harland Spinka",
-!    "ccNumber": "4939491060179",
-    "cclevel": "VISA",
-    "ccMonthExp": 6,
-    "ccYearExp": 38,
-    "ccSecurityCode": 279,
-0    "ccuserEmail": "chrystal.zulauf@gmail.com",
-    "ccDues": "29",
-    "ccDate": "30/12/2023",
-    "ccamount": "307766",
-"    "cccellphone": "080-796-3395"
-}
-Request method:	POST
->Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-     "ccreference": "306279528",
-$    "ccName": "Ms. Harland Spinka",
-!    "ccNumber": "4939491060179",
-    "cclevel": "VISA",
-    "ccMonthExp": 6,
-    "ccYearExp": 38,
-    "ccSecurityCode": 279,
-0    "ccuserEmail": "chrystal.zulauf@gmail.com",
-    "ccDues": "29",
-    "ccDate": "30/12/2023",
-    "ccamount": "307766",
-"    "cccellphone": "080-796-3395"
-}
-Request method:	POST
->Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-     "ccreference": "306279528",
-$    "ccName": "Ms. Harland Spinka",
-!    "ccNumber": "4939491060179",
-    "cclevel": "VISA",
-    "ccMonthExp": 6,
-    "ccYearExp": 38,
-    "ccSecurityCode": 279,
-0    "ccuserEmail": "chrystal.zulauf@gmail.com",
-    "ccDues": "29",
-    "ccDate": "30/12/2023",
-    "ccamount": "307766",
-"    "cccellphone": "080-796-3395"
-}
-Request method:	POST
->Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-     "ccreference": "306279528",
-$    "ccName": "Ms. Harland Spinka",
-!    "ccNumber": "4939491060179",
-    "cclevel": "VISA",
-    "ccMonthExp": 6,
-    "ccYearExp": 38,
-    "ccSecurityCode": 279,
-0    "ccuserEmail": "chrystal.zulauf@gmail.com",
-    "ccDues": "29",
-    "ccDate": "30/12/2023",
-    "ccamount": "307766",
-"    "cccellphone": "080-796-3395"
-}
-Request method:	POST
->Request URI:	http://localhost:1337/api/v1/credit-card-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-     "ccreference": "306279528",
-$    "ccName": "Ms. Harland Spinka",
-!    "ccNumber": "4939491060179",
-    "cclevel": "VISA",
-    "ccMonthExp": 6,
-    "ccYearExp": 38,
-    "ccSecurityCode": 279,
-0    "ccuserEmail": "chrystal.zulauf@gmail.com",
-    "ccDues": "29",
-    "ccDate": "30/12/2023",
-    "ccamount": "307766",
-"    "cccellphone": "080-796-3395"
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 316
-*ETag: W/"13c-mLxQs+NHTe3TP40Yc+EVf594gXI"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-     "ccreference": "306279528",
-$    "ccName": "Ms. Harland Spinka",
-!    "ccNumber": "4939491060179",
-    "cclevel": "VISA",
-    "ccMonthExp": 6,
-    "ccYearExp": 38,
-    "ccDues": 29,
-    "ccSecurityCode": 279,
-    "ccDate": "30/12/2023",
-0    "ccuserEmail": "chrystal.zulauf@gmail.com",
-    "ccamount": 307766,
-#    "cccellphone": "080-796-3395",
-'    "_id": "6518a286b15d7ac86c3d935d",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 316
-*ETag: W/"13c-mLxQs+NHTe3TP40Yc+EVf594gXI"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-     "ccreference": "306279528",
-$    "ccName": "Ms. Harland Spinka",
-!    "ccNumber": "4939491060179",
-    "cclevel": "VISA",
-    "ccMonthExp": 6,
-    "ccYearExp": 38,
-    "ccDues": 29,
-    "ccSecurityCode": 279,
-    "ccDate": "30/12/2023",
-0    "ccuserEmail": "chrystal.zulauf@gmail.com",
-    "ccamount": 307766,
-#    "cccellphone": "080-796-3395",
-'    "_id": "6518a286b15d7ac86c3d935d",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 316
-*ETag: W/"13c-mLxQs+NHTe3TP40Yc+EVf594gXI"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-     "ccreference": "306279528",
-$    "ccName": "Ms. Harland Spinka",
-!    "ccNumber": "4939491060179",
-    "cclevel": "VISA",
-    "ccMonthExp": 6,
-    "ccYearExp": 38,
-    "ccDues": 29,
-    "ccSecurityCode": 279,
-    "ccDate": "30/12/2023",
-0    "ccuserEmail": "chrystal.zulauf@gmail.com",
-    "ccamount": 307766,
-#    "cccellphone": "080-796-3395",
-'    "_id": "6518a286b15d7ac86c3d935d",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 316
-*ETag: W/"13c-mLxQs+NHTe3TP40Yc+EVf594gXI"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-     "ccreference": "306279528",
-$    "ccName": "Ms. Harland Spinka",
-!    "ccNumber": "4939491060179",
-    "cclevel": "VISA",
-    "ccMonthExp": 6,
-    "ccYearExp": 38,
-    "ccDues": 29,
-    "ccSecurityCode": 279,
-    "ccDate": "30/12/2023",
-0    "ccuserEmail": "chrystal.zulauf@gmail.com",
-    "ccamount": 307766,
-#    "cccellphone": "080-796-3395",
-'    "_id": "6518a286b15d7ac86c3d935d",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 316
-*ETag: W/"13c-mLxQs+NHTe3TP40Yc+EVf594gXI"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-     "ccreference": "306279528",
-$    "ccName": "Ms. Harland Spinka",
-!    "ccNumber": "4939491060179",
-    "cclevel": "VISA",
-    "ccMonthExp": 6,
-    "ccYearExp": 38,
-    "ccDues": 29,
-    "ccSecurityCode": 279,
-    "ccDate": "30/12/2023",
-0    "ccuserEmail": "chrystal.zulauf@gmail.com",
-    "ccamount": 307766,
-#    "cccellphone": "080-796-3395",
-'    "_id": "6518a286b15d7ac86c3d935d",
-    "__v": 0
-}
-Request method:	PUT
-ORequest URI:	http://localhost:1337/api/v1/pse-payment/6518a285b15d7ac86c3d9359
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a285b15d7ac86c3d9359
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-.    "pseuserEmail": "corie.gibson@gmail.com",
-    "pseamount": 567504,
-)    "psefullNameUser": "Heriberto Howe",
-#    "psecellphone": "628-619-3539"
-}
-Request method:	PUT
-ORequest URI:	http://localhost:1337/api/v1/pse-payment/6518a285b15d7ac86c3d9359
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a285b15d7ac86c3d9359
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-.    "pseuserEmail": "corie.gibson@gmail.com",
-    "pseamount": 567504,
-)    "psefullNameUser": "Heriberto Howe",
-#    "psecellphone": "628-619-3539"
-}
-Request method:	PUT
-ORequest URI:	http://localhost:1337/api/v1/pse-payment/6518a285b15d7ac86c3d9359
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a285b15d7ac86c3d9359
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-.    "pseuserEmail": "corie.gibson@gmail.com",
-    "pseamount": 567504,
-)    "psefullNameUser": "Heriberto Howe",
-#    "psecellphone": "628-619-3539"
-}
-Request method:	PUT
-ORequest URI:	http://localhost:1337/api/v1/pse-payment/6518a285b15d7ac86c3d9359
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a285b15d7ac86c3d9359
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-.    "pseuserEmail": "corie.gibson@gmail.com",
-    "pseamount": 567504,
-)    "psefullNameUser": "Heriberto Howe",
-#    "psecellphone": "628-619-3539"
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 201
-)ETag: W/"c9-QTsBtbkOnD7ZtpCsiKvFp2Nxi54"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-2    "message": "PSE payment updated successfull",
--    "idUpdated": "6518a285b15d7ac86c3d9359",
-    "result": {
-        "acknowledged": true,
-        "modifiedCount": 1,
-        "upsertedId": null,
-        "upsertedCount": 0,
-        "matchedCount": 1
-    }
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 201
-)ETag: W/"c9-QTsBtbkOnD7ZtpCsiKvFp2Nxi54"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-2    "message": "PSE payment updated successfull",
--    "idUpdated": "6518a285b15d7ac86c3d9359",
-    "result": {
-        "acknowledged": true,
-        "modifiedCount": 1,
-        "upsertedId": null,
-        "upsertedCount": 0,
-        "matchedCount": 1
-    }
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 201
-)ETag: W/"c9-QTsBtbkOnD7ZtpCsiKvFp2Nxi54"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-2    "message": "PSE payment updated successfull",
--    "idUpdated": "6518a285b15d7ac86c3d9359",
-    "result": {
-        "acknowledged": true,
-        "modifiedCount": 1,
-        "upsertedId": null,
-        "upsertedCount": 0,
-        "matchedCount": 1
-    }
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 201
-)ETag: W/"c9-QTsBtbkOnD7ZtpCsiKvFp2Nxi54"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-2    "message": "PSE payment updated successfull",
--    "idUpdated": "6518a285b15d7ac86c3d9359",
-    "result": {
-        "acknowledged": true,
-        "modifiedCount": 1,
-        "upsertedId": null,
-        "upsertedCount": 0,
-        "matchedCount": 1
-    }
-}
-Request method:	DELETE
-WRequest URI:	http://localhost:1337/api/v1/credit-card-payment/6518a286b15d7ac86c3d935d
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a286b15d7ac86c3d935d
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-WRequest URI:	http://localhost:1337/api/v1/credit-card-payment/6518a286b15d7ac86c3d935d
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a286b15d7ac86c3d935d
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-WRequest URI:	http://localhost:1337/api/v1/credit-card-payment/6518a286b15d7ac86c3d935d
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a286b15d7ac86c3d935d
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-WRequest URI:	http://localhost:1337/api/v1/credit-card-payment/6518a286b15d7ac86c3d935d
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a286b15d7ac86c3d935d
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-WRequest URI:	http://localhost:1337/api/v1/credit-card-payment/6518a286b15d7ac86c3d935d
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a286b15d7ac86c3d935d
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 86
-)ETag: W/"56-r4uTZFgoSgjkbUIBnUl1peeWjgw"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-:    "message": "Credit card payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 86
-)ETag: W/"56-r4uTZFgoSgjkbUIBnUl1peeWjgw"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-:    "message": "Credit card payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 86
-)ETag: W/"56-r4uTZFgoSgjkbUIBnUl1peeWjgw"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-:    "message": "Credit card payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 86
-)ETag: W/"56-r4uTZFgoSgjkbUIBnUl1peeWjgw"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-:    "message": "Credit card payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 86
-)ETag: W/"56-r4uTZFgoSgjkbUIBnUl1peeWjgw"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-:    "message": "Credit card payment deleted successfull",
-    "items_deleted": 1
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-.    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "pseamount": 595949,
-'    "psefullNameUser": "Normand Wiza",
-%    "psecellphone": "1-206-373-6738"
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-.    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "pseamount": 595949,
-'    "psefullNameUser": "Normand Wiza",
-%    "psecellphone": "1-206-373-6738"
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-.    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "pseamount": 595949,
-'    "psefullNameUser": "Normand Wiza",
-%    "psecellphone": "1-206-373-6738"
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-.    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "pseamount": 595949,
-'    "psefullNameUser": "Normand Wiza",
-%    "psecellphone": "1-206-373-6738"
-}
-Request method:	POST
-6Request URI:	http://localhost:1337/api/v1/pse-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-.    "pseuserEmail": "lavonna.rice@yahoo.com",
-    "pseamount": 595949,
-'    "psefullNameUser": "Normand Wiza",
-%    "psecellphone": "1-206-373-6738"
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 223
-)ETag: W/"df-spHhXAJ71gBkHKhz9uuFpImwaGQ"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-.    "pseuserEmail": "lavonna.rice@yahoo.com",
-'    "psefullNameUser": "Normand Wiza",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-&    "psecellphone": "1-206-373-6738",
-    "pseamount": 595949,
-'    "_id": "6518a286b15d7ac86c3d9361",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 223
-)ETag: W/"df-spHhXAJ71gBkHKhz9uuFpImwaGQ"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-.    "pseuserEmail": "lavonna.rice@yahoo.com",
-'    "psefullNameUser": "Normand Wiza",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-&    "psecellphone": "1-206-373-6738",
-    "pseamount": 595949,
-'    "_id": "6518a286b15d7ac86c3d9361",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 223
-)ETag: W/"df-spHhXAJ71gBkHKhz9uuFpImwaGQ"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-.    "pseuserEmail": "lavonna.rice@yahoo.com",
-'    "psefullNameUser": "Normand Wiza",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-&    "psecellphone": "1-206-373-6738",
-    "pseamount": 595949,
-'    "_id": "6518a286b15d7ac86c3d9361",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 223
-)ETag: W/"df-spHhXAJ71gBkHKhz9uuFpImwaGQ"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-.    "pseuserEmail": "lavonna.rice@yahoo.com",
-'    "psefullNameUser": "Normand Wiza",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-&    "psecellphone": "1-206-373-6738",
-    "pseamount": 595949,
-'    "_id": "6518a286b15d7ac86c3d9361",
-    "__v": 0
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 223
-)ETag: W/"df-spHhXAJ71gBkHKhz9uuFpImwaGQ"
-$Date: Sat, 30 Sep 2023 22:34:46 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-.    "pseuserEmail": "lavonna.rice@yahoo.com",
-'    "psefullNameUser": "Normand Wiza",
-!    "psereference": "306279528",
-$    "psereferencePse": "306279528",
-&    "psecellphone": "1-206-373-6738",
-    "pseamount": 595949,
-'    "_id": "6518a286b15d7ac86c3d9361",
-    "__v": 0
-}
-Request method:	POST
-7Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-"    "cashreference": "306279528",
-.    "cashuserEmail": "sam.pacocha@gmail.com",
-    "cashamount": 468823,
-#    "cashcollectorCash": "Efecty",
-$    "cashcellphone": "589.456.0591"
-}
-Request method:	POST
-7Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-"    "cashreference": "306279528",
-.    "cashuserEmail": "sam.pacocha@gmail.com",
-    "cashamount": 468823,
-#    "cashcollectorCash": "Efecty",
-$    "cashcellphone": "589.456.0591"
-}
-Request method:	POST
-7Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-"    "cashreference": "306279528",
-.    "cashuserEmail": "sam.pacocha@gmail.com",
-    "cashamount": 468823,
-#    "cashcollectorCash": "Efecty",
-$    "cashcellphone": "589.456.0591"
-}
-Request method:	POST
-7Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-"    "cashreference": "306279528",
-.    "cashuserEmail": "sam.pacocha@gmail.com",
-    "cashamount": 468823,
-#    "cashcollectorCash": "Efecty",
-$    "cashcellphone": "589.456.0591"
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
-}
-Request method:	DELETE
-ORequest URI:	http://localhost:1337/api/v1/pse-payment/6518a286b15d7ac86c3d9361
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a286b15d7ac86c3d9361
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-ORequest URI:	http://localhost:1337/api/v1/pse-payment/6518a286b15d7ac86c3d9361
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a286b15d7ac86c3d9361
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-ORequest URI:	http://localhost:1337/api/v1/pse-payment/6518a286b15d7ac86c3d9361
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a286b15d7ac86c3d9361
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-ORequest URI:	http://localhost:1337/api/v1/pse-payment/6518a286b15d7ac86c3d9361
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a286b15d7ac86c3d9361
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-ORequest URI:	http://localhost:1337/api/v1/pse-payment/6518a286b15d7ac86c3d9361
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-)Path params:	id=6518a286b15d7ac86c3d9361
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 78
-)ETag: W/"4e-Af8yqi6GEqk3sMWo9nMoZirsi0o"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-2    "message": "PSE payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 78
-)ETag: W/"4e-Af8yqi6GEqk3sMWo9nMoZirsi0o"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-2    "message": "PSE payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 78
-)ETag: W/"4e-Af8yqi6GEqk3sMWo9nMoZirsi0o"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-2    "message": "PSE payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 78
-)ETag: W/"4e-Af8yqi6GEqk3sMWo9nMoZirsi0o"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-2    "message": "PSE payment deleted successfull",
-    "items_deleted": 1
-}
-HTTP/1.1 201 Created
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 78
-)ETag: W/"4e-Af8yqi6GEqk3sMWo9nMoZirsi0o"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "status": "201",
-2    "message": "PSE payment deleted successfull",
-    "items_deleted": 1
-}
-Request method:	POST
-7Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-"    "cashreference": "306279528",
-1    "cashuserEmail": "willette.ebert@gmail.com",
-    "cashamount": 209801,
-&    "cashcollectorCash": "Daviplata",
-$    "cashcellphone": "792.872.2848"
-}
-Request method:	POST
-7Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-"    "cashreference": "306279528",
-1    "cashuserEmail": "willette.ebert@gmail.com",
-    "cashamount": 209801,
-&    "cashcollectorCash": "Daviplata",
-$    "cashcellphone": "792.872.2848"
-}
-Request method:	POST
-7Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-"    "cashreference": "306279528",
-1    "cashuserEmail": "willette.ebert@gmail.com",
-    "cashamount": 209801,
-&    "cashcollectorCash": "Daviplata",
-$    "cashcellphone": "792.872.2848"
-}
-Request method:	POST
-7Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-"    "cashreference": "306279528",
-1    "cashuserEmail": "willette.ebert@gmail.com",
-    "cashamount": 209801,
-&    "cashcollectorCash": "Daviplata",
-$    "cashcellphone": "792.872.2848"
-}
-Request method:	POST
-7Request URI:	http://localhost:1337/api/v1/cash-payment
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-"				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-"    "cashreference": "306279528",
-1    "cashuserEmail": "willette.ebert@gmail.com",
-    "cashamount": 209801,
-&    "cashcollectorCash": "Daviplata",
-$    "cashcellphone": "792.872.2848"
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
-}
-HTTP/1.1 200 OK
-X-Powered-By: Express
-.Content-Type: application/json; charset=utf-8
-Content-Length: 95
-)ETag: W/"5f-U7KpRiS9LHSR4ZP8y1CQ6tfsQAU"
-$Date: Sat, 30 Sep 2023 22:34:47 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "message": {
-        "index": 0,
-        "code": 11000,
-        "keyPattern": {
-            "reference": 1
-        },
-        "keyValue": {
-            "reference": null
-
-        }
-    }
-}
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+1    "pseuserEmail": "teena.oconner@hotmail.com",
+    "pseamount": 153213,
+,    "psefullNameUser": "Joan Pfannerstill",
+#    "psecellphone": "988-003-4061"
+}
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+1    "pseuserEmail": "teena.oconner@hotmail.com",
+    "pseamount": 153213,
+,    "psefullNameUser": "Joan Pfannerstill",
+#    "psecellphone": "988-003-4061"
+}
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+1    "pseuserEmail": "teena.oconner@hotmail.com",
+    "pseamount": 153213,
+,    "psefullNameUser": "Joan Pfannerstill",
+#    "psecellphone": "988-003-4061"
+}
+Request method:	POST
+>Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+     "ccreference": "578961422",
+    "ccName": "Sammy Kovacek",
+'    "ccNumber": "6759334657389768119",
+    "cclevel": "VISA",
+    "ccMonthExp": 3,
+    "ccYearExp": 29,
+    "ccSecurityCode": 717,
+,    "ccuserEmail": "nena.larkin@yahoo.com",
+    "ccDues": "5",
+    "ccPayDate": "2023-12-30",
+    "ccamount": "519405",
+$    "cccellphone": "(590) 826-1409"
+}
+Request method:	POST
+>Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+     "ccreference": "578961422",
+    "ccName": "Sammy Kovacek",
+'    "ccNumber": "6759334657389768119",
+    "cclevel": "VISA",
+    "ccMonthExp": 3,
+    "ccYearExp": 29,
+    "ccSecurityCode": 717,
+,    "ccuserEmail": "nena.larkin@yahoo.com",
+    "ccDues": "5",
+    "ccPayDate": "2023-12-30",
+    "ccamount": "519405",
+$    "cccellphone": "(590) 826-1409"
+}
+Request method:	POST
+>Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+     "ccreference": "578961422",
+    "ccName": "Sammy Kovacek",
+'    "ccNumber": "6759334657389768119",
+    "cclevel": "VISA",
+    "ccMonthExp": 3,
+    "ccYearExp": 29,
+    "ccSecurityCode": 717,
+,    "ccuserEmail": "nena.larkin@yahoo.com",
+    "ccDues": "5",
+    "ccPayDate": "2023-12-30",
+    "ccamount": "519405",
+$    "cccellphone": "(590) 826-1409"
+}
+Request method:	POST
+>Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+     "ccreference": "578961422",
+    "ccName": "Sammy Kovacek",
+'    "ccNumber": "6759334657389768119",
+    "cclevel": "VISA",
+    "ccMonthExp": 3,
+    "ccYearExp": 29,
+    "ccSecurityCode": 717,
+,    "ccuserEmail": "nena.larkin@yahoo.com",
+    "ccDues": "5",
+    "ccPayDate": "2023-12-30",
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+1    "pseuserEmail": "teena.oconner@hotmail.com",
+    "pseamount": 153213,
+,    "psefullNameUser": "Joan Pfannerstill",
+#    "psecellphone": "988-003-4061"
+}
+    "ccamount": "519405",
+$    "cccellphone": "(590) 826-1409"
+}
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+-    "pseuserEmail": "sidney.moen@gmail.com",
+    "pseamount": 65323,
+)    "psefullNameUser": "Clifford Green",
+#    "psecellphone": "420-174-4466"
+}
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+-    "pseuserEmail": "sidney.moen@gmail.com",
+    "pseamount": 65323,
+)    "psefullNameUser": "Clifford Green",
+#    "psecellphone": "420-174-4466"
+}
+Request method:	POST
+>Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+     "ccreference": "578961422",
+#    "ccName": "Ms. Waldo Bartell",
+$    "ccNumber": "4511708756255743",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 43,
+    "ccSecurityCode": 473,
+4    "ccuserEmail": "florencio.dickinson@yahoo.com",
+    "ccDues": "43",
+    "ccPayDate": "2023-12-30",
+    "ccamount": "587213",
+$    "cccellphone": "(949) 229-2682"
+}
+Request method:	POST
+>Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+     "ccreference": "578961422",
+#    "ccName": "Ms. Waldo Bartell",
+$    "ccNumber": "4511708756255743",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 43,
+    "ccSecurityCode": 473,
+4    "ccuserEmail": "florencio.dickinson@yahoo.com",
+    "ccDues": "43",
+    "ccPayDate": "2023-12-30",
+    "ccamount": "587213",
+$    "cccellphone": "(949) 229-2682"
+}
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+-    "pseuserEmail": "sidney.moen@gmail.com",
+    "pseamount": 65323,
+)    "psefullNameUser": "Clifford Green",
+#    "psecellphone": "420-174-4466"
+}
+Request method:	POST
+>Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+     "ccreference": "578961422",
+#    "ccName": "Ms. Waldo Bartell",
+$    "ccNumber": "4511708756255743",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 43,
+    "ccSecurityCode": 473,
+4    "ccuserEmail": "florencio.dickinson@yahoo.com",
+    "ccDues": "43",
+    "ccPayDate": "2023-12-30",
+    "ccamount": "587213",
+$    "cccellphone": "(949) 229-2682"
+}
+Request method:	POST
+>Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+     "ccreference": "578961422",
+#    "ccName": "Ms. Waldo Bartell",
+$    "ccNumber": "4511708756255743",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 43,
+    "ccSecurityCode": 473,
+4    "ccuserEmail": "florencio.dickinson@yahoo.com",
+    "ccDues": "43",
+    "ccPayDate": "2023-12-30",
+    "ccamount": "587213",
+$    "cccellphone": "(949) 229-2682"
+}
+Request method:	POST
+>Request URI:	http://localhost:1337/api/v1/credit-card-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+     "ccreference": "578961422",
+#    "ccName": "Ms. Waldo Bartell",
+$    "ccNumber": "4511708756255743",
+    "cclevel": "VISA",
+    "ccMonthExp": 6,
+    "ccYearExp": 43,
+    "ccSecurityCode": 473,
+4    "ccuserEmail": "florencio.dickinson@yahoo.com",
+    "ccDues": "43",
+    "ccPayDate": "2023-12-30",
+    "ccamount": "587213",
+$    "cccellphone": "(949) 229-2682"
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+-    "pseuserEmail": "sidney.moen@gmail.com",
+    "pseamount": 65323,
+)    "psefullNameUser": "Clifford Green",
+#    "psecellphone": "420-174-4466"
+}
+Request method:	POST
+6Request URI:	http://localhost:1337/api/v1/pse-payment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+!    "psereference": "578961422",
+$    "psereferencePse": "578961422",
+-    "pseuserEmail": "sidney.moen@gmail.com",
+    "pseamount": 65323,
+)    "psefullNameUser": "Clifford Green",
+#    "psecellphone": "420-174-4466"
+}
+}
