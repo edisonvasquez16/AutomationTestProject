@@ -12,7 +12,7 @@ public class CreditCardFactory {
         CreditCardPayment creditCardPayment = new CreditCardPayment();
         creditCardPayment.setCcreference(String.valueOf(jf.random().nextInt(10000,1000000)));
         creditCardPayment.setCcName(jf.name().fullName());
-        creditCardPayment.setCcNumber(jf.finance().creditCard().replace("-",""));
+        creditCardPayment.setCcNumber(String.valueOf(jf.random().nextInt(1000000000000000,9999999999999999)));
         creditCardPayment.setCcMonthExp(jf.random().nextInt(1,12));
         creditCardPayment.setCcYearExp(jf.random().nextInt(23,50));
         creditCardPayment.setCcDues(String.valueOf(jf.random().nextInt(1,48)));
