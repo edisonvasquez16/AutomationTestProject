@@ -12,7 +12,7 @@ public class CashFactory {
     public static CashPayment withRandomData() {
 
         CashPayment cashPayment = new CashPayment();
-        cashPayment.setCashreference(String.valueOf(jf.random().nextInt(1000,1000000)));
+        cashPayment.setCashreference(String.valueOf(jf.random().nextInt(10000,1000000)));
         cashPayment.setCashuserEmail(jf.internet().emailAddress());
         cashPayment.setCashamount(jf.random().nextInt(3000, 800000));
         cashPayment.setCashcollectorCash(COLLECTORS_CASH[jf.random().nextInt(0, 4)]);
