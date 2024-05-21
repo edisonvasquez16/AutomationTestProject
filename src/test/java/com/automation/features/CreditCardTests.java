@@ -13,6 +13,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import static com.automation.enums.Memory.CC_PAYMENT_ID;
 
 @ExtendWith(SerenityJUnit5Extension.class)
+@Tag("develop")
 @Tag("credit-card")
 public class CreditCardTests extends BaseConf {
 

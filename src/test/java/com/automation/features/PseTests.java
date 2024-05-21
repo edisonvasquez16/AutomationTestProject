@@ -13,6 +13,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import static com.automation.enums.Memory.PSE_PAYMENT_ID;
 
 @ExtendWith(SerenityJUnit5Extension.class)
+@Tag("staging")
+@Tag("develop")
 @Tag("PSE")
 public class PseTests extends BaseConf {
 

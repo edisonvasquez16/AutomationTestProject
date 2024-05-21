@@ -63,11 +63,29 @@ test {
     systemProperties System.getProperties()
 }
 
-task smoke(type: Test) {
+task main(type: Test) {
     testLogging.showStandardStreams = true
     maxParallelForks = 1
     useJUnitPlatform {
-        includeTags("smoke")
+        includeTags("production")
+    }
+    systemProperties System.getProperties()
+}
+
+task staging(type: Test) {
+    testLogging.showStandardStreams = true
+    maxParallelForks = 1
+    useJUnitPlatform {
+        includeTags("staging")
+    }
+    systemProperties System.getProperties()
+}
+
+task develop(type: Test) {
+    testLogging.showStandardStreams = true
+    maxParallelForks = 1
+    useJUnitPlatform {
+        includeTags("develop")
     }
     systemProperties System.getProperties()
 }

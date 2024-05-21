@@ -13,6 +13,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import static com.automation.enums.Memory.CASH_PAYMENT_ID;
 
 @ExtendWith(SerenityJUnit5Extension.class)
+@Tag("production")
+@Tag("staging")
+@Tag("develop")
 @Tag("cash")
 public class CashTests extends BaseConf {
 
